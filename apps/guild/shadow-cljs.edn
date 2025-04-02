@@ -1,0 +1,7 @@
+{
+  :deps true
+  :builds
+    {:app
+      {:target :node-library
+       :output-to "target/functions.js"
+       :exports-fn functions/exports}}}

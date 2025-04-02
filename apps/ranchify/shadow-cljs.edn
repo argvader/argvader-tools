@@ -1,0 +1,13 @@
+{
+  :deps true
+  :nrepl {:middleware [cider.piggieback/wrap-cljs-repl]}
+
+  :http {:port 3449
+         :host "0.0.0.0"}
+
+  :builds {:app
+            {:target :node-library
+             :output-to "serverless/ranchify.js"
+             :output-dir "serverless"
+             :exports {:handler ranchify.handler/handler}
+             :js-options {:js-package-dirs ["./serverless/cljs-runtime"]}}}}

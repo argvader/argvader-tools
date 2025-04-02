@@ -1,0 +1,80 @@
+# This workflow uses actions that are not certified by GitHub.
+# They are provided by a third-party and are governed by
+# separate terms of service, privacy policy, and support
+# documentation.
+# clj-watson scans dependencies in a clojure deps.edn
+# seeking for vulnerable direct/transitive dependencies and
+# build a report with all the information needed to help you
+# understand how the vulnerability manifest in your software.
+# More details at https://github.com/clj-holmes/clj-watson
+
+name: team-tree-ui-analysis
+
+on:
+  push:
+    branches: [ master ]
+    paths:
+      - 'apps/team_tree/web/**'
+
+  pull_request:
+    branches: [ master ]
+    paths:
+      - 'apps/team_tree/web/**'
+
+  schedule:
+    - cron: '16 18 * * 5'
+
+permissions:
+  contents: read
+
+env:
+  GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
+  project_name: team-tree-ui
+  app_path: ./apps/team_tree/web
+
+jobs:
+  analysis:
+    name: Run analysis
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      security-events: write
+      actions: read
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Dependency scan
+        uses: clj-holmes/clj-watson-action@main
+        with:
+          clj-watson-sha: "65d928c"
+          clj-watson-tag: "v4.0.1"
+          database-strategy: github-advisory
+          aliases: clojure-lsp,test
+          deps-edn-path: ${{env.app_path}}/deps.edn
+          suggest-fix: true
+          output-type: sarif
+          output-file: watson-${{env.project_name}}-results.sarif
+          fail-on-result: false
+
+      - name: Upload analysis results to GitHub
+        uses: github/codeql-action/upload-sarif@v2
+        with:
+          sarif_file: ${{github.workspace}}/watson-${{env.project_name}}-results.sarif
+          wait-for-processing: true
+
+      - name: Scan code
+        uses: argvader/clj-holmes-action@main
+        with:
+          rules-repository: git://clj-holmes/clj-holmes-rules#main
+          scan-path: ${{env.app_path}}
+          output-type: sarif
+          output-file: holmes-${{env.project_name}}-results.sarif
+          fail-on-result: false
+
+      - name: Upload analysis results to GitHub Security tab
+        uses: github/codeql-action/upload-sarif@v2
+        with:
+          sarif_file: ${{github.workspace}}/holmes-${{env.project_name}}-results.sarif
+          wait-for-processing: true

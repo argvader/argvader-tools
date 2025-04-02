@@ -1,0 +1,10 @@
+{
+  "name": "contentful-manager",
+  "version": "1.0.0",
+  "devDependencies": {
+    "serverless-offline": "^8.7.0"
+  },
+  "dependencies": {
+    "contentful-management": "^10.6.3"
+  }
+}

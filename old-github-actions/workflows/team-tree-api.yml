@@ -1,0 +1,54 @@
+name: Team Tree API Deploy
+
+on:
+  push:
+    branches:
+      - 'master'
+    paths:
+      - 'apps/team_tree/service/**'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    container: docker:19.03
+    env:
+        REGION: 'us-east-1'
+        ENV: ${{ github.event.inputs.env || 'prod' }}
+        AWS_PROFILE: asurion-soluto-nonprod.appadmins
+
+    steps:
+      - name: Prime container
+        run: |
+          apk update && apk add bash && apk add openjdk11
+
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Configure AWS Credentials
+        if: ${{ env.ENV == 'prod' }}
+        uses: aws-actions/configure-aws-credentials@v1
+        with:
+          aws-region: '${{ env.REGION }}'
+          role-to-assume: ${{ secrets.AWS_ROLE_TO_ASSUME_DEV }}
+          role-duration-seconds: 1200
+          role-skip-session-tagging: true
+
+      - name: Setup Clojure
+        uses: DeLaGuardo/setup-clojure@2.0
+        env:
+          ACTIONS_ALLOW_UNSECURE_COMMANDS: 'true'
+        with:
+          tools-deps: '1.10.1.469'
+
+      - name: Create env file
+        uses: "finnp/create-file-action@master"
+        env:
+          FILE_NAME: "apps/team_tree/service/resources/secrets.edn"
+          FILE_DATA: "{:team-tree-db {:username \"${{ secrets.TEAM_TREE_DB_USER }}\" :password \"${{ secrets.TEAM_TREE_DB_PASSWORD }}\"}}"
+
+      - name: clojure uberjar:push-image:release
+        working-directory: ./apps/team_tree/service
+        run: |
+          clojure -R1.10.1 -Auberdeps
+          clojure -R1.10.1 -Apush-image
+          clojure -R1.10.1 -Arelease

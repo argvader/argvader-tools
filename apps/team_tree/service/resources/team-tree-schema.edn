@@ -1,0 +1,64 @@
+{:objects
+  {:ProductSpace
+    {:description "Logical Product grouping of journey teams."
+     :fields {
+              :id {:type (non-null Int)}
+              :name {:type (non-null String)}
+              :product_lead     {:type :Person
+                                 :resolve :resolver/product-lead}
+              :design_lead      {:type :Person
+                                 :resolve :resolver/design-lead}
+              :engineering_lead {:type :Person
+                                 :resolve :resolver/engineering-lead}
+              :teams {:type (list :JourneyTeam)
+                      :resolve :resolver/teams}}}
+   :JourneyTeam
+    {:description "A journey team."
+     :fields {
+              :id {:type (non-null Int)}
+              :name {:type (non-null String)}
+              :nick_name {:type String}
+              :members {:type (list :TeamMember)
+                        :resolve :resolver/team-members}}}
+
+   :TeamMember
+    {
+     :description "A Team Member"
+     :fields {
+              :person {:type :Person
+                       :resolve :resolver/team-member}
+              :role {:type String}}}
+
+   :Person
+    {:description "A real Person"
+     :fields {
+              :id {:type (non-null Int)}
+              :job_level {:type String}
+              :github_id {:type String}
+              :email {:type String}
+              :first_name {:type String}
+              :last_name {:type String}
+              :metrics {:type :CodeMetrics
+                        :resolve :resolver/person-code-metrics}}}
+
+   :CodeMetrics
+    {:description "Individual code metrics"
+     :fields {
+              :repository_count {:type Int}
+              :contributions {:type Int}}}}
+
+ :queries {:domains
+             {:type (list :ProductSpace)
+              :resolve :query/domains}
+           :team_by_id
+             {:type :JourneyTeam
+              :args {:id {:type Int}}
+              :resolve :query/team-by-id}
+           :person_by_id
+             {:type :Person
+              :args {:id {:type Int}}
+              :resolve :query/person-by-id}
+           :domain_by_id
+             {:type :ProductSpace
+              :args {:id {:type Int}}
+              :resolve :query/domain-by-id}}}

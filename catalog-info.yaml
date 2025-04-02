@@ -1,0 +1,29 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: argvader-tools-monorepo
+  description: All things argvader and Clojure/Clojurescript
+  annotations:
+    backstage.io/techdocs-ref: dir:.
+    github.com/project-slug: soluto-private/argvader-tools
+  tags:
+    - clojure
+    - personal
+
+
+spec:
+  type: website
+  lifecycle: experimentation
+  owner: argvader
+  system: argvader-tools
+---
+apiVersion: backstage.io/v1alpha1
+kind: Location
+metadata:
+  name: argvader-tools-locations
+spec:
+  targets:
+    - ./apps/code_churn/backstage.yaml
+    - ./apps/acronym/backstage.yaml
+    - ./apps/footsteps/backstage.yaml
+    - ./apps/team_tree/backstage.yaml

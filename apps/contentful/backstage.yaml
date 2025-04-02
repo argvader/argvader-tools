@@ -1,0 +1,19 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: contentful-bot
+  description: slack bot to manage contentful spaces and registration.
+  annotations:
+    backstage.io/techdocs-ref: dir:.
+    github.com/project-slug: soluto-private/argvader-tools
+  tags:
+    - clojurescript
+    - slack
+    - lambda
+    - personal
+
+spec:
+  type: api
+  lifecycle: experimentation
+  owner: argvader
+  system: argvader-tools

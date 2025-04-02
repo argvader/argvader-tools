@@ -1,0 +1,16 @@
+{
+  :deps true
+
+  :http {:port 3449
+         :host "0.0.0.0"}
+ 
+  :builds
+    {:app
+      {
+       :output-dir "resources/public/script"
+       :asset-path "/public"
+       :compiler-options
+         {:infer-externs    :auto
+          :closure-warnings {:global-this :off}}
+       :target :browser
+       :modules {:main {:init-fn gotest.core/start}}}}}

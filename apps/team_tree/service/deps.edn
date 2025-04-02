@@ -1,0 +1,50 @@
+{:deps
+ {io.pedestal/pedestal.service     {:mvn/version "0.5.7"}
+  io.pedestal/pedestal.route       {:mvn/version "0.5.7"}
+  io.pedestal/pedestal.jetty       {:mvn/version "0.5.7"}
+  org.slf4j/slf4j-simple           {:mvn/version "1.7.28"}
+  ring-cors/ring-cors              {:mvn/version "0.1.13"}
+  com.stuartsierra/component       {:mvn/version "0.4.0"}
+  com.walmartlabs/lacinia-pedestal {:mvn/version "0.13.0-alpha-3"}
+  aero/aero                             {:mvn/version "1.1.5"}
+  honeysql/honeysql                         {:mvn/version "1.0.444"}
+  seancorfield/next.jdbc           {:mvn/version "1.1.613"}
+  org.postgresql/postgresql        {:mvn/version "42.2.2"}}
+
+ :paths ["src" "resources" "../../../libs" "../../../tools"]
+
+ :aliases {;; pull in specific versions of Clojure:
+           :1.10 {:override-deps {org.clojure/clojure {:mvn/version "1.10.0"}}}
+           :1.10.1 {:override-deps {org.clojure/clojure {:mvn/version "1.10.1"}}}
+           :master {:override-deps {org.clojure/clojure {:mvn/version "1.11.0-master-SNAPSHOT"}}}
+           :start {:main-opts ["-m" "team-tree.core" "dev"]}
+           :prod {:main-opts ["-m" "team-tree.core" "prod"]}
+           :migratus {:extra-deps
+                       {orangefoxcollective/clj-migratus {:mvn/version "0.1.0"}}
+                      :main-opts ["-m" "clj-migratus.core"]}
+           :push-image {:main-opts ["-m" "build.ecr.core"]
+                        :extra-deps {amazonica/amazonica {:mvn/version "0.3.152"}
+                                     lispyclouds/clj-docker-client {:mvn/version "1.0.1"}}}
+           :release {:main-opts ["-m" "build.ecs.core"]
+                     :extra-deps {amazonica/amazonica {:mvn/version "0.3.152"}}}
+           :uberdeps {
+                      :extra-deps {uberdeps/uberdeps {:mvn/version "0.1.8"}}
+                      :main-opts ["-m" "uberdeps.uberjar"]}
+           ;; REPL-related tools:
+           ;; - start a modern nREPL server on a random available port:
+           :nrepl {:extra-deps {nrepl {:mvn/version "RELEASE"}}
+                   :main-opts ["-m" "nrepl.cmdline"]}
+           ;; - start a legacy nREPL server on port 60606:
+           :nrepl/old {:extra-deps {org.clojure/tools.nrepl {:mvn/version "RELEASE"}}
+                       :main-opts ["-e" "(require,'[clojure.tools.nrepl.server,:refer,[start-server]]),(start-server,:port,60606)"]}
+           ;; - start a Socket REPL on port 50505:
+           :socket {:jvm-opts ["-Dclojure.server.repl={:port,50505,:accept,clojure.core.server/repl}"]}
+           ;; - start a Socket REPL on an available port, and display that port:
+           ;; - specify -r as well if you want a repl
+           :socket-zero {:jvm-opts ["-Dclojure.server.repl={:port,0,:accept,clojure.core.server/repl}"]
+                         :main-opts ["-e" "(.getLocalPort,(get-in,@#'clojure.core.server/servers,[\"repl\",:socket]))"]}
+           ;; - start a Socket pREPL on port 40404:
+           :prepl {:jvm-opts ["-Dclojure.server.repl={:port,40404,:accept,clojure.core.server/io-prepl}"]}
+           ;; - see https://atom.io/packages/proto-repl
+           ;; - for use with Atom/ProtoREPL: clj -A:proto:nrepl
+           :proto {:extra-deps {proto-repl/proto-repl {:mvn/version "RELEASE"}}}}}

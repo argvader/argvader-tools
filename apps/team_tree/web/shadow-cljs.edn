@@ -1,0 +1,19 @@
+{
+  :deps true
+  :dev-http {3000 "resources/public"}
+  :nrepl {:port 8230
+          :middleware [dirac.nrepl/middleware]}
+  :builds
+    {:app
+      {
+       :output-dir "resources/public/js"
+       :asset-path "/js"
+       :devtools {:preloads [day8.re-frame-10x.preload devtools.preload dirac.runtime.preload]}
+       :compiler-options
+         {:infer-externs    :auto
+          :closure-warnings {:global-this :off}
+          :closure-defines  {"re_frame.trace.trace_enabled_QMARK_"         true
+                             "day8.re_frame.tracing.trace_enabled_QMARK_"  true}}
+       :target :browser
+       :build-hooks [(build.cljs.shadow/load-env)]
+       :modules {:main {:init-fn team-tree.app/init}}}}}

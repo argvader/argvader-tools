@@ -1,0 +1,22 @@
+{
+  "name": "team-tree",
+  "version": "1.0.0",
+  "scripts": {
+    "dirac": "/Applications/Google\\ Chrome\\ Canary.app/Contents/MacOS/Google\\ Chrome\\ Canary --remote-debugging-port=9700 --no-first-run --user-data-dir=.dirac http://localhost:3000"
+  },
+  "dependencies": {
+    "babel-polyfill": "6.26.0",
+    "create-react-class": "15.7.0",
+    "d3": "6.5.0",
+    "d3-scale": "3.2.3",
+    "highlight.js": "9.18.5",
+    "oidc-client": "1.11.5",
+    "path": "0.12.7",
+    "react": "16.14.0",
+    "react-dom": "16.14.0",
+    "react-flip-move": "3.0.4",
+    "react-highlight.js": "1.0.7",
+    "rxjs": "7.1.0",
+    "rxjs-compat": "6.6.7"
+  }
+}

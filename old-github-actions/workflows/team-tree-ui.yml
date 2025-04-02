@@ -1,0 +1,51 @@
+name: Team Tree UI Deploy
+
+on:
+  push:
+    branches:
+      - 'master'
+    paths:
+      - 'apps/team_tree/web/**'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    env:
+        REGION: 'us-east-1'
+        ENV: ${{ github.event.inputs.env || 'prod' }}
+
+    steps:
+      - name: Configure AWS credentials
+        uses: aws-actions/configure-aws-credentials@v1
+        with:
+          aws-access-key-id: ${{secrets.AWS_ACCESS_KEY_ID}}
+          aws-secret-access-key: ${{secrets.AWS_SECRET_ACCESS_KEY}}
+          aws-region: us-east-1
+
+      - name: Checkout Code
+        uses: actions/checkout@v2
+
+      - name: Setup Clojure
+        uses: DeLaGuardo/setup-clojure@2.0
+        env:
+          ACTIONS_ALLOW_UNSECURE_COMMANDS: 'true'
+        with:
+          tools-deps: '1.10.1.469'
+
+      - name: Setup Node
+        uses: actions/setup-node@v1
+        env:
+          ACTIONS_ALLOW_UNSECURE_COMMANDS: 'true'
+        with:
+          node-version: '14.15.3'
+
+      - name: npm install
+        working-directory: ./apps/team_tree/web
+        run: npm install
+
+      - name: clojure build:release:invalidate
+        working-directory: ./apps/team_tree/web
+        run: |
+          clojure -R1.10.1 -Abuild
+          clojure -R1.10.1 -Arelease
+          clojure -R1.10.1 -Ainvalidate

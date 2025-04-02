@@ -1,0 +1,1044 @@
+entity,author,added,deleted
+.babelrc,Gary Paige,27,1
+.dockerignore,Jeff Tougas,2,0
+.eslintignore,Gary Paige,3,3
+.eslintrc.yaml,Jeff Tougas,23,1
+.eslintrc.yaml,Daniel Nalbach,1,1
+.eslintrc.yaml,Muhamed Brifkani,11,0
+.eslintrc.yaml,Gary Paige,37,4
+.flowconfig,Gary Paige,1,0
+.flowconfig,Jeff Tougas,13,0
+.gitignore,Gary Paige,1,0
+.gitignore,Jeff Tougas,16,0
+.node-version,Jeff Tougas,1,0
+.nvmrc,Jeff Tougas,1,0
+.storybook/config.js,Gary Paige,0,7
+.storybook/config.js,Jeff Tougas,7,0
+Dockerfile,Gary Paige,5,1
+Dockerfile,Jeff Tougas,23,7
+README.md,brennanbelew,1,1
+README.md,Muhamed Brifkani,1,1
+README.md,Gary Paige,53,399
+README.md,Jeff Tougas,1247,0
+env/features_dev.json,Gary Paige,12,2
+env/features_dev.json,brennanbelew,9,0
+env/features_public.json,Gary Paige,9,0
+env/features_soco.json,Gary Paige,9,0
+flow-typed/npm/jest_v18.x.x.js,Jeff Tougas,440,440
+flow-typed/npm/jest_v19.x.x.js,Jeff Tougas,459,0
+flow/CSSModule.js.flow,Jeff Tougas,3,0
+jest/cssTransform.js,Gary Paige,12,12
+jest/fileTransform.js,Gary Paige,9,9
+locales/en-US/bookmarks.json,brennanbelew,3,0
+locales/en-US/common.json,Gary Paige,16,5
+locales/en-US/common.json,Daniel Nalbach,3,1
+locales/en-US/common.json,brennanbelew,1,1
+locales/en-US/common.json,Jeff Tougas,2,1
+locales/en-US/common.json,Muhamed Brifkani,10,0
+locales/en-US/contentTypes.json,Gary Paige,4,0
+locales/en-US/feedback.json,Gary Paige,1,0
+locales/en-US/feedback.json,brennanbelew,1,1
+locales/en-US/feedback.json,Muhamed Brifkani,27,0
+locales/en-US/login.json,Gary Paige,8,0
+locales/en-US/share.json,Gary Paige,5,0
+locales/en/common.json,Muhamed Brifkani,1,11
+locales/en/common.json,Gary Paige,12,2
+locales/en/feedback.json,Muhamed Brifkani,0,27
+locales/en/feedback.json,Jeff Tougas,27,0
+main.js,Gary Paige,0,61
+main.js,Jeff Tougas,61,0
+package-lock.json,Gary Paige,4177,33530
+package-lock.json,Daniel Nalbach,14016,0
+package.json,Gary Paige,229,131
+package.json,pijus-kadisius,45,32
+package.json,Jeff Tougas,75,29
+package.json,Alex Petty,5,6
+package.json,Daniel Nalbach,2,1
+package.json,Muhamed Brifkani,22,15
+public/assets/images/Alert.svg,Gary Paige,12,0
+public/assets/images/Bookmark.svg,Gary Paige,12,0
+public/assets/images/LoaderTrans.gif,Gary Paige,0,0
+public/assets/images/alertLandingModule_icon.png,Gary Paige,0,0
+public/assets/images/derp.png,Gary Paige,0,0
+public/assets/images/google-logo.svg,Gary Paige,124,0
+public/assets/images/login-splash.jpg,Gary Paige,0,0
+public/assets/images/logo.png,Gary Paige,0,0
+public/assets/images/logo.svg,Gary Paige,94,0
+public/assets/images/mostRecent_icon.png,brennanbelew,0,0
+public/assets/images/mostViewed_icon.png,brennanbelew,0,0
+public/assets/images/mostViewed_icon.png,Gary Paige,0,0
+public/assets/images/question.png,argvader,0,0
+public/assets/images/resizeDrawerIcon.png,Gary Paige,0,0
+public/assets/images/resizeDrawerIcon.svg,Gary Paige,22,22
+public/assets/images/smc.svg,Gary Paige,1,0
+public/favicon.ico,Jeff Tougas,0,0
+public/iframe.html,Gary Paige,0,80
+public/iframe.html,Jeff Tougas,41,2
+public/iframe.html,Laidlaw,43,2
+public/index.html,Gary Paige,14,17
+public/index.html,Muhamed Brifkani,1,1
+public/index.html,Jeff Tougas,32,1
+scripts/build.sh,Gary Paige,10,3
+scripts/build.sh,Jeff Tougas,12,3
+scripts/deploy.sh,Gary Paige,7,5
+scripts/deploy.sh,Scott Clark,6,1
+scripts/deploy.sh,Jeff Tougas,37,22
+src/App.css,Gary Paige,0,168
+src/App.css,Laidlaw,8,2
+src/App.css,Jeff Tougas,78,0
+src/App.js,Gary Paige,351,314
+src/App.js,brennanbelew,15,5
+src/App.js,Jeff Tougas,517,53
+src/App.js,Daniel Nalbach,5,24
+src/App.js,Muhamed Brifkani,38,67
+src/App.js,Alex Petty,26,3
+src/App.js,argvader,34,6
+src/App.js,Laidlaw,36,365
+src/App.scss,Gary Paige,168,4
+src/App.scss,Muhamed Brifkani,5,0
+src/App.test.js,Gary Paige,141,122
+src/App.test.js,brennanbelew,27,4
+src/App.test.js,Jeff Tougas,37,15
+src/App.test.js,Daniel Nalbach,0,2
+src/App.test.js,Alex Petty,1,4
+src/App.test.js,Muhamed Brifkani,54,3
+src/App.test.js,argvader,31,12
+src/Content/index.css,Gary Paige,0,1531
+src/Content/index.css,Jeff Tougas,1531,0
+src/Content/index.js,Gary Paige,0,286
+src/Content/index.js,Jeff Tougas,106,44
+src/Content/index.js,Laidlaw,261,41
+src/CustomHits/index.js,Laidlaw,104,104
+src/Home/index.js,Gary Paige,0,84
+src/Home/index.js,Laidlaw,84,0
+src/Routes.js,Alex Petty,0,56
+src/Routes.js,Gary Paige,45,6
+src/Routes.js,Jeff Tougas,2,0
+src/Routes.js,argvader,16,16
+src/Routes.js,Muhamed Brifkani,21,6
+src/Routes.test.js,Alex Petty,0,35
+src/Routes.test.js,Gary Paige,35,4
+src/Routes.test.js,Jeff Tougas,1,1
+src/Routes.test.js,argvader,1,1
+src/Routes.test.js,Muhamed Brifkani,5,1
+src/SearchBox/index.js,Gary Paige,0,50
+src/SearchBox/index.js,Jeff Tougas,8,5
+src/SearchBox/index.js,Laidlaw,47,0
+src/SearchResults/ResultCard/index.js,Gary Paige,0,113
+src/SearchResults/ResultCard/index.js,Jeff Tougas,5,4
+src/SearchResults/ResultCard/index.js,Laidlaw,125,13
+src/SearchResults/index.js,Gary Paige,0,59
+src/SearchResults/index.js,Jeff Tougas,1,1
+src/SearchResults/index.js,Laidlaw,62,3
+src/__mocks__/mixpanelMiddleware.js,Daniel Nalbach,5,0
+src/__mocks__/react-cookie.js,Daniel Nalbach,7,0
+src/__mocks__/routerActionsMock.js,Alex Petty,11,0
+src/__mocks__/routerMock.js,Alex Petty,0,16
+src/__mocks__/routerMock.js,argvader,16,0
+src/__mocks__/storeMock.js,Gary Paige,62,12
+src/__mocks__/storeMock.js,brennanbelew,10,1
+src/__mocks__/storeMock.js,Ginu Philip Simon,16,1
+src/__mocks__/storeMock.js,Daniel Nalbach,30,8
+src/__mocks__/storeMock.js,Jeff Tougas,10,1
+src/__mocks__/storeMock.js,Alex Petty,1,0
+src/__tests__/App.js,Gary Paige,17,17
+src/actions/activitiesActions.js,Ginu Philip Simon,32,2
+src/actions/activitiesActions.js,Gary Paige,2,2
+src/actions/activitiesActions.test.js,Ginu Philip Simon,39,2
+src/actions/authenticationActions.js,Gary Paige,32,0
+src/actions/authenticationActions.test.js,Gary Paige,34,0
+src/actions/carrierActions.js,Gary Paige,9,9
+src/actions/carrierActions.test.js,Gary Paige,13,13
+src/actions/contentDetailActions.js,Gary Paige,43,43
+src/actions/contentDetailActions.test.js,Gary Paige,70,70
+src/actions/featureActions.js,Gary Paige,12,0
+src/actions/featureActions.js,brennanbelew,12,0
+src/actions/featureActions.test.js,Gary Paige,13,0
+src/actions/featureActions.test.js,brennanbelew,13,0
+src/actions/healthActions.js,Gary Paige,17,8
+src/actions/healthActions.js,argvader,10,0
+src/actions/healthActions.test.js,Gary Paige,18,6
+src/actions/healthActions.test.js,argvader,15,0
+src/actions/helixStateActions.js,Gary Paige,32,0
+src/actions/helixStateActions.test.js,Gary Paige,38,0
+src/actions/index.js,Muhamed Brifkani,9,9
+src/actions/mixpanelActions.js,Gary Paige,214,56
+src/actions/mixpanelActions.js,Ginu Philip Simon,17,3
+src/actions/mixpanelActions.js,Daniel Nalbach,84,19
+src/actions/mixpanelActions.js,brennanbelew,18,3
+src/actions/mixpanelActions.js,Jeff Tougas,31,1
+src/actions/mixpanelActions.test.js,Gary Paige,329,96
+src/actions/mixpanelActions.test.js,Ginu Philip Simon,41,2
+src/actions/mixpanelActions.test.js,Daniel Nalbach,159,24
+src/actions/mixpanelActions.test.js,brennanbelew,113,3
+src/actions/searchActions.js,Gary Paige,30,14
+src/actions/searchActions.js,Ginu Philip Simon,9,3
+src/actions/searchActions.js,Daniel Nalbach,11,0
+src/actions/searchActions.test.js,Gary Paige,32,23
+src/actions/searchActions.test.js,Ginu Philip Simon,11,0
+src/actions/searchActions.test.js,Daniel Nalbach,14,0
+src/actions/sessionActions.js,Muhamed Brifkani,10,0
+src/actions/sessionActions.test.js,Gary Paige,3,3
+src/actions/sessionActions.test.js,Muhamed Brifkani,14,0
+src/actions/sharedWorkerEventBusActions.js,Jeff Tougas,9,0
+src/actions/sharedWorkerEventBusActions.test.js,Gary Paige,22,0
+src/actions/tabActions.js,Gary Paige,26,2
+src/actions/tabActions.test.js,Gary Paige,38,8
+src/actions/technicianActions.js,Daniel Nalbach,7,0
+src/actions/technicianActions.js,Jeff Tougas,14,0
+src/actions/technicianActions.test.js,Daniel Nalbach,10,1
+src/actions/technicianActions.test.js,Jeff Tougas,20,0
+src/applicationConfig.js,Gary Paige,32,38
+src/applicationConfig.js,Muhamed Brifkani,13,4
+src/applicationConfig.js,Jeff Tougas,2,1
+src/clients/__mocks__/algoliasearch.js,Gary Paige,33,1
+src/clients/__mocks__/gapiClient.js,Gary Paige,57,2
+src/clients/__mocks__/mixpanel-browser.js,Gary Paige,13,0
+src/clients/algoliaClient.js,Gary Paige,101,23
+src/clients/algoliaClient.js,Jeff Tougas,18,1
+src/clients/algoliaClient.test.js,Gary Paige,89,11
+src/clients/analyticsClient.js,Gary Paige,14,6
+src/clients/analyticsClient.js,Daniel Nalbach,2,2
+src/clients/analyticsClient.js,brennanbelew,19,0
+src/clients/analyticsClient.test.js,Gary Paige,13,2
+src/clients/analyticsClient.test.js,brennanbelew,31,0
+src/clients/bitlyClient.js,Gary Paige,18,0
+src/clients/bitlyClient.test.js,Gary Paige,32,0
+src/clients/dapulseClient.js,Gary Paige,87,4
+src/clients/dapulseClient.js,brennanbelew,1,1
+src/clients/dapulseClient.js,Jeff Tougas,53,33
+src/clients/dapulseClient.test.js,Gary Paige,48,1
+src/clients/featureToggleClient.js,Gary Paige,13,2
+src/clients/featureToggleClient.js,brennanbelew,9,0
+src/clients/featureToggleClient.test.js,Gary Paige,14,0
+src/clients/featureToggleClient.test.js,brennanbelew,14,0
+src/clients/gapiClient.js,pijus-kadisius,1,1
+src/clients/gapiClient.js,Gary Paige,89,12
+src/clients/gapiClient.test.js,Gary Paige,54,0
+src/clients/mixpanelClient.js,Gary Paige,38,10
+src/clients/mixpanelClient.js,brennanbelew,17,9
+src/clients/mixpanelClient.test.js,Gary Paige,28,3
+src/clients/mixpanelClient.test.js,brennanbelew,9,3
+src/clients/sharedWorkerEventBusClient.js,Gary Paige,26,12
+src/clients/sharedWorkerEventBusClient.js,Jeff Tougas,28,0
+src/clients/sharedWorkerEventBusClient.test.js,Gary Paige,31,0
+src/clients/socoConfigClient.js,Jeff Tougas,24,8
+src/clients/socoConfigClient.js,Gary Paige,35,17
+src/clients/socoConfigClient.js,Daniel Nalbach,13,3
+src/clients/socoConfigClient.test.js,Gary Paige,4,28
+src/clients/socoConfigClient.test.js,Daniel Nalbach,27,3
+src/clients/socoConfigClient.test.js,Jeff Tougas,13,0
+src/clients/technicianClient.js,Gary Paige,5,6
+src/clients/technicianClient.js,Daniel Nalbach,11,54
+src/clients/technicianClient.js,jacobmassengill,12,12
+src/clients/technicianClient.js,Jeff Tougas,75,0
+src/clients/technicianClient.test.js,Gary Paige,7,5
+src/clients/technicianClient.test.js,Daniel Nalbach,29,37
+src/clients/technicianClient.test.js,Alex Petty,2,3
+src/clients/technicianClient.test.js,jacobmassengill,18,1
+src/clients/technicianClient.test.js,Jeff Tougas,44,0
+src/components/Activities/Activities.js,Ginu Philip Simon,67,1
+src/components/Activities/Activities.js,Gary Paige,1,1
+src/components/Activities/Activities.scss,Ginu Philip Simon,104,0
+src/components/Activities/Activities.test.js,Gary Paige,1,1
+src/components/Activities/Activities.test.js,Ginu Philip Simon,29,0
+src/components/Activities/Activity.js,Ginu Philip Simon,130,8
+src/components/Activities/Activity.js,Gary Paige,2,2
+src/components/Activities/Activity.test.js,Gary Paige,1,1
+src/components/Activities/Activity.test.js,Ginu Philip Simon,62,1
+src/components/Activities/OnExDeviceInfo.js,Ginu Philip Simon,157,0
+src/components/Activities/OnExDeviceInfo.test.js,Ginu Philip Simon,47,0
+src/components/Activities/index.js,Ginu Philip Simon,2,0
+src/components/ApplicationError/ApplicationError.js,Gary Paige,81,20
+src/components/ApplicationError/ApplicationError.js,Muhamed Brifkani,1,1
+src/components/ApplicationError/ApplicationError.scss,Gary Paige,48,4
+src/components/ApplicationError/ApplicationError.test.js,Gary Paige,43,6
+src/components/ApplicationError/index.js,Gary Paige,2,0
+src/components/BookmarkPanel/BookmarkPanel.js,Gary Paige,80,2
+src/components/BookmarkPanel/BookmarkPanel.scss,Gary Paige,41,0
+src/components/BookmarkPanel/BookmarkPanel.test.js,Gary Paige,44,1
+src/components/Content/AlertList/AlertList.js,Gary Paige,26,1
+src/components/Content/AlertList/AlertList.scss,Gary Paige,11,0
+src/components/Content/AlertList/AlertList.test.js,Gary Paige,48,1
+src/components/Content/BookmarkList/BookmarkCard/BookmarkCard.js,Gary Paige,147,1
+src/components/Content/BookmarkList/BookmarkCard/BookmarkCard.scss,Gary Paige,181,0
+src/components/Content/BookmarkList/BookmarkCard/BookmarkCard.test.js,Gary Paige,121,1
+src/components/Content/BookmarkList/BookmarkCard/BookmarkCardEventHandlers.js,Gary Paige,176,0
+src/components/Content/BookmarkList/BookmarkCard/BookmarkCardEventHandlers.test.js,Gary Paige,161,0
+src/components/Content/BookmarkList/BookmarkCard/index.js,Gary Paige,4,0
+src/components/Content/BookmarkList/BookmarkList.js,Gary Paige,50,1
+src/components/Content/BookmarkList/BookmarkList.scss,Gary Paige,17,0
+src/components/Content/BookmarkList/BookmarkList.test.js,Gary Paige,33,1
+src/components/Content/Content.js,Gary Paige,441,505
+src/components/Content/Content.js,Alex Petty,15,11
+src/components/Content/Content.js,Daniel Nalbach,37,13
+src/components/Content/Content.js,Jeff Tougas,152,52
+src/components/Content/Content.js,Muhamed Brifkani,111,197
+src/components/Content/Content.js,argvader,16,4
+src/components/Content/Content.js,Laidlaw,27,12
+src/components/Content/Content.scss,Gary Paige,99,38
+src/components/Content/Content.scss,Muhamed Brifkani,40,19
+src/components/Content/Content.test.js,Gary Paige,143,176
+src/components/Content/Content.test.js,Daniel Nalbach,14,0
+src/components/Content/Content.test.js,Jeff Tougas,60,6
+src/components/Content/Content.test.js,Alex Petty,2,10
+src/components/Content/Content.test.js,argvader,2,1
+src/components/Content/ContentDetail/ContentDetail.js,Gary Paige,275,10
+src/components/Content/ContentDetail/ContentDetail.js,brennanbelew,18,8
+src/components/Content/ContentDetail/ContentDetail.scss,Gary Paige,530,0
+src/components/Content/ContentDetail/ContentDetail.test.js,Gary Paige,198,5
+src/components/Content/ContentDetail/ContentDetail.test.js,brennanbelew,37,1
+src/components/Content/ContentDetail/ContentFeatures/BookmarkFeature.js,Gary Paige,33,4
+src/components/Content/ContentDetail/ContentFeatures/BookmarkFeature.test.js,Gary Paige,52,1
+src/components/Content/ContentDetail/ContentFeatures/FeedbackFeature.js,Gary Paige,19,1
+src/components/Content/ContentDetail/ContentFeatures/FeedbackFeature.test.js,Gary Paige,24,1
+src/components/Content/ContentDetail/ContentFeatures/ShareFeature.js,Gary Paige,135,4
+src/components/Content/ContentDetail/ContentFeatures/ShareFeature.test.js,Gary Paige,64,1
+src/components/Content/ContentDetail/ContentFeatures/index.js,Gary Paige,6,0
+src/components/Content/ContentDetail/contentTransforms.js,Gary Paige,70,1
+src/components/Content/ContentDetail/contentTransforms.js,brennanbelew,1,1
+src/components/Content/ContentDetail/contentTransforms.test.js,Gary Paige,76,1
+src/components/Content/ContentDetail/contentTransforms.test.js,brennanbelew,1,1
+src/components/Content/ContentHeader/ContentHeader.js,Gary Paige,19,1
+src/components/Content/ContentHeader/ContentHeader.scss,Gary Paige,24,0
+src/components/Content/ContentHeader/ContentHeader.test.js,Gary Paige,23,1
+src/components/Content/ContentHeader/index.js,Gary Paige,1,0
+src/components/Content/DrawerContainer/AlertList/AlertList.js,Gary Paige,33,33
+src/components/Content/DrawerContainer/AlertList/AlertList.scss,Gary Paige,12,12
+src/components/Content/DrawerContainer/AlertList/AlertList.test.js,Gary Paige,51,51
+src/components/Content/DrawerContainer/BookmarkList/BookmarkCard/BookmarkCard.js,Gary Paige,19,159
+src/components/Content/DrawerContainer/BookmarkList/BookmarkCard/BookmarkCard.js,Daniel Nalbach,45,18
+src/components/Content/DrawerContainer/BookmarkList/BookmarkCard/BookmarkCard.js,brennanbelew,34,20
+src/components/Content/DrawerContainer/BookmarkList/BookmarkCard/BookmarkCard.js,Jeff Tougas,99,0
+src/components/Content/DrawerContainer/BookmarkList/BookmarkCard/BookmarkCard.scss,Gary Paige,1,181
+src/components/Content/DrawerContainer/BookmarkList/BookmarkCard/BookmarkCard.scss,Daniel Nalbach,8,1
+src/components/Content/DrawerContainer/BookmarkList/BookmarkCard/BookmarkCard.scss,brennanbelew,20,0
+src/components/Content/DrawerContainer/BookmarkList/BookmarkCard/BookmarkCard.scss,Jeff Tougas,153,0
+src/components/Content/DrawerContainer/BookmarkList/BookmarkCard/BookmarkCard.test.js,Gary Paige,10,122
+src/components/Content/DrawerContainer/BookmarkList/BookmarkCard/BookmarkCard.test.js,Daniel Nalbach,43,4
+src/components/Content/DrawerContainer/BookmarkList/BookmarkCard/BookmarkCard.test.js,brennanbelew,11,1
+src/components/Content/DrawerContainer/BookmarkList/BookmarkCard/BookmarkCard.test.js,Jeff Tougas,63,0
+src/components/Content/DrawerContainer/BookmarkList/BookmarkCard/BookmarkCardEventHandlers.js,Gary Paige,2,178
+src/components/Content/DrawerContainer/BookmarkList/BookmarkCard/BookmarkCardEventHandlers.js,Daniel Nalbach,199,23
+src/components/Content/DrawerContainer/BookmarkList/BookmarkCard/BookmarkCardEventHandlers.test.js,Gary Paige,0,161
+src/components/Content/DrawerContainer/BookmarkList/BookmarkCard/BookmarkCardEventHandlers.test.js,Daniel Nalbach,168,7
+src/components/Content/DrawerContainer/BookmarkList/BookmarkCard/index.js,Gary Paige,0,4
+src/components/Content/DrawerContainer/BookmarkList/BookmarkCard/index.js,Jeff Tougas,4,0
+src/components/Content/DrawerContainer/BookmarkList/BookmarkList.js,Gary Paige,19,63
+src/components/Content/DrawerContainer/BookmarkList/BookmarkList.js,Daniel Nalbach,10,5
+src/components/Content/DrawerContainer/BookmarkList/BookmarkList.js,Jeff Tougas,39,0
+src/components/Content/DrawerContainer/BookmarkList/BookmarkList.scss,Gary Paige,11,17
+src/components/Content/DrawerContainer/BookmarkList/BookmarkList.scss,Jeff Tougas,6,0
+src/components/Content/DrawerContainer/BookmarkList/BookmarkList.test.js,Gary Paige,1,33
+src/components/Content/DrawerContainer/BookmarkList/BookmarkList.test.js,Daniel Nalbach,2,1
+src/components/Content/DrawerContainer/BookmarkList/BookmarkList.test.js,Jeff Tougas,31,0
+src/components/Content/DrawerContainer/ContentDetail/ContentDetail.js,Gary Paige,311,351
+src/components/Content/DrawerContainer/ContentDetail/ContentDetail.js,Daniel Nalbach,10,8
+src/components/Content/DrawerContainer/ContentDetail/ContentDetail.js,Jeff Tougas,42,5
+src/components/Content/DrawerContainer/ContentDetail/ContentDetail.js,Alex Petty,10,9
+src/components/Content/DrawerContainer/ContentDetail/ContentDetail.scss,Gary Paige,477,495
+src/components/Content/DrawerContainer/ContentDetail/ContentDetail.scss,Jeff Tougas,20,2
+src/components/Content/DrawerContainer/ContentDetail/ContentDetail.test.js,Gary Paige,177,189
+src/components/Content/DrawerContainer/ContentDetail/ContentDetail.test.js,Daniel Nalbach,28,14
+src/components/Content/DrawerContainer/ContentDetail/ContentDetail.test.js,Alex Petty,3,5
+src/components/Content/DrawerContainer/ContentDetail/ContentToolbar/ContentToolbar.js,Gary Paige,21,106
+src/components/Content/DrawerContainer/ContentDetail/ContentToolbar/ContentToolbar.js,Jeff Tougas,87,5
+src/components/Content/DrawerContainer/ContentDetail/ContentToolbar/ContentToolbar.js,Muhamed Brifkani,4,1
+src/components/Content/DrawerContainer/ContentDetail/ContentToolbar/ContentToolbar.scss,Gary Paige,0,77
+src/components/Content/DrawerContainer/ContentDetail/ContentToolbar/ContentToolbar.scss,Jeff Tougas,85,8
+src/components/Content/DrawerContainer/ContentDetail/ContentToolbar/ContentToolbar.test.js,Gary Paige,9,77
+src/components/Content/DrawerContainer/ContentDetail/ContentToolbar/ContentToolbar.test.js,Jeff Tougas,81,13
+src/components/Content/DrawerContainer/ContentDetail/ContentToolbar/index.js,Gary Paige,0,1
+src/components/Content/DrawerContainer/ContentDetail/ContentToolbar/index.js,Jeff Tougas,1,0
+src/components/Content/DrawerContainer/ContentDetail/contentTransforms.js,Gary Paige,62,73
+src/components/Content/DrawerContainer/ContentDetail/contentTransforms.js,Daniel Nalbach,12,1
+src/components/Content/DrawerContainer/ContentDetail/contentTransforms.test.js,Gary Paige,73,79
+src/components/Content/DrawerContainer/ContentDetail/contentTransforms.test.js,Daniel Nalbach,6,0
+src/components/Content/DrawerContainer/ContentHeader/ContentHeader.js,Gary Paige,19,19
+src/components/Content/DrawerContainer/ContentHeader/ContentHeader.scss,Gary Paige,27,27
+src/components/Content/DrawerContainer/ContentHeader/ContentHeader.test.js,Gary Paige,24,24
+src/components/Content/DrawerContainer/ContentHeader/index.js,Gary Paige,1,1
+src/components/Content/DrawerContainer/ContentToolbar/ContentToolbar.js,Gary Paige,107,107
+src/components/Content/DrawerContainer/ContentToolbar/ContentToolbar.js,brennanbelew,1,1
+src/components/Content/DrawerContainer/ContentToolbar/ContentToolbar.js,Muhamed Brifkani,1,1
+src/components/Content/DrawerContainer/ContentToolbar/ContentToolbar.scss,Gary Paige,64,69
+src/components/Content/DrawerContainer/ContentToolbar/ContentToolbar.scss,Muhamed Brifkani,6,1
+src/components/Content/DrawerContainer/ContentToolbar/ContentToolbar.test.js,Gary Paige,66,66
+src/components/Content/DrawerContainer/ContentToolbar/index.js,Gary Paige,1,1
+src/components/Content/DrawerContainer/DrawerContainer.js,Gary Paige,247,320
+src/components/Content/DrawerContainer/DrawerContainer.js,brennanbelew,2,1
+src/components/Content/DrawerContainer/DrawerContainer.js,Jeff Tougas,74,8
+src/components/Content/DrawerContainer/DrawerContainer.js,Alex Petty,8,5
+src/components/Content/DrawerContainer/DrawerContainer.js,Muhamed Brifkani,8,5
+src/components/Content/DrawerContainer/DrawerContainer.scss,Gary Paige,32,32
+src/components/Content/DrawerContainer/DrawerContainer.test.js,Gary Paige,128,128
+src/components/Content/DrawerContainer/DrawerContainer.test.js,Alex Petty,2,2
+src/components/Content/DrawerContainer/DrawerContainer.test.js,Jeff Tougas,1,1
+src/components/Content/DrawerContainer/GeneralFeedback/GeneralFeedback.js,Gary Paige,12,24
+src/components/Content/DrawerContainer/GeneralFeedback/GeneralFeedback.js,Jeff Tougas,12,0
+src/components/Content/DrawerContainer/GeneralFeedback/GeneralFeedback.scss,Gary Paige,0,0
+src/components/Content/DrawerContainer/GeneralFeedback/GeneralFeedback.test.js,Gary Paige,5,16
+src/components/Content/DrawerContainer/GeneralFeedback/GeneralFeedback.test.js,Jeff Tougas,11,0
+src/components/Content/GeneralFeedback/GeneralFeedback.js,Gary Paige,20,1
+src/components/Content/GeneralFeedback/GeneralFeedback.scss,Gary Paige,0,0
+src/components/Content/GeneralFeedback/GeneralFeedback.test.js,Gary Paige,17,1
+src/components/Content/Landing/Landing.js,Gary Paige,13,1
+src/components/Content/Landing/Landing.scss,Gary Paige,26,0
+src/components/Content/Landing/Landing.test.js,Gary Paige,17,1
+src/components/Content/Landing/index.js,Gary Paige,2,0
+src/components/Content/__tests__/Content.js,Gary Paige,14,14
+src/components/Content/index.css,Gary Paige,1531,3072
+src/components/Content/index.css,Laidlaw,6,1
+src/components/Content/index.js,Alex Petty,1,2
+src/components/Content/index.js,Gary Paige,3,1
+src/components/Content/index.js,Jeff Tougas,6,2
+src/components/Content/index.js,Muhamed Brifkani,1,1
+src/components/Content/index.scss,Gary Paige,3072,3072
+src/components/ContentFlow/ContentDetail/ContentFlowDetail.js,Gary Paige,2,2
+src/components/ContentFlow/ContentDetail/ContentFlowDetail.js,Ginu Philip Simon,17,0
+src/components/ContentFlow/ContentDetail/ContentFlowDetail.test.js,Gary Paige,2,2
+src/components/ContentFlow/ContentDetail/ContentFlowDetail.test.js,Ginu Philip Simon,28,0
+src/components/ContentFlow/ContentDetail/index.js,Ginu Philip Simon,2,0
+src/components/ContentFlow/SearchResults/ContentFlowSearchResults.js,Gary Paige,0,25
+src/components/ContentFlow/SearchResults/ContentFlowSearchResults.js,Ginu Philip Simon,25,0
+src/components/ContentFlow/SearchResults/ContentFlowSearchResults.test.js,Gary Paige,0,39
+src/components/ContentFlow/SearchResults/ContentFlowSearchResults.test.js,Ginu Philip Simon,39,0
+src/components/ContentFlow/SearchResults/index.js,Gary Paige,0,2
+src/components/ContentFlow/SearchResults/index.js,Ginu Philip Simon,2,0
+src/components/ContentTabs/ContentTabs.js,Gary Paige,110,20
+src/components/ContentTabs/ContentTabs.scss,Gary Paige,62,12
+src/components/ContentTabs/ContentTabs.test.js,Gary Paige,69,2
+src/components/Dashboard/Dashboard.js,Gary Paige,113,60
+src/components/Dashboard/Dashboard.js,brennanbelew,31,11
+src/components/Dashboard/Dashboard.js,Alex Petty,2,2
+src/components/Dashboard/Dashboard.js,Muhamed Brifkani,3,3
+src/components/Dashboard/Dashboard.scss,Gary Paige,127,35
+src/components/Dashboard/Dashboard.scss,brennanbelew,4,2
+src/components/Dashboard/Dashboard.test.js,Gary Paige,57,16
+src/components/Dashboard/Dashboard.test.js,brennanbelew,28,8
+src/components/Dashboard/index.js,Gary Paige,2,0
+src/components/Feedback/Feedback.js,Gary Paige,151,243
+src/components/Feedback/Feedback.js,brennanbelew,37,25
+src/components/Feedback/Feedback.js,Muhamed Brifkani,115,23
+src/components/Feedback/Feedback.js,Jeff Tougas,253,48
+src/components/Feedback/Feedback.scss,Gary Paige,62,7
+src/components/Feedback/Feedback.scss,brennanbelew,0,6
+src/components/Feedback/Feedback.scss,Jeff Tougas,62,24
+src/components/Feedback/Feedback.scss,Muhamed Brifkani,25,2
+src/components/Feedback/Feedback.test.js,Gary Paige,64,197
+src/components/Feedback/Feedback.test.js,brennanbelew,61,24
+src/components/Feedback/Feedback.test.js,Muhamed Brifkani,37,4
+src/components/Feedback/Feedback.test.js,Jeff Tougas,169,7
+src/components/Feedback/index.js,Jeff Tougas,2,1
+src/components/Feedback/index.js,Muhamed Brifkani,2,1
+src/components/Header/Header.js,Gary Paige,177,138
+src/components/Header/Header.js,Alex Petty,10,5
+src/components/Header/Header.js,brennanbelew,11,3
+src/components/Header/Header.js,Jeff Tougas,20,11
+src/components/Header/Header.js,Muhamed Brifkani,95,72
+src/components/Header/Header.scss,Gary Paige,205,124
+src/components/Header/Header.scss,Alex Petty,16,7
+src/components/Header/Header.scss,Jeff Tougas,48,22
+src/components/Header/Header.scss,Muhamed Brifkani,51,16
+src/components/Header/Header.test.js,Gary Paige,113,78
+src/components/Header/Header.test.js,brennanbelew,13,1
+src/components/Header/Header.test.js,Jeff Tougas,8,1
+src/components/Header/Header.test.js,Muhamed Brifkani,47,38
+src/components/Header/HeaderComponent.js,Muhamed Brifkani,29,29
+src/components/Header/HeaderTasks.js,Gary Paige,124,23
+src/components/Header/HeaderTasks.js,brennanbelew,13,10
+src/components/Header/HeaderTasks.js,Ginu Philip Simon,26,15
+src/components/Header/HeaderTasks.scss,Gary Paige,28,0
+src/components/Header/HeaderTasks.test.js,Gary Paige,59,2
+src/components/Header/HeaderTasks.test.js,brennanbelew,10,1
+src/components/Header/HeaderTasks.test.js,Ginu Philip Simon,13,1
+src/components/Header/Navbar.test.js,Muhamed Brifkani,30,30
+src/components/Header/ResultsCounter.js,Gary Paige,140,83
+src/components/Header/ResultsCounter.js,Muhamed Brifkani,1,1
+src/components/Header/ResultsCounter.js,Jeff Tougas,11,6
+src/components/Header/ResultsCounter.scss,Gary Paige,26,9
+src/components/Header/ResultsCounter.scss,Alex Petty,0,4
+src/components/Header/ResultsCounter.scss,Muhamed Brifkani,2,3
+src/components/Header/ResultsCounter.test.js,Gary Paige,65,65
+src/components/Header/index.js,Gary Paige,5,1
+src/components/HelixTabs/HelixSearchContainer.js,Gary Paige,72,4
+src/components/HelixTabs/HelixSearchContainer.js,Ginu Philip Simon,20,5
+src/components/HelixTabs/HelixSearchContainer.test.js,Gary Paige,39,1
+src/components/HelixTabs/HelixSearchContainer.test.js,Ginu Philip Simon,38,4
+src/components/HelixTabs/HelixTabs.js,Gary Paige,97,10
+src/components/HelixTabs/HelixTabs.js,Ginu Philip Simon,33,0
+src/components/HelixTabs/HelixTabs.scss,Gary Paige,52,15
+src/components/HelixTabs/HelixTabs.scss,Ginu Philip Simon,1,1
+src/components/HelixTabs/HelixTabs.test.js,Gary Paige,80,6
+src/components/HelixTabs/HelixTabs.test.js,Ginu Philip Simon,21,1
+src/components/HelixTabs/HelixTabsContainer.js,Gary Paige,150,6
+src/components/HelixTabs/HelixTabsContainer.js,Ginu Philip Simon,9,0
+src/components/HelixTabs/HelixTabsContainer.test.js,Gary Paige,109,11
+src/components/HelixTabs/HelixTabsContainer.test.js,Ginu Philip Simon,15,1
+src/components/KnowledgeAlerts/KnowledgeAlert.js,Gary Paige,73,17
+src/components/KnowledgeAlerts/KnowledgeAlert.js,Daniel Nalbach,2,2
+src/components/KnowledgeAlerts/KnowledgeAlert.js,Alex Petty,14,5
+src/components/KnowledgeAlerts/KnowledgeAlert.js,Jeff Tougas,1,1
+src/components/KnowledgeAlerts/KnowledgeAlert.test.js,Gary Paige,50,3
+src/components/KnowledgeAlerts/KnowledgeAlert.test.js,Alex Petty,2,6
+src/components/KnowledgeAlerts/KnowledgeAlerts.js,Gary Paige,205,84
+src/components/KnowledgeAlerts/KnowledgeAlerts.js,Jeff Tougas,1,1
+src/components/KnowledgeAlerts/KnowledgeAlerts.scss,Gary Paige,121,67
+src/components/KnowledgeAlerts/KnowledgeAlerts.scss,brennanbelew,7,5
+src/components/KnowledgeAlerts/KnowledgeAlerts.test.js,Gary Paige,105,26
+src/components/KnowledgeAlerts/index.js,Gary Paige,2,0
+src/components/LaunchKana/LaunchKana.js,Muhamed Brifkani,58,36
+src/components/LaunchKana/LaunchKana.js,Jeff Tougas,1,0
+src/components/LaunchKana/LaunchKana.scss,Muhamed Brifkani,24,17
+src/components/LaunchKana/LaunchKana.scss,Gary Paige,6,2
+src/components/LaunchKana/LaunchKana.test.js,Muhamed Brifkani,48,25
+src/components/LaunchKana/LaunchKana.test.js,Jeff Tougas,1,0
+src/components/LaunchKana/index.js,Muhamed Brifkani,3,3
+src/components/LaunchKana/index.js,Jeff Tougas,2,1
+src/components/Loading/Loading.js,Gary Paige,47,11
+src/components/Loading/Loading.scss,Gary Paige,50,0
+src/components/Loading/Loading.test.js,Gary Paige,29,7
+src/components/Loading/index.js,Gary Paige,4,0
+src/components/Login/Login.js,Gary Paige,91,1
+src/components/Login/Login.scss,Gary Paige,180,0
+src/components/Login/Login.test.js,Gary Paige,51,1
+src/components/Login/index.js,Gary Paige,4,0
+src/components/MostRecent/MostRecent.js,Gary Paige,17,130
+src/components/MostRecent/MostRecent.js,brennanbelew,114,1
+src/components/MostRecent/MostRecent.scss,Gary Paige,0,37
+src/components/MostRecent/MostRecent.scss,brennanbelew,37,0
+src/components/MostRecent/MostRecent.test.js,Gary Paige,20,184
+src/components/MostRecent/MostRecent.test.js,brennanbelew,164,0
+src/components/MostRecent/index.js,Gary Paige,0,2
+src/components/MostRecent/index.js,brennanbelew,2,0
+src/components/MostViewed/MostViewed.js,brennanbelew,0,108
+src/components/MostViewed/MostViewed.js,Alex Petty,31,8
+src/components/MostViewed/MostViewed.js,Gary Paige,131,46
+src/components/MostViewed/MostViewed.js,Muhamed Brifkani,2,2
+src/components/MostViewed/MostViewed.js,Jeff Tougas,1,1
+src/components/MostViewed/MostViewed.scss,brennanbelew,0,37
+src/components/MostViewed/MostViewed.scss,Gary Paige,109,72
+src/components/MostViewed/MostViewed.test.js,brennanbelew,0,148
+src/components/MostViewed/MostViewed.test.js,Alex Petty,86,15
+src/components/MostViewed/MostViewed.test.js,Gary Paige,97,20
+src/components/MostViewed/MostViewed.test.js,Jeff Tougas,1,1
+src/components/MostViewed/index.js,brennanbelew,0,2
+src/components/MostViewed/index.js,Gary Paige,2,0
+src/components/NotFound/NotFound.js,Gary Paige,65,16
+src/components/NotFound/NotFound.js,argvader,21,0
+src/components/NotFound/NotFound.js,Jeff Tougas,1,15
+src/components/NotFound/NotFound.js,Muhamed Brifkani,15,15
+src/components/NotFound/NotFound.scss,Gary Paige,7,5
+src/components/NotFound/NotFound.scss,brennanbelew,3,3
+src/components/NotFound/NotFound.scss,argvader,43,0
+src/components/NotFound/NotFound.test.js,Gary Paige,16,3
+src/components/NotFound/NotFound.test.js,argvader,24,0
+src/components/NotFound/index.js,argvader,2,0
+src/components/NotFound/index.js,Jeff Tougas,2,3
+src/components/NotFound/index.js,Muhamed Brifkani,2,2
+src/components/NotFound/index.js,Gary Paige,1,0
+src/components/Search/Pagination.js,Gary Paige,78,37
+src/components/Search/Pagination.scss,Gary Paige,55,1
+src/components/Search/Pagination.test.js,Gary Paige,42,1
+src/components/Search/ResultsCounter.js,Gary Paige,71,4
+src/components/Search/ResultsCounter.scss,Gary Paige,10,0
+src/components/Search/ResultsCounter.test.js,Gary Paige,51,1
+src/components/Search/Search.js,Gary Paige,209,117
+src/components/Search/Search.scss,Gary Paige,31,0
+src/components/Search/Search.test.js,Gary Paige,133,57
+src/components/SearchBox/NotFound/NotFound.js,Muhamed Brifkani,14,14
+src/components/SearchBox/NotFound/index.js,Muhamed Brifkani,1,1
+src/components/SearchBox/SearchBox.js,Gary Paige,109,93
+src/components/SearchBox/SearchBox.js,Daniel Nalbach,2,8
+src/components/SearchBox/SearchBox.js,Muhamed Brifkani,122,59
+src/components/SearchBox/SearchBox.js,Jeff Tougas,2,7
+src/components/SearchBox/SearchBox.scss,Gary Paige,62,14
+src/components/SearchBox/SearchBox.scss,Muhamed Brifkani,27,10
+src/components/SearchBox/SearchBox.test.js,Gary Paige,78,67
+src/components/SearchBox/SearchBox.test.js,Daniel Nalbach,0,2
+src/components/SearchBox/SearchBox.test.js,Muhamed Brifkani,48,1
+src/components/SearchBox/SearchField.js,Gary Paige,168,106
+src/components/SearchBox/SearchField.js,Jeff Tougas,14,8
+src/components/SearchBox/SearchField.js,Daniel Nalbach,14,13
+src/components/SearchBox/SearchField.js,Muhamed Brifkani,187,173
+src/components/SearchBox/SearchField.scss,Muhamed Brifkani,149,149
+src/components/SearchBox/SearchField.test.js,Gary Paige,108,107
+src/components/SearchBox/SearchField.test.js,Daniel Nalbach,86,19
+src/components/SearchBox/SearchField.test.js,Muhamed Brifkani,102,68
+src/components/SearchBox/index.js,Jeff Tougas,1,0
+src/components/SearchBox/index.js,Muhamed Brifkani,1,1
+src/components/SearchBox/index.js,Gary Paige,1,0
+src/components/SearchResults/CardView/CardView.js,Gary Paige,4,4
+src/components/SearchResults/CardView/CardView.js,Daniel Nalbach,5,2
+src/components/SearchResults/CardView/CardView.js,Muhamed Brifkani,27,0
+src/components/SearchResults/CardView/CardView.test.js,Gary Paige,3,2
+src/components/SearchResults/CardView/CardView.test.js,Muhamed Brifkani,31,0
+src/components/SearchResults/CardView/ResultCard/Footer.js,Gary Paige,37,1
+src/components/SearchResults/CardView/ResultCard/Footer.scss,Gary Paige,26,0
+src/components/SearchResults/CardView/ResultCard/Footer.test.js,Gary Paige,33,1
+src/components/SearchResults/CardView/ResultCard/ResultCard.js,Gary Paige,85,86
+src/components/SearchResults/CardView/ResultCard/ResultCard.js,Ginu Philip Simon,12,4
+src/components/SearchResults/CardView/ResultCard/ResultCard.js,Daniel Nalbach,9,6
+src/components/SearchResults/CardView/ResultCard/ResultCard.js,Jeff Tougas,10,3
+src/components/SearchResults/CardView/ResultCard/ResultCard.js,Alex Petty,14,5
+src/components/SearchResults/CardView/ResultCard/ResultCard.js,Muhamed Brifkani,118,0
+src/components/SearchResults/CardView/ResultCard/ResultCard.scss,Gary Paige,51,14
+src/components/SearchResults/CardView/ResultCard/ResultCard.scss,Jeff Tougas,12,0
+src/components/SearchResults/CardView/ResultCard/ResultCard.scss,Daniel Nalbach,5,0
+src/components/SearchResults/CardView/ResultCard/ResultCard.scss,Muhamed Brifkani,43,0
+src/components/SearchResults/CardView/ResultCard/ResultCard.test.js,Gary Paige,22,33
+src/components/SearchResults/CardView/ResultCard/ResultCard.test.js,Ginu Philip Simon,41,2
+src/components/SearchResults/CardView/ResultCard/ResultCard.test.js,Daniel Nalbach,2,2
+src/components/SearchResults/CardView/ResultCard/ResultCard.test.js,Jeff Tougas,1,0
+src/components/SearchResults/CardView/ResultCard/ResultCard.test.js,Alex Petty,2,4
+src/components/SearchResults/CardView/ResultCard/ResultCard.test.js,Muhamed Brifkani,57,0
+src/components/SearchResults/CardView/ResultCard/index.js,Alex Petty,1,2
+src/components/SearchResults/CardView/ResultCard/index.js,Muhamed Brifkani,5,0
+src/components/SearchResults/ListView/ListView.js,Gary Paige,2,24
+src/components/SearchResults/ListView/ListView.js,Daniel Nalbach,5,2
+src/components/SearchResults/ListView/ListView.js,Muhamed Brifkani,19,0
+src/components/SearchResults/ListView/ListView.test.js,Gary Paige,0,30
+src/components/SearchResults/ListView/ListView.test.js,Muhamed Brifkani,30,0
+src/components/SearchResults/ListView/ResultList/ResultList.js,Gary Paige,27,159
+src/components/SearchResults/ListView/ResultList/ResultList.js,Daniel Nalbach,9,7
+src/components/SearchResults/ListView/ResultList/ResultList.js,Jeff Tougas,11,4
+src/components/SearchResults/ListView/ResultList/ResultList.js,Alex Petty,14,5
+src/components/SearchResults/ListView/ResultList/ResultList.js,Muhamed Brifkani,114,0
+src/components/SearchResults/ListView/ResultList/ResultList.scss,Gary Paige,0,54
+src/components/SearchResults/ListView/ResultList/ResultList.scss,Jeff Tougas,12,1
+src/components/SearchResults/ListView/ResultList/ResultList.scss,Muhamed Brifkani,43,0
+src/components/SearchResults/ListView/ResultList/ResultList.test.js,Gary Paige,17,71
+src/components/SearchResults/ListView/ResultList/ResultList.test.js,Daniel Nalbach,2,2
+src/components/SearchResults/ListView/ResultList/ResultList.test.js,Jeff Tougas,2,1
+src/components/SearchResults/ListView/ResultList/ResultList.test.js,Alex Petty,2,4
+src/components/SearchResults/ListView/ResultList/ResultList.test.js,Muhamed Brifkani,55,0
+src/components/SearchResults/ListView/ResultList/index.js,Gary Paige,0,4
+src/components/SearchResults/ListView/ResultList/index.js,Alex Petty,1,2
+src/components/SearchResults/ListView/ResultList/index.js,Muhamed Brifkani,5,0
+src/components/SearchResults/ResultCard/ResultCard.css,Gary Paige,41,82
+src/components/SearchResults/ResultCard/ResultCard.js,Muhamed Brifkani,96,210
+src/components/SearchResults/ResultCard/ResultCard.js,Jeff Tougas,37,20
+src/components/SearchResults/ResultCard/ResultCard.js,Gary Paige,139,61
+src/components/SearchResults/ResultCard/ResultCard.js,argvader,8,3
+src/components/SearchResults/ResultCard/ResultCard.js,Laidlaw,84,43
+src/components/SearchResults/ResultCard/ResultCard.scss,Muhamed Brifkani,18,45
+src/components/SearchResults/ResultCard/ResultCard.scss,Gary Paige,110,56
+src/components/SearchResults/ResultCard/ResultCard.test.js,Muhamed Brifkani,1,44
+src/components/SearchResults/ResultCard/ResultCard.test.js,argvader,9,2
+src/components/SearchResults/ResultCard/ResultCard.test.js,Gary Paige,16,16
+src/components/SearchResults/ResultCard/ResultCard.test.js,Jeff Tougas,13,5
+src/components/SearchResults/ResultCard/index.js,Muhamed Brifkani,0,5
+src/components/SearchResults/ResultCard/index.js,Jeff Tougas,5,0
+src/components/SearchResults/SearchResults.js,Gary Paige,75,83
+src/components/SearchResults/SearchResults.js,Daniel Nalbach,8,1
+src/components/SearchResults/SearchResults.js,Muhamed Brifkani,89,50
+src/components/SearchResults/SearchResults.js,Jeff Tougas,14,10
+src/components/SearchResults/SearchResults.js,Laidlaw,4,1
+src/components/SearchResults/SearchResults.scss,Gary Paige,1,54
+src/components/SearchResults/SearchResults.scss,Jeff Tougas,8,5
+src/components/SearchResults/SearchResults.scss,Muhamed Brifkani,67,0
+src/components/SearchResults/SearchResults.test.js,Gary Paige,23,90
+src/components/SearchResults/SearchResults.test.js,Daniel Nalbach,30,2
+src/components/SearchResults/SearchResults.test.js,Muhamed Brifkani,139,44
+src/components/SearchResults/SearchResults.test.js,Jeff Tougas,3,3
+src/components/SearchResults/index.js,Jeff Tougas,2,1
+src/components/SearchResults/index.js,Muhamed Brifkani,1,1
+src/components/SearchResults/index.js,Gary Paige,1,0
+src/components/TabMenu/Tab.js,Gary Paige,19,1
+src/components/TabMenu/Tab.js,Jeff Tougas,1,1
+src/components/TabMenu/Tab.test.js,Gary Paige,17,1
+src/components/TabMenu/TabMenu.js,Gary Paige,97,13
+src/components/TabMenu/TabMenu.js,Jeff Tougas,1,1
+src/components/TabMenu/TabMenu.scss,Gary Paige,44,1
+src/components/TabMenu/TabMenu.test.js,Gary Paige,36,3
+src/components/TabMenu/index.js,Gary Paige,5,0
+src/components/searchFilters/ApplyTags/ApplyTags.js,Muhamed Brifkani,0,40
+src/components/searchFilters/ApplyTags/ApplyTags.js,Gary Paige,40,0
+src/components/searchFilters/ApplyTags/index.js,Muhamed Brifkani,0,1
+src/components/searchFilters/ApplyTags/index.js,Gary Paige,1,0
+src/components/searchFilters/CheckBoxRefinementList/CheckBoxRefinementList.js,Muhamed Brifkani,0,59
+src/components/searchFilters/CheckBoxRefinementList/CheckBoxRefinementList.js,Gary Paige,59,0
+src/components/searchFilters/CheckBoxRefinementList/index.js,Muhamed Brifkani,0,1
+src/components/searchFilters/CheckBoxRefinementList/index.js,Gary Paige,1,0
+src/components/searchFilters/NestedList/NestedList.js,Muhamed Brifkani,0,41
+src/components/searchFilters/NestedList/NestedList.js,Gary Paige,41,0
+src/components/searchFilters/NestedList/index.js,Muhamed Brifkani,0,1
+src/components/searchFilters/NestedList/index.js,Gary Paige,1,0
+src/components/searchFilters/SelectFieldRefinementList/SelectFieldRefinementList.js,Muhamed Brifkani,0,32
+src/components/searchFilters/SelectFieldRefinementList/SelectFieldRefinementList.js,Gary Paige,32,0
+src/components/searchFilters/SelectFieldRefinementList/index.js,Muhamed Brifkani,0,1
+src/components/searchFilters/SelectFieldRefinementList/index.js,Gary Paige,1,0
+src/components/searchFilters/SortBy/SortBy.js,Muhamed Brifkani,0,30
+src/components/searchFilters/SortBy/SortBy.js,Gary Paige,30,0
+src/components/searchFilters/SortBy/index.js,Muhamed Brifkani,0,1
+src/components/searchFilters/SortBy/index.js,Gary Paige,1,0
+src/components/searchFilters/index.js,Muhamed Brifkani,0,5
+src/components/searchFilters/index.js,Gary Paige,5,0
+src/connectors/connectSharedWorker/__mocks__/connectSharedWorker.js,Jeff Tougas,33,33
+src/connectors/connectSharedWorker/connectSharedWorker.js,Jeff Tougas,43,43
+src/connectors/connectSharedWorker/connectSharedWorker.test.js,Jeff Tougas,112,112
+src/connectors/connectSharedWorker/index.js,Jeff Tougas,1,1
+src/connectors/connectSharedWorkerEventBus/__mocks__/connectSharedWorkerEventBus.js,Gary Paige,0,29
+src/connectors/connectSharedWorkerEventBus/__mocks__/connectSharedWorkerEventBus.js,Jeff Tougas,33,4
+src/connectors/connectSharedWorkerEventBus/connectSharedWorkerEventBus.js,Gary Paige,0,47
+src/connectors/connectSharedWorkerEventBus/connectSharedWorkerEventBus.js,Jeff Tougas,53,6
+src/connectors/connectSharedWorkerEventBus/connectSharedWorkerEventBus.test.js,Gary Paige,0,97
+src/connectors/connectSharedWorkerEventBus/connectSharedWorkerEventBus.test.js,Jeff Tougas,104,7
+src/connectors/connectSharedWorkerEventBus/index.js,Gary Paige,0,2
+src/connectors/connectSharedWorkerEventBus/index.js,Jeff Tougas,3,1
+src/connectors/withErrors/ErrorHandler.js,argvader,0,43
+src/connectors/withErrors/ErrorHandler.js,Gary Paige,43,0
+src/connectors/withErrors/ErrorHandler.test.js,argvader,0,59
+src/connectors/withErrors/ErrorHandler.test.js,Gary Paige,69,10
+src/connectors/withErrors/index.js,argvader,0,2
+src/connectors/withErrors/index.js,Gary Paige,2,0
+src/connectors/withSharedWorkerEventBus/__mocks__/connectSharedWorkerEventBus.js,Gary Paige,31,2
+src/connectors/withSharedWorkerEventBus/connectSharedWorkerEventBus.js,Gary Paige,52,5
+src/connectors/withSharedWorkerEventBus/connectSharedWorkerEventBus.js,Alex Petty,3,3
+src/connectors/withSharedWorkerEventBus/connectSharedWorkerEventBus.js,Jeff Tougas,1,1
+src/connectors/withSharedWorkerEventBus/connectSharedWorkerEventBus.test.js,Gary Paige,115,15
+src/connectors/withSharedWorkerEventBus/connectSharedWorkerEventBus.test.js,Jeff Tougas,3,2
+src/connectors/withSharedWorkerEventBus/index.js,Gary Paige,2,0
+src/constants/ActionTypes.js,Gary Paige,0,4
+src/constants/ActionTypes.js,Muhamed Brifkani,4,0
+src/constants/Activities.js,Ginu Philip Simon,68,7
+src/constants/actionNames.js,Gary Paige,97,7
+src/constants/actionNames.js,brennanbelew,5,1
+src/constants/actionTypes.js,Gary Paige,31,70
+src/constants/actionTypes.js,Ginu Philip Simon,9,2
+src/constants/contentTypes.js,Gary Paige,24,10
+src/constants/contentTypes.js,Ginu Philip Simon,4,0
+src/constants/contentTypes.js,Jeff Tougas,2,0
+src/constants/healthStates.js,Muhamed Brifkani,1,1
+src/constants/healthStates.js,argvader,6,0
+src/constants/serviceHeaderConstants.js,Gary Paige,13,0
+src/constants/technicianKeys.js,Daniel Nalbach,5,0
+src/featureToggleConfig.json,brennanbelew,7,7
+src/i18n.js,Gary Paige,39,2
+src/i18n.js,Jeff Tougas,1,1
+src/i18n.test.js,Gary Paige,12,1
+src/i18n.test.js,Jeff Tougas,1,1
+src/index.css,Gary Paige,9,78
+src/index.css,Jeff Tougas,30,0
+src/index.js,Gary Paige,53,58
+src/index.js,Alex Petty,9,3
+src/index.js,Muhamed Brifkani,24,15
+src/index.js,Jeff Tougas,16,1
+src/index.scss,Gary Paige,279,82
+src/index.scss,Daniel Nalbach,0,6
+src/index.scss,Muhamed Brifkani,15,1
+src/littleroutes.js,Gary Paige,88,63
+src/littleroutes.js,brennanbelew,9,11
+src/littleroutes.js,Ginu Philip Simon,11,2
+src/littleroutes.js,Jeff Tougas,7,15
+src/littleroutes.js,Alex Petty,27,0
+src/middleware/__mocks__/algoliasearch.js,Gary Paige,30,30
+src/middleware/__mocks__/algoliasearch.js,Muhamed Brifkani,1,1
+src/middleware/activitiesMiddleware.js,Ginu Philip Simon,60,15
+src/middleware/activitiesMiddleware.test.js,Ginu Philip Simon,56,1
+src/middleware/algoliaClient.js,Gary Paige,96,96
+src/middleware/algoliaClient.js,Muhamed Brifkani,1,1
+src/middleware/algoliaClient.test.js,Gary Paige,63,63
+src/middleware/algoliaClient.test.js,Muhamed Brifkani,1,1
+src/middleware/analyticsDispatcher.js,Gary Paige,2,18
+src/middleware/analyticsDispatcher.js,brennanbelew,16,0
+src/middleware/analyticsDispatcher.test.js,Gary Paige,0,16
+src/middleware/analyticsDispatcher.test.js,brennanbelew,16,0
+src/middleware/analyticsMiddleware.js,Gary Paige,55,20
+src/middleware/analyticsMiddleware.js,brennanbelew,16,13
+src/middleware/analyticsMiddleware.js,Daniel Nalbach,3,0
+src/middleware/analyticsMiddleware.test.js,Gary Paige,49,5
+src/middleware/analyticsMiddleware.test.js,brennanbelew,12,0
+src/middleware/analyticsMiddleware.test.js,Daniel Nalbach,32,1
+src/middleware/authenticationMiddleware.js,Gary Paige,143,2
+src/middleware/authenticationMiddleware.js,brennanbelew,49,44
+src/middleware/authenticationMiddleware.test.js,Gary Paige,250,1
+src/middleware/authenticationMiddleware.test.js,brennanbelew,14,0
+src/middleware/contentDetailMiddleware.js,Gary Paige,0,0
+src/middleware/contentFlowMiddleware.js,Gary Paige,2,39
+src/middleware/contentFlowMiddleware.js,Ginu Philip Simon,37,0
+src/middleware/contentFlowMiddleware.test.js,Gary Paige,0,52
+src/middleware/contentFlowMiddleware.test.js,Ginu Philip Simon,52,0
+src/middleware/contentTabsMiddleware.js,Gary Paige,29,2
+src/middleware/contentTabsMiddleware.test.js,Gary Paige,31,0
+src/middleware/dapulseClient.js,Gary Paige,0,83
+src/middleware/dapulseClient.js,Jeff Tougas,41,34
+src/middleware/dapulseClient.js,Muhamed Brifkani,76,0
+src/middleware/dapulseClient.test.js,Gary Paige,0,47
+src/middleware/dapulseClient.test.js,Muhamed Brifkani,47,0
+src/middleware/featureToggleMiddleware.js,Gary Paige,21,0
+src/middleware/featureToggleMiddleware.js,brennanbelew,21,0
+src/middleware/featureToggleMiddleware.test.js,Gary Paige,43,0
+src/middleware/featureToggleMiddleware.test.js,brennanbelew,43,0
+src/middleware/helixTabMiddleware.js,Gary Paige,133,20
+src/middleware/helixTabMiddleware.js,Kris Unnikannan,3,0
+src/middleware/helixTabMiddleware.js,Ginu Philip Simon,3,0
+src/middleware/helixTabMiddleware.js,Daniel Nalbach,13,1
+src/middleware/helixTabMiddleware.test.js,Gary Paige,72,2
+src/middleware/helixTabMiddleware.test.js,Daniel Nalbach,11,0
+src/middleware/initializationMiddleware.js,Gary Paige,94,9
+src/middleware/initializationMiddleware.js,brennanbelew,11,5
+src/middleware/initializationMiddleware.test.js,Gary Paige,35,0
+src/middleware/mixpanelDispatcher.js,Gary Paige,44,50
+src/middleware/mixpanelDispatcher.js,Daniel Nalbach,7,2
+src/middleware/mixpanelDispatcher.js,brennanbelew,2,1
+src/middleware/mixpanelDispatcher.test.js,Gary Paige,31,41
+src/middleware/mixpanelDispatcher.test.js,Daniel Nalbach,11,1
+src/middleware/mixpanelMiddleware.js,Gary Paige,98,27
+src/middleware/mixpanelMiddleware.js,brennanbelew,34,17
+src/middleware/mixpanelMiddleware.js,Daniel Nalbach,3,1
+src/middleware/mixpanelMiddleware.test.js,Gary Paige,136,45
+src/middleware/mixpanelMiddleware.test.js,brennanbelew,93,43
+src/middleware/mixpanelMiddleware.test.js,Daniel Nalbach,26,11
+src/middleware/searchMiddleware.js,Gary Paige,55,1
+src/middleware/searchMiddleware.test.js,Gary Paige,65,4
+src/middleware/sharedWorkerMiddleware.js,Jeff Tougas,0,24
+src/middleware/sharedWorkerMiddleware.js,Gary Paige,2,1
+src/middleware/sharedWorkerMiddleware.js,Daniel Nalbach,23,0
+src/middleware/sharedWorkerMiddleware.test.js,Jeff Tougas,0,55
+src/middleware/sharedWorkerMiddleware.test.js,Daniel Nalbach,55,0
+src/middleware/supportSessionMiddleware.js,Gary Paige,7,3
+src/middleware/supportSessionMiddleware.js,Jeff Tougas,24,0
+src/middleware/supportSessionMiddleware.test.js,Gary Paige,1,1
+src/middleware/supportSessionMiddleware.test.js,Jeff Tougas,55,0
+src/middleware/swebInMiddleware.js,Gary Paige,10,6
+src/middleware/swebInMiddleware.js,Jeff Tougas,27,0
+src/middleware/swebInMiddleware.test.js,Gary Paige,23,0
+src/middleware/swebOutMiddleware.js,Gary Paige,3,4
+src/middleware/swebOutMiddleware.js,Jeff Tougas,15,0
+src/middleware/technicianDispatcher.js,Gary Paige,8,118
+src/middleware/technicianDispatcher.js,Daniel Nalbach,28,6
+src/middleware/technicianDispatcher.js,jacobmassengill,4,3
+src/middleware/technicianDispatcher.js,brennanbelew,8,0
+src/middleware/technicianDispatcher.js,Jeff Tougas,79,0
+src/middleware/technicianDispatcher.test.js,Gary Paige,0,118
+src/middleware/technicianDispatcher.test.js,Daniel Nalbach,37,15
+src/middleware/technicianDispatcher.test.js,jacobmassengill,2,2
+src/middleware/technicianDispatcher.test.js,brennanbelew,16,1
+src/middleware/technicianDispatcher.test.js,Jeff Tougas,81,0
+src/middleware/technicianMiddleware.js,Gary Paige,223,96
+src/middleware/technicianMiddleware.js,brennanbelew,93,89
+src/middleware/technicianMiddleware.test.js,Gary Paige,230,94
+src/middleware/technicianMiddleware.test.js,brennanbelew,104,86
+src/middleware/technicianMiddleware.test.js,Daniel Nalbach,2,2
+src/middleware/triageMiddleware.js,Gary Paige,48,10
+src/middleware/triageMiddleware.test.js,Gary Paige,36,0
+src/models/activity.js,Ginu Philip Simon,27,0
+src/models/subactivity.js,Ginu Philip Simon,19,0
+src/models/technician.js,Gary Paige,3,2
+src/models/technician.js,Daniel Nalbach,57,0
+src/models/technician.test.js,Daniel Nalbach,82,0
+src/reducers/activityStatusReducers.js,Ginu Philip Simon,63,9
+src/reducers/activityStatusReducers.test.js,Ginu Philip Simon,74,4
+src/reducers/authenticationReducer.js,Gary Paige,34,0
+src/reducers/authenticationReducer.test.js,Gary Paige,38,0
+src/reducers/contentDetailReducer.js,Gary Paige,23,23
+src/reducers/contentDetailReducer.test.js,Gary Paige,0,24
+src/reducers/contentDetailReducer.test.js,Jeff Tougas,24,0
+src/reducers/contentFlowReducer.js,Gary Paige,1,3
+src/reducers/contentFlowReducer.js,Ginu Philip Simon,24,0
+src/reducers/contentFlowReducer.test.js,Gary Paige,56,0
+src/reducers/createReducer.js,Muhamed Brifkani,6,0
+src/reducers/currentCarrier.js,Gary Paige,16,16
+src/reducers/currentCarrier.test.js,Gary Paige,19,19
+src/reducers/featureToggleReducer.js,Gary Paige,14,0
+src/reducers/featureToggleReducer.js,brennanbelew,14,0
+src/reducers/featureToggleReducer.test.js,Gary Paige,24,0
+src/reducers/featureToggleReducer.test.js,brennanbelew,24,0
+src/reducers/health.js,Gary Paige,0,34
+src/reducers/health.js,argvader,17,0
+src/reducers/health.test.js,Gary Paige,0,42
+src/reducers/health.test.js,argvader,21,0
+src/reducers/healthReducer.js,Gary Paige,34,0
+src/reducers/healthReducer.test.js,Gary Paige,42,0
+src/reducers/helixStateReducer.js,Gary Paige,54,0
+src/reducers/helixStateReducer.test.js,Gary Paige,62,0
+src/reducers/helixTabReducer.js,Gary Paige,92,18
+src/reducers/helixTabReducer.test.js,Gary Paige,94,15
+src/reducers/index.js,Gary Paige,30,17
+src/reducers/index.js,brennanbelew,3,1
+src/reducers/index.js,Ginu Philip Simon,5,1
+src/reducers/index.js,Daniel Nalbach,3,1
+src/reducers/index.js,Jeff Tougas,3,1
+src/reducers/index.js,Alex Petty,4,7
+src/reducers/index.js,argvader,2,1
+src/reducers/index.js,Muhamed Brifkani,14,1
+src/reducers/routeSchemeReducer.js,Gary Paige,19,19
+src/reducers/routeSchemeReducer.test.js,Gary Paige,30,30
+src/reducers/routeStateReducer.js,Gary Paige,86,25
+src/reducers/routeStateReducer.js,brennanbelew,6,5
+src/reducers/routeStateReducer.test.js,Gary Paige,108,32
+src/reducers/routeStateReducer.test.js,brennanbelew,16,13
+src/reducers/searchReducer.js,Gary Paige,0,15
+src/reducers/searchReducer.js,Daniel Nalbach,15,0
+src/reducers/searchReducer.test.js,Gary Paige,0,20
+src/reducers/searchReducer.test.js,Daniel Nalbach,20,0
+src/reducers/session.js,Daniel Nalbach,2,4
+src/reducers/session.js,Muhamed Brifkani,26,10
+src/reducers/session.test.js,Daniel Nalbach,4,2
+src/reducers/session.test.js,argvader,19,0
+src/reducers/technicianReducer.js,Daniel Nalbach,39,19
+src/reducers/technicianReducer.js,Jeff Tougas,78,0
+src/reducers/technicianReducer.test.js,Daniel Nalbach,52,24
+src/reducers/technicianReducer.test.js,Jeff Tougas,70,0
+src/router.js,Muhamed Brifkani,29,63
+src/router.js,Gary Paige,34,34
+src/searchFilters/ApplyTags/index.js,Gary Paige,0,42
+src/searchFilters/ApplyTags/index.js,Laidlaw,42,0
+src/searchFilters/CheckBoxRefinementList/index.js,Gary Paige,0,66
+src/searchFilters/CheckBoxRefinementList/index.js,Jeff Tougas,1,1
+src/searchFilters/CheckBoxRefinementList/index.js,Laidlaw,78,12
+src/searchFilters/NestedList/index.js,Gary Paige,0,45
+src/searchFilters/NestedList/index.js,Jeff Tougas,2,2
+src/searchFilters/NestedList/index.js,Laidlaw,48,3
+src/searchFilters/SelectFieldRefinementList/index.js,Gary Paige,0,34
+src/searchFilters/SelectFieldRefinementList/index.js,Jeff Tougas,35,1
+src/searchFilters/SortBy/index.js,Gary Paige,0,33
+src/searchFilters/SortBy/index.js,Laidlaw,33,0
+src/selectors/activitiesSelector.js,Ginu Philip Simon,34,1
+src/selectors/activitiesSelector.test.js,Ginu Philip Simon,38,7
+src/selectors/analyticStateSelector.js,Gary Paige,16,0
+src/selectors/contentFlowSelector.js,Ginu Philip Simon,17,0
+src/selectors/featureToggleSelector.js,Gary Paige,4,0
+src/selectors/featureToggleSelector.js,brennanbelew,4,0
+src/selectors/featureToggleSelector.test.js,Gary Paige,21,0
+src/selectors/featureToggleSelector.test.js,brennanbelew,21,0
+src/selectors/healthSelector.js,Gary Paige,22,4
+src/selectors/healthSelector.test.js,Gary Paige,28,1
+src/selectors/helixStateSelector.js,Gary Paige,34,0
+src/selectors/helixStateSelector.test.js,Gary Paige,42,0
+src/selectors/pathBuilderSelector.js,Ginu Philip Simon,4,1
+src/selectors/pathBuilderSelector.js,Gary Paige,21,8
+src/selectors/routeSelector.js,Gary Paige,34,0
+src/selectors/routeSelector.test.js,Gary Paige,44,0
+src/selectors/searchSelector.js,Gary Paige,63,15
+src/selectors/searchSelector.js,brennanbelew,8,1
+src/selectors/searchSelector.test.js,Gary Paige,55,6
+src/selectors/searchSelector.test.js,brennanbelew,6,1
+src/selectors/socoSelector.js,Gary Paige,107,52
+src/selectors/socoSelector.js,Daniel Nalbach,14,6
+src/selectors/socoSelector.test.js,Gary Paige,37,1
+src/selectors/socoSelector.test.js,Daniel Nalbach,23,15
+src/selectors/tabSelector.js,Gary Paige,24,1
+src/selectors/tabSelector.test.js,Gary Paige,43,0
+src/selectors/userSelector.js,Gary Paige,20,0
+src/selectors/userSelector.test.js,Gary Paige,26,0
+src/store.js,Gary Paige,57,40
+src/store.js,brennanbelew,6,1
+src/store.js,Ginu Philip Simon,4,0
+src/store.js,Jeff Tougas,12,2
+src/store.js,Daniel Nalbach,4,1
+src/store.js,Alex Petty,20,8
+src/store.js,argvader,7,3
+src/store.js,Muhamed Brifkani,19,1
+src/store.test.js,Gary Paige,20,0
+src/store.test.js,Jeff Tougas,2,0
+src/stories/index.js,Gary Paige,0,11
+src/stories/index.js,Jeff Tougas,11,0
+src/styles/icons.scss,Gary Paige,21,4
+src/styles/icons.scss,Jeff Tougas,11,0
+src/styles/orig.css,Gary Paige,3082,1541
+src/styles/palette.scss,Gary Paige,108,3
+src/styles/palette.scss,Jeff Tougas,5,2
+src/styles/palette.scss,Muhamed Brifkani,1,0
+src/styles/semantic-ui/site/collections/breadcrumb.overrides,Gary Paige,3,0
+src/styles/semantic-ui/site/collections/form.overrides,Gary Paige,23,0
+src/styles/semantic-ui/site/collections/form.variables,Gary Paige,1,0
+src/styles/semantic-ui/site/elements/button.overrides,Gary Paige,59,0
+src/styles/semantic-ui/site/elements/button.variables,Gary Paige,55,0
+src/styles/semantic-ui/site/elements/icon.overrides,Gary Paige,56,0
+src/styles/semantic-ui/site/elements/input.variables,Gary Paige,1,0
+src/styles/semantic-ui/site/globals/site.variables,Gary Paige,162,0
+src/styles/semantic-ui/site/modules/checkbox.variables,Gary Paige,9,0
+src/styles/semantic-ui/site/modules/dropdown.overrides,Gary Paige,33,0
+src/styles/semantic-ui/site/modules/dropdown.variables,Gary Paige,39,0
+src/styles/semantic-ui/site/modules/tab.overrides,Gary Paige,55,4
+src/styles/semantic-ui/site/views/card.overrides,Gary Paige,4,0
+src/styles/semantic-ui/theme.config,Gary Paige,93,0
+src/techNotifications/index.js,Gary Paige,0,138
+src/techNotifications/index.js,Jeff Tougas,138,0
+src/types.js,Gary Paige,10,0
+src/utils/__tests__/carrier.js,Gary Paige,44,44
+src/utils/applicationConfig.js,Gary Paige,239,79
+src/utils/applicationConfig.js,Kris Unnikannan,2,1
+src/utils/applicationConfig.js,Jeff Tougas,13,8
+src/utils/applicationConfig.js,Daniel Nalbach,6,0
+src/utils/applicationConfig.js,Muhamed Brifkani,51,12
+src/utils/applicationConfig.js,argvader,1,1
+src/utils/applicationConfig.test.js,Gary Paige,231,105
+src/utils/applicationConfig.test.js,Jeff Tougas,6,3
+src/utils/applicationConfig.test.js,Daniel Nalbach,7,3
+src/utils/applicationConfig.test.js,Muhamed Brifkani,37,10
+src/utils/applicationConfig.test.js,argvader,1,1
+src/utils/breadcrumbsBuilder.js,Gary Paige,27,0
+src/utils/breadcrumbsBuilder.test.js,Gary Paige,24,0
+src/utils/carrier.js,Gary Paige,51,8
+src/utils/carrier.js,Jeff Tougas,5,3
+src/utils/carrier.js,Muhamed Brifkani,3,2
+src/utils/carrier.test.js,Gary Paige,350,14
+src/utils/carrier.test.js,brennanbelew,4,307
+src/utils/carrier.test.js,Jeff Tougas,2,1
+src/utils/client.js,Daniel Nalbach,1,0
+src/utils/client.js,Gary Paige,1,1
+src/utils/client.js,brennanbelew,41,0
+src/utils/client.test.js,brennanbelew,28,0
+src/utils/eventBusWorker/__mocks__/index.js,Gary Paige,0,1
+src/utils/eventBusWorker/__mocks__/index.js,Jeff Tougas,18,2
+src/utils/eventBusWorker/index.js,Gary Paige,18,4
+src/utils/eventBusWorker/index.js,Jeff Tougas,41,35
+src/utils/eventBusWorker/onconnect.js,Jeff Tougas,15,1
+src/utils/eventBusWorker/onconnect.test.js,Gary Paige,17,0
+src/utils/eventBusWorker/onmessage.js,Jeff Tougas,48,15
+src/utils/eventBusWorker/onmessage.test.js,Gary Paige,33,0
+src/utils/form/semanticFormField.js,Gary Paige,76,1
+src/utils/form/semanticFormField.test.js,Gary Paige,35,0
+src/utils/form/validation.js,Gary Paige,5,0
+src/utils/form/validation.test.js,Gary Paige,26,0
+src/utils/mixPanelEvents.js,Gary Paige,26,26
+src/utils/mixpanelEvents.js,Gary Paige,81,153
+src/utils/mixpanelEvents.js,Muhamed Brifkani,49,21
+src/utils/mixpanelEvents.js,Jeff Tougas,58,10
+src/utils/mixpanelEvents.test.js,Gary Paige,150,221
+src/utils/mixpanelEvents.test.js,Muhamed Brifkani,37,15
+src/utils/mixpanelEvents.test.js,Jeff Tougas,52,3
+src/utils/operatingSystem.js,Jeff Tougas,14,2
+src/utils/operatingSystem.test.js,Gary Paige,5,6
+src/utils/operatingSystem.test.js,Jeff Tougas,33,0
+src/utils/pathBuilder.js,Gary Paige,74,32
+src/utils/pathBuilder.js,brennanbelew,2,4
+src/utils/pathBuilder.js,Ginu Philip Simon,16,1
+src/utils/pathBuilder.js,Jeff Tougas,24,20
+src/utils/pathBuilder.js,argvader,13,0
+src/utils/pathBuilder.test.js,Gary Paige,174,161
+src/utils/pathBuilder.test.js,brennanbelew,10,124
+src/utils/pathBuilder.test.js,Ginu Philip Simon,90,0
+src/utils/pathBuilder.test.js,Jeff Tougas,6,6
+src/utils/pathBuilder.test.js,argvader,15,0
+src/utils/routeDecorators.js,Gary Paige,24,0
+src/utils/routeDecorators.test.js,Gary Paige,25,0
+test/README.md,pijus-kadisius,80,3
+test/cucumber_reports/.keep,pijus-kadisius,0,0
+test/cucumber_reports/helix_cucumber_reports_qa.json,pijus-kadisius,0,0
+test/cucumber_reports/helix_cucumber_reports_qa.json,David Wright,0,0
+test/features/pages/soluto-helix-page.js,pijus-kadisius,227,167
+test/features/pages/soluto-helix-page.js,David Wright,5,0
+test/features/soluto-helix.feature,pijus-kadisius,205,141
+test/features/soluto-helix.feature,David Wright,13,0
+test/features/step_definitions/soluto-helix.js,pijus-kadisius,111,74
+test/features/support/commandLineUitilityHelper.js,pijus-kadisius,63,63
+test/features/support/environmentConfig.js,pijus-kadisius,66,3
+test/features/support/hooks.js,pijus-kadisius,37,9
+test/features/support/qtest/parse-qtest.sh,pijus-kadisius,54,0
+test/features/support/qtest/submit-qtest.sh,pijus-kadisius,42,0
+tools/jest/cssTransform.js,Gary Paige,12,0
+tools/jest/fileTransform.js,Gary Paige,9,0
+tools/jest/jestSetup.js,Gary Paige,23,2
+tools/jest/jestSetup.js,Jeff Tougas,1,0
+tools/test.js,Alex Petty,1,0
+tools/test.js,Gary Paige,31,0
+webpack.config.js,Gary Paige,347,90
+webpack.config.js,brennanbelew,10,1
+webpack.config.js,Jeff Tougas,86,29
+webpack.config.js,Alex Petty,23,23
+webpack.config.js,argvader,2,2
+webpack.config.js,Laidlaw,5,0

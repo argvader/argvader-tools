@@ -1,0 +1,498 @@
+SN-682: check url if redux-little-router doesnt have vendor (#292)
+SN-000: version bump from 2.8.1 to 2.8.2 (#293)
+search fixes (#291)
+SOCO-000-missing-semicolon-lint-error (#290)
+SN-383-e2e-scenario-for-share-functionality (#286)
+SN-655: using window.gapi instead of gapi (#289)
+need space before from (#285)
+SOCO-10592: On ex device info for content transfer PR (#279)
+SOCO-10551 refactor react import also made content types a constant object (#284)
+set base path for local proxy (#283)
++x on deploy.sh (#282)
+Soco 10091 deploy me (#281)
+Feature/public helix (#278)
+SOCO-10305: function to allow user to choose which NA carrier they want to run e2e tests against. (#269)
+need to get the nextProp page value when search tab is switched (#271)
+remove intercom mock from app.js (#270)
+SOCO-10512 pagination (#268)
+SOCO-10511 Fancy Result Card (#267)
+SOCO-10212: refactor command line utility helper (#266)
+SOCO-000: updated version from 2.6.1 to 2.7.0 (#265)
+Soco 000 updated selector (#264)
+intercom until 12-14-2017 (#263)
+SOCO-10479: Add Helix version to Mixpanel event metadata (#262)
+SOCO-000: version bump (#255)
+SOCO-9433: share button (#251)
+add breakpoint for dashboard (#253)
+add source and source_id to content and alert view events (#254)
+SOCO-000: version bump (#249)
+SOCO-000: remove reports file (#252)
+SOCO-10325: update Mix panel with events for activity complete and opened status (#247)
+SOCO-10286: Helix timeline integration (#246)
+SOCO-10364: Added a scenario for the Onboarding experience (#250)
+SOCO-10299 : Adding AT&T and default onboarding activities to Helix (#244)
+transform content to use only https (#245)
+Soco 000 version bump (#243)
+SOCO-9658: added scripts to package.json to run regression jobs in parallel (#240)
+SOCO-10197: removed solutoHelix prefix from selectors (#235)
+SOCO-10151: ux debt (#241)
+SOCO-9854: Helix activities (#238)
+SOCO-000 Use the plus circle moron :) (#239)
+SOCO-000: version bump from 2.3.0 to 2.3.1 (#237)
+EPOC image url rewrite ROLLBACK (#236)
+SOCO-10205 restrict .item class to .tabular (#234)
+SOCO-10173: updated Scenario: Technician can add and remove tabs to accomodate for the close tab button only being visible on hover (#233)
+SOCO-10039: paramterize steps for e2e scenarios (#230)
+SOCO-10106 application blur and focus events (#232)
+SOCO-000: version bump from 2.2.1 to 2.3.0 (#231)
+Soco 10072 sherlock error (#229)
+tabs = UX design guide (#228)
+send state without content (#225)
+SOCO-9671: enabled ability to execute helix e2e tests against adhoc and customurls. (#222)
+SOCO-000: version bump from 2.2.0 to 2.2.1 (#227)
+Soco 000 adjustments (#224)
+SOCO-9621 transform global epoc image links (#223)
+SOCO-000: minor updates for e2e test suite (#221)
+SOCO-000: fixed merge conflicts (#220)
+SOCO-9665: scenario to cover tab functionality (#218)
+SOCO-000: version bump from 2.0.2 to 2.1.0 (#219)
+remove tabUpdatedEvent (#217)
+SOCO-9950 and SOCO-9982 UX style updates (#216)
+Soco 9544 update helix test scenarios (#215)
+SOCO-000: version bump form 2.0.1 to 2.0.2 (#214)
+SOCO-9949 show tabCount on all messages (#213)
+set reason to title when in article feedback (#211)
+add location to mixpanel metadata (#212)
+SOCO-9900 created new event to help track article duration (#210)
+SOCO-9908 - fix bookmarks for multi-skilled environments (#209)
+updateIframe in test (#208)
+fixes non slash route (#205)
+refocus searchfield on mount if standalone OR if !!currentRefinement (#207)
+update linking (#206)
+Dynamically proxy to local or dev soco based on availability (#204)
+SOCO-8488 - Feature/tab refactor (#199)
+map individual eu carries to all eu carriers (#203)
+Add tchibo to "eu" common alias (#202)
+Add ukee to carrier map (#201)
+SOCO-9652: Update deploy script to rearrange params (#200)
+SOCO-000 - add .node-version and .nvmrc files (#198)
+SOCO-000: updated dev url (#197)
+Soco 9299 qtest scripts for helix (#196)
+update version (#195)
+Fix issue with two separate cases of client name in events (#194)
+SOCO-9301: functionality to run e2e locally (#189)
+SOCO-000-version-bump (#193)
+Updated analytics tests and added missing method signature params (#192)
+use the snippet attribute from snippetResult if present (#190)
+SOCO-000 - update local dev proxying to reflect soco alb changes (#191)
+SOCO-000: version bump from 1.13.0 to 1.14.0 (#188)
+Soco 9376 carrier issues (#187)
+SOCO-8999 - fix broken tests (#186)
+SOCO-9280: added cucumber-parallel (#185)
+Soco 8999 workereventbus redux integration (#183)
+SOCO-9274: added documentation for running e2e tests (#184)
+Soco-9124: choose testing environment for helix (#180)
+SOCO-000: version bump from 1.12.0 to 1.13.0 (#181)
+values in carrier map can be CSV format (#182)
+svg and images handled slightly different (#179)
+alias verizon soco config to vzw (#178)
+update universal carrier name naff -> Naff (#177)
+Soco 009 fix bookmarks (#176)
+SOCO-000: version bump from 1.11.1 to 1.12.0 (#175)
+handle all anchor tags (#174)
+update pathbuilder to not require carrier parameter rather assign it from routeStateReducer (#173)
+SOCO-9133 add event to track zero results (#172)
+use redux state for currentCarrier and currentClient (#171)
+SOCO-000: version bump from 1.10.0 to 1.11.0 (#169)
+SOCO-9103 support both new and old url formats (#170)
+Fix overly specific type preventing links from dragging and dropping correctly (#167)
+SOCO-000 - use cp --recursive, not sync for s3 deploy (#168)
+SOCO-000: updated e2e test scenario. (#165)
+Fixed redux action missing dispatch wrapper and added new mixpanel actions to track aspects of bookmark reordering (#166)
+Reorder bookmarks (#163)
+move function to remove warning (#164)
+SOCO-000: added timeout (#161)
+Revert "Load eventbusworker.js from github npm module (#145)" (#162)
+Load eventbusworker.js from github npm module (#145)
+override img values in requirements to prevent resizing; (#159)
+SOCO-000: version bump from 1.9.1 to 1.10.0 (#158)
+fixed lint issues (#160)
+Selectively show or hide Helix logo based on iframe detection (#157)
+Soco 8301 initial e2e framework setup (#150)
+SOCO-000-version bum from 1.9.0 to 1.9.1 (#155)
+updated webpack version and plugins (#156)
+check empty router (#154)
+Soco 8423 url scheme (#151)
+set images within the requirements section to width and height auto, added space to bottom of steps (#153)
+SOCO-0000: version bump from 1.8.0 to 1.9.0 (#152)
+remove title for remote content the title will be part of the content (#148)
+SOCO-0000: version bump from 1.7.1 to 1.8.0 (#149)
+Remove unecessary newlines after block to fix exlint failure, correct tests for tech profile data (#147)
+Soco 8643 use add to profile (#146)
+checkin test fix (#144)
+Soco content styles (#143)
+custom styles for alert layout (#141)
+Now that the required naming feature has been merged and deployed into the shared-worker-loader release, let's use npmjs to load it rather than Tougas's git repository (#140)
+Graceful fallback for when Dapulse is unresponsive (#139)
+Soco 8383 content type styles (#136)
+SOCO-000: version bump from 1.7.0 to 1.7.1 (#138)
+Remove our last usage of lodash from Content.js and purge it from package.json (#135)
+Soco-000: version bump from 1.6.1 to 1.7.0 (#134)
+added the data required formats to all events (#133)
+Changed alerts list padding to match recent articles format (#132)
+update moment deprecation warning (#130)
+SOCO-000 fix hot reload by disabling ModuleConcatenationPlugin in dev (#131)
+alert widget updated for time order and most recent uses elapsedTime (#129)
+Soco 8165 selectors refactor (#127)
+Changed "Tech coach" to "Coach" in feedback form (#128)
+SOCO-000 - Avoid republishing event to the sender (#126)
+Soco 000 version bump (#125)
+SOCO-000 - add replayLast capability to sharedworker eventbus (#124)
+Alerts and Feedback header icons now trigger Mixpanel actions correctly (#122)
+Transfer list no longer shows modified date in most recent articles (#123)
+iframe remote content view (#118)
+Relco_Alerts_View_All is fired correctly (#120)
+SOCO-000-fix-content-toolbar-sticky: (#119)
+changed most viewed articles to most recent (#117)
+externalize header and toolbar (#116)
+added graceful fallback for archived bookmarks (#114)
+SOCO-0000: version bump from 1.5.0 to 1.6.0 (#111)
+fix the scroll issue on detail pane when content is scrolled (#113)
+updated flow to latest 0.48.0 (#112)
+SOCO-0000: version bump from 1.4.0 to 1.5.0 (#110)
+SOCO-7965 We want to add our current search text as a property to all mixpanel events (#108)
+Hooked up all mixpanel events to SoCo analytics service (#106)
+Misc eventing (#107)
+SOCO-7849 We want to track events in Helix when the supportSessionId … (#105)
+update to version 1.4.0 (#104)
+Rebased and merged with other changes (#103)
+Event changes and new events (#102)
+Soco 7871 client name change (#101)
+SOCO-7216 - ensure that knowledge alerts arent bookmarkable (#100)
+SOCO-0000: version bump 1.2.0 to 1.3.0 (#99)
+[WIP] - Soco 7216 - bookmark articles (#90)
+SOCO-0000: updated version number from 1.1.0 to 1.2.0 (#98)
+use relative path for img link this would allow local testing with linked images (#97)
+resolve lint error (#96)
+Added event so we can track clicks of Load More button. We believe that is a sign of non-relevant content (#95)
+Fix failing test after carrier change (#94)
+Move em styling out of global scope to ResultCard scope to fix content impact (#93)
+SOCO-7748 add applicationSessionId UUID (#92)
+adding back few events and set carrier attribute for mixpanel (#91)
+smbdirect added to universal (#89)
+Soco 7731 show your assets (#88)
+adding mixpanel dispatcher to middleware (#87)
+SOCO-000: Remove Intercom (#86)
+Replace react-router with redux-little-router (#83)
+SOCO-000: Fix missing Id's (#85)
+SOCO-7697 - submit dapulse api data as url-encoded form data (#84)
+Soco 7377 refactor mixpanel from context into redux store and actions (#79)
+SOCO-0000: Version bump from 1.0.0 t0 1.1.0 (#82)
+SOCO-7606 - send credentials with requests to dapulse api (to appease siteminder) (#81)
+SOCO-7606 - reverse proxy dapulse api through our infrastructure (#80)
+Soco 000 mixpanel event logo (#77)
+SOCO: 7214 list view (#75)
+SOCO-7563 - remove asseted shortcodes (#76)
+SOCO-7522: Limit searches from most viewed list (#73)
+SOCO-000 - update eslint to require semicolon after type declarations (#74)
+SOCO-7475 - update dockerfile to support base path parameter (#72)
+SOCO-000: Fix Trial Mixpanel (#71)
+SOCO-6748: Feedback Clear On Submit (#66)
+SOCO-000: Fix unable to delete (#70)
+SOCO-000: Small Tweaks (#69)
+updated configs for trial and universal (#68)
+updated logo (#67)
+SOCO-7271 fix undefined search event (#65)
+Soco 6748 - feedback forms (#63)
+using [carrier].host.com instead of :carrier param from router as mixpanel project (#64)
+only run npm version when build_number is provided else use value in package.json (#62)
+SOCO-000 - add support for pseudo adhoc environments (#61)
+updated version number (#60)
+fix tests (#58)
+index change in application config and handle the link cases better within content detail (#57)
+SOCO-000: Fix mixpanel vzw prod (#56)
+SOCO-6099: Dapulse Feedback Middleware (#55)
+mapped avaliable carriers in carrier path and mixpanel (#54)
+Soco 7069 phat articles (#53)
+change to search api key; (#52)
+Soco 6771 alert detail (#51)
+update production url (#50)
+most viewed panel on dashboard (#49)
+i18n localization added (#48)
+alert events added (#47)
+using % to fix browser resize issue (#46)
+Soco 6769 knowledge component (#45)
+SOCO-000 - bump coverage thresholds to the current values (#44)
+dashboard view when empty search (#43)
+SOCO-000 - fix visual defect introduced by removing the empty div in the header (#42)
+SOCO-000 - Fix the unit test that I b0rked in #39 (#41)
+SOCO-000 - fix lint error caused by #38 (#40)
+SOCO-000 - cleanup unused "customerProfileEvent" listener (#39)
+update start event to work on session state change (#38)
+update eslint version (#37)
+intercom added to app.js (#36)
+SOCO-6528: Updated content component render reference to drawer variable to fix linter error (#35)
+SOCO-6528: Drawer Scroll Fix (#33)
+pass carrier to mixpanel and set mixpanel in context within App (#32)
+SOCO-000 fix proxy bypass (#34)
+Soco 6535 search carrier filter (#31)
+Soco 6626 browser routes (#30)
+Merge pull request #29 from jefftougas/SOCO-000_fix_deep_linking
+SOCO-000 - fix deep linking
+Merge pull request #28 from jefftougas/SOCO-000_bump_eslint_version
+SOCO-000 - bump eslint to latest to fix the build
+Merge pull request #26 from imoby/SOCO-6529-add-redux
+SOCO-6529: Add Redux. Updated package json dependency for dev tools
+SOCO-6529: Add Redux
+Merge branch 'master' of github.com:SolutoNashville/connect-content into SOCO-6529-add-redux
+SOCO-6529: Add Redux
+Merge pull request #27 from jefftougas/SOCO-6175_mixpanel_events_for_clicks
+SOCO-6175 - fix trailing whitespace breaking the build
+SOCO-6175 - send mixpanel events for link clicks within articles
+SOCO-6529: Redux ✅  Added action types constants file ✅  Updated index.js action to include a default export temporarly ✅  Updated routes app with connect to new name passed into route components ✅  Updated searchresults linter warnings for trailing spaces
+SOCO-6529: Redux - Added redux dev tool enhancer to store
+SOCO-6529: Redux - Removed router.js file, somehow didnt get deleted as part of the merge conflict fixes from previous commit.
+SOCO-6529: Redux ✅ Moved toProps methods and connect of app from router to routes file. Moved provider and store into index.js file
+SOCO-6529: Redux - Fixed merge conflicts from upstream
+SOCO-6529 - Initial wip commit of adding redux - Changed support session id to store in redux store
+Merge pull request #24 from argvader/SOCO-808-asset-fix
+Merge pull request #25 from imoby/SOCO-000-fix-test-theme
+Merge pull request #23 from imoby/SOCO-5385-unit-tests-search-results
+SOCO-000: Mocked import of the css module for autosuggest to no longer throw warning in console
+image fix resolved and added some tests
+SOCO-5385 💡 Added unit tests for searchresults 💡 Updated refine anon function for ontouchtap in searchresult to call method (easier for testing)
+Routes flow props
+filling in tests
+Merge pull request #22 from argvader/SOCO-001-prod-img-hack
+Merge pull request #21 from argvader/SOCO-000-lint-clean
+set img path to prod for release will set var for it next
+resolving lint issues in tests
+remove lint ignore
+Merge pull request #20 from jefftougas/SOCO-000_remove_base_tag
+SOCO-000 - remove the unneeded base tag
+Merge pull request #19 from argvader/SOCO-6432-error-handling
+Error Handling
+Merge pull request #17 from imoby/soco-5385-autosuggest
+SOCO-5385: Autosuggest - Added mixpanel events for autosuggest events within SearchField
+SOCO-5385: Autosuggest - Added prop handleArticleSelected to header test - Removed flow comment to ignore in header
+SOCO-5385: Fixed images having full width and changed to 50% of width of drawer
+Merge branch 'master' of github.com:SolutoNashville/connect-content into soco-5385-autosuggest
+Merge pull request #18 from jefftougas/SOCO-6310_x_article_linking
+SOCO-6310 - Enable cross article linking and deep linking
+SOCO-5385: autosuggest - Removed launch kana component - Added unit tests for searchbox and searchfield - Updated feedback test and header for incorrections
+SOCO-5385: - Added clear mixpanel event when query is cleared through backspace or button.
+SOCO-5385: Fixed flow type errors
+Changed searchbox to be a react component instead of stateless, moved state and prop update from searchfield to searchbox and passed input down to searchfield
+SOCO-5385: Fixed merge conflicts
+SOCO-5385: Removed button for search
+Merge pull request #16 from imoby/soco-6374-css-modules
+SOCO-6374: Updated css spacing to only only not include break point when a css block has one property before a child block
+SOCO-6374: Updated styling to have spacing for readability
+SOCO-5385: Added styling changes for the searchfield
+SOCO-5385: Fixed package dependencies
+soco-5385: fixed flow errors in headerjs
+soco-5385: fixed flow errors in headerjs
+soco-5385: moved theme to theme scss file
+soco-5385: styled the header components to be responsive and hide in smaller resoutions so only search displays
+Merge branch 'master' of github.com:SolutoNashville/connect-content into soco-5385-autosuggest
+Merge branch 'master' of github.com:SolutoNashville/connect-content into soco-6374-css-modules
+soco-6374: added css modules to components
+Merge pull request #15 from jefftougas/SOCO-6370_fix_broken_coverage_check
+Merge pull request #14 from argvader/SOCO-6375-README
+soco-5385: added new autosuggest to searchbox component, passed down handlearticleselected to search box through props
+SOCO-6370 - add an initial test for mixpanelEvents
+initial rework
+Merge pull request #13 from jefftougas/SOCO-000_run_tests_with_coverage_flag
+SOCO-000 - go ahead and use coverage and set thresholds to baseline values
+Merge pull request #12 from argvader/SOCO-007-Start-Event
+added start event to application
+Merge pull request #11 from jefftougas/SOCO-000_fix_and_enforce_linter
+SOCO-000 - fix the outstanding linter errors and enforce passing lint result for the build
+Merge pull request #10 from jefftougas/SOCO-000_fix_flow_docker_install
+Add node_modules and build to .dockerignore
+SOCO-000 - cleanup of reference to node_modules bin files
+SOCO-000 - add ocaml and libelf-dev to apt-get install list in support of flow
+Merge pull request #6 from jefftougas/SOCO-5854_add_flow
+Merge pull request #8 from argvader/fix-link
+fix broken links
+Merge pull request #7 from imoby/SOCO-000-fix-mixpanel-token-vzw
+SOCO-000: updated  app config mixpanel token for prod vzw instead of prod sprint
+SOCO-5854 - add flow type checking
+Merge branch 'master' of github.com:SolutoNashville/connect-content
+Merge pull request #5 from imoby/SOCO-6286-connect-feedback
+SOCO-6286: Fixed linter errors
+SOCO-6286: Undid accidental move of not found component
+SOCO-6286: Undid ui changes for testing placeholder of search
+Merge branch 'master' of github.com:SolutoNashville/connect-content into SOCO-6286-connect-feedback
+SOCO-6286: Added unit tests for feedback
+Merge pull request #4 from jefftougas/SOCO-000_fix_extract_text_plugin
+SOCO-000 - update extract-text-webpack-plugin to version compatible with webpack 2.x
+SOCO-6286: Fixed merge conflicts
+SOCO-6286: Styling changes for the textarea on feedback, converted the span to button for launch kana
+Merge pull request #2 from argvader/SOCO-6194-Branding
+updates for new result model
+counting results
+highlight
+resize drawer
+SOCO-6287: Removed multiple calls of mixpanel track method
+SOCO-6287: added launch in kana component and moved to header, added css for kana launch component, added mixpanel tracking to send event on click of button
+search field styled
+parked styles into orig.css for now
+scss working and started header
+SOCO-6286: Added css updates to feedback modal
+Merge pull request #3 from argvader/SOCO-6195-Session-Sync
+updates for new result model
+counting results
+SOCO-6286: Added feedback capability to mixpanel for connect content, updated launchKana styling of button
+Merge branch 'master' of github.com:SolutoNashville/connect-content
+highlight
+resize drawer
+SOCO-000 - fix broken build
+SOCO-6287: Removed multiple calls of mixpanel track method
+SOCO-6287: added launch in kana component and moved to header, added css for kana launch component, added mixpanel tracking to send event on click of button
+Merge pull request #1 from jefftougas/SOCO-000_fix_broken_build
+search field styled
+SOCO-000 - fix broken build
+SOCO-6195: Removed operating system from connect content
+parked styles into orig.css for now
+scss working and started header
+better sync event
+session passing
+session sync
+Merge pull request #29 in STSHPRD/connect-content from ~CWR.JEFFREY.TOUGAS/connect-content:SOCO-5896-relocate-sharedworker-source to master
+SOCO-5896 - get tests working now that the eventBusWorker code is in this repo
+SOCO-5896 - break worker up into multiple files
+SOCO-5896 - shared worker source in this repo + webpack support for it
+Merge pull request #28 in STSHPRD/connect-content from ~CWR.JEFFREY.TOUGAS/connect-content:SOCO-5896-bidirectional-soco-connect-content-cleanup to master
+SOCO-5896 - combine two related tests into one per muhameds suggestion
+SOCO-5896 - clean up call reason parsing
+SOCO-5896 - various linter fixes
+SOCO-5896 - adding tests for bidirectional communication stuff
+SOCO-5896 - refactor sharedworker code into a higher order component
+Merge pull request #26 in STSHPRD/connect-content from ~GARY.PAIGE/connect-content:SOCO-001-Styles to master
+Merge pull request #27 in STSHPRD/connect-content from ~CWR.JEFFREY.TOUGAS/connect-content:messaging to master
+SOCO-5896 - dont default to ios
+SOCO-5896 connect-content initial messaging implementation
+responsive styles added, fix clicking off drawer, and made images smaller
+Merge pull request #25 in STSHPRD/connect-content from ~GARY.PAIGE/connect-content:SOCO-5844-ADHOC to master
+update url for adhoc
+Merge pull request #24 in STSHPRD/connect-content from ~GARY.PAIGE/connect-content:SOCO-5844-PATCH to master
+update case on filename
+Merge pull request #23 in STSHPRD/connect-content from ~GARY.PAIGE/connect-content:SOCO-5844-Events to master
+code cleanup from PR comments
+mixpanel environment switch
+mixpanel events added to application and sessionId set in context
+Merge pull request #22 in STSHPRD/connect-content from ~CWR.JEFFREY.TOUGAS/connect-content:SOCO-000_fix_deploy_script to master
+SOCO-000 - actually refer to the $environment variable rather than the argvar directly
+SOCO-000 - update deploy script to not require aws profile
+Merge pull request #21 in STSHPRD/connect-content from ~MUHAMED.BRIFKANI/connect-content:SOCO-5843-sessionid-to-content to master
+SOCO-5843: Fixed indentation on props app.js
+SOCO-5843: Updated failing tests
+SOCO-5843: Updated formatting of props in app.js
+SOCO-5843: Removed createUrl method inside of app.js since instantSearch no longer required as property in component, added supportSessionId to the router as optional in indexjs
+Merge pull request #20 in STSHPRD/connect-content from ~MUHAMED.BRIFKANI/connect-content:SOCO-5836-eliminate-linter-issues to master
+SOCO-5836: Fixed merge conflicts
+Merge pull request #18 in STSHPRD/connect-content from ~GARY.PAIGE/connect-content:SOCO-5838-Update-InstantSearch to master
+Merge pull request #19 in STSHPRD/connect-content from ~GARY.PAIGE/connect-content:SOCO-5837-Coverage to master
+SOCO-5836: removed unused components, updated linter warnings and errors on existing components
+SOCO-5836: removed unused components, updated linter warnings and errors on existing components
+add coverage report method
+update version of instantSearch and remove race condition of updates
+Merge pull request #16 in STSHPRD/connect-content from ~GARY.PAIGE/connect-content:SOCO-5598-Remove-Selection to master
+resolve merge conflicts
+style updates
+Merge pull request #11 in STSHPRD/connect-content from ~GARY.PAIGE/connect-content:SOCO-5764-Routing to master
+balanced the card summary style
+balanced the card summary style
+added highlighter container class to carttext - tempory fix
+changed color of drawer title to match soco
+reduced padding in gutter surrounding cards
+added auto grid sizing to cards
+added highlighter style
+Merge pull request #12 in STSHPRD/connect-content from ~MUHAMED.BRIFKANI/connect-content:SOCO-5389-mixpanel-integration to master
+SOCO-5389: Updated formatting of index.js
+SOCO-5389: fixed merge conflicts
+Merge pull request #13 in STSHPRD/connect-content from ~GARY.PAIGE/connect-content:SOCO-5598-Remove-Selection to master
+styled search box based on design mock
+SOCO-5389: Moved mixpanel token to applicationConfig
+Merge branch 'master' of ssh://nedappjira001.int.asurion.com:7999/stshprd/connect-content into SOCO-5389-mixpanel-integration
+Merge pull request #14 in STSHPRD/connect-content from ~CWR.JEFFREY.TOUGAS/connect-content:SOCO-5597_tweaks_for_soco_integration to master
+SOCO-5597 - minor tweaks in support of soco integration
+remove carrier selector
+not found page
+Merge pull request #11 in STSHPRD/connect-content from ~GARY.PAIGE/connect-content:SOCO-5764-Routing to master
+styled card summary slightly
+styled card summary slightly
+added a fixed header in drawer so that article title is always readable.
+bug fix: scroll jank caused by the position:absolute invisible scrollpane container
+minor: changed height of iframe for prototyping
+SOCO-5389: Fixed merge conflicts
+SOCO-5389: Updated package json react mixpanel required version for dependency to set version
+SOCO-5389: Added prop types
+SOCO-5389: Added unit tests for results cards
+Merge pull request #11 in STSHPRD/connect-content from ~GARY.PAIGE/connect-content:SOCO-5764-Routing to master
+Merge pull request #10 in STSHPRD/connect-content from ~GARY.PAIGE/connect-content:SOCO-5599-PATCH to master
+SOCO-5389: Minor lint fixes
+SOCO0-5389: Fixed merge conflicts
+updated routing with standalone route
+fix runtime dependencies and only allow patch updates on dev. Fixes search bug too
+SOCO-5389: initial commit
+Merge pull request #8 in STSHPRD/connect-content from ~GARY.PAIGE/connect-content:SOCO-5599-Carrier-Data to master
+Merge pull request #4 in STSHPRD/connect-content from ~ALAN.LAIDLAW/connect-content:master to master
+jeff adds iframe to webpack
+updated eslint and removed the __tests__ folders
+testing on the way!
+Merge pull request #6 in STSHPRD/connect-content from ~CWR.JEFFREY.TOUGAS/connect-content:SOCO-5381_dockerized_build_scripts to master
+Merging in latest from upstream (STSHPRD/connect-content:refs/heads/master)
+SOCO-5381 - use the less magical COPY instead of ADD
+SOCO-5381 - add build / deploy script and setup Dockerfile to execute build
+carrier path added to url
+Merge pull request #7 in STSHPRD/connect-content from ~MUHAMED.BRIFKANI/connect-content:SOCO-5600-remove-side-rail to master
+SOCO-5600: Used template literal for resizerStyle inside of Content component
+SOCO-5600: Added new rules to linter, removed siderail from content and fixed linter errors
+Merge pull request #3 in STSHPRD/connect-content from ~GARY.PAIGE/connect-content:SOCO-5587-Build-Tools to master
+set test src directory to rootDir/src
+deps missed. My Bad
+updated based on comments. still need to add watch and env flags
+added padding so that article title in modal is readable. will need to figure out another way to pull in this content that does not require DangerouslySetInnerHTML - cannot customize content until this has been figured out.
+iframe route for ux testing. includes rough dimensions of soco container
+jest tests working
+webpack enabled
+Merge pull request #2 in STSHPRD/connect-content from ~GARY.PAIGE/connect-content:SOCO-5613-Refactor-Codebase to master
+SOCO-5613 Initial re-swizzling
+Merge pull request #1 in STSHPRD/connect-content from SOCO-5386_render_content_from_algolia to master
+Render content loaded from Algolia instead of WordPress
+add tech notifications + storybook
+draggable content drawer
+sort alphabetically
+render html properly
+use cursor pointer for cards
+fix left content well width
+Merge remote-tracking branch 'origin/master' into browse-categories
+Merge remote-tracking branch 'origin/browse-categories' into browse-categories
+re-wire up article selection
+additional styling
+extracted card component to put a hover state on it. also included the default page work but it is not added to the app currently
+move carrier filter to appbar as a dropdown selector
+reduce searchbox width some
+Merge remote-tracking branch 'origin/card-styling'
+searchbox styling
+simple merge conflict
+further styling
+more styles
+added toggles and background color
+fixed merge maybe
+Merge remote-tracking branch 'origin/card-styling' into master-temp
+starting to add custom styles
+style header / close button of content drawer
+load content detail in iframe from permalink for now
+missing } and "this."
+adding custom styling w muitheme. hit a snag in content/index while updating class to component
+Merge remote-tracking branch 'origin/material-ui'
+moved all elements but RemoveFilter to their own directory. this is useful when app gets larger. still need to set up isMobile at a more more global level
+minor update to README to test bitbucket->jenkins hook
+minor update to README to test bitbucket->jenkins hook
+add Dockerfile that can run the build and tests
+use locally installed react-scripts
+add s3 sync based deploy script
+initial commit

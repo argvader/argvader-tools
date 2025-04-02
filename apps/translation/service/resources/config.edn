@@ -1,0 +1,99 @@
+{
+  :secrets #include "secrets.edn"
+  :service {
+            :name "translation-api"
+            :version "0.1.0"
+            :domain "solutodev.com"}
+
+  :cluster-name #profile
+    {:prod "argvader-tools"
+     :dev  "argvader-tools"}
+
+  :creds #profile
+    {:prod {:profile "asurion-soluto-nonprod.appadmins"
+            :endpoint "us-east-1"}
+     :dev  {:profile "asurion-soluto-nonprod.dev"
+            :endpoint "us-east-1"}}
+
+  :account #profile
+    {:prod "245511257894"
+     :dev "245511257894"}
+
+  :zone-id #profile
+    {:prod "Z1VK003NJDAJYI"
+     :dev "Z1VK003NJDAJYI"}
+
+  :vpc-id #profile
+    {:prod "vpc-a0dd74d9"
+     :dev "vpc-a0dd74d9"}
+
+  :tags #profile
+    {:prod {"PLATFORM" "SONASH-SHARED"
+            "CLIENT" "NONE"
+            "BUSINESS_UNIT" "PSS"
+            "BUSINESS_REGION" "NORTHAMERICA"}
+     :dev {"PLATFORM" "SONASH-SHARED"
+           "CLIENT" "NONE"
+           "BUSINESS_UNIT" "PSS"
+           "BUSINESS_REGION" "NORTHAMERICA"}}
+
+  :registry-namespace #profile
+    {:prod "ns-33rrqdvw6phkna4x"
+     :dev "ns-33rrqdvw6phkna4x"}
+
+
+  :ecs-task-definition #profile
+    {:prod {:executionRoleArn "arn:aws:iam::245511257894:role/ecsTaskExecutionRole"
+            :container-definitions [{:log-configuration {:log-driver "Awslogs"
+                                                         :options {
+                                                                   "awslogs-group" "/ecs/translation-api"
+                                                                   "awslogs-region" "us-east-1"
+                                                                   "awslogs-stream-prefix" "ecs"}}
+                                      :port-mappings [{:container-port 8888, :host-port 8888}]
+                                      :cpu 0}]
+            :memory 512
+            :cpu 256
+            :taskRoleArn "arn:aws:iam::245511257894:role/sonash-cluster-pgbouncer"
+            :requires-compatibilities ["FARGATE"]
+            :compatibilities ["EC2" "FARGATE"]}
+     :dev {:executionRoleArn "arn:aws:iam::245511257894:role/ecsTaskExecutionRole"
+             :container-definitions [{:log-configuration {:log-driver "Awslogs"
+                                                          :options {
+                                                                    "awslogs-group" "/ecs/translation-api"
+                                                                    "awslogs-region" "us-east-1"
+                                                                    "awslogs-stream-prefix" "ecs"}}
+                                       :port-mappings [{:container-port 8888, :host-port 8888}]
+                                       :cpu 0}]
+             :memory 512
+             :cpu 256
+             :taskRoleArn "arn:aws:iam::245511257894:role/sonash-cluster-pgbouncer"
+             :requires-compatibilities ["FARGATE"]
+             :compatibilities ["EC2" "FARGATE"]}}
+
+  :load-balancer #profile
+    {:prod {:name "argvader-tools-alb"
+            :security-groups ["sg-0cd57fd9b309adb3b"]
+            :type "application"
+            :ip-address-type "ipv4"
+            :scheme "internal"
+            :subnet-mappings [{:subnet-id "subnet-b82529dd"}
+                              {:subnet-id "subnet-04f54028"}
+                              {:subnet-id "subnet-b5e686fd"}]
+            :network-interface {:subnet-id "subnet-04f54028"
+                                :security-group "ConAir-dev-alb-sg"}}
+     :dev { :name "argvader-tools-alb"
+            :security-groups ["sg-0cd57fd9b309adb3b"]
+            :type "application"
+            :ip-address-type "ipv4"
+            :scheme "internal"
+            :subnet-mappings [{:subnet-id "subnet-b82529dd"}
+                              {:subnet-id "subnet-04f54028"}
+                              {:subnet-id "subnet-b5e686fd"}]
+            :network-interface {:subnet-id "subnet-04f54028"
+                                :security-group "ConAir-dev-alb-sg"}}}
+
+
+
+  :allowed-origins #profile
+   {:dev ["http://localhost:3000" "*"]
+    :prod ["https://translation.solutodev.com" "*"]}}

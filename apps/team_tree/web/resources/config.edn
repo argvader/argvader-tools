@@ -1,0 +1,13 @@
+{
+ :graphapi #profile {
+                     :dev  "http://localhost:8888/graphql"
+                     :prod "https://team-tree-api.solutodev.com/graphql"}
+ :graphws  #profile {
+                     :dev  "ws://localhost:8888/graphql-ws"
+                     :prod "wss://team-tree-api.solutodev.com/graphql-ws"}
+
+ :creds #profile {
+                  :prod {:profile "asurion-soluto-nonprod.appadmins"
+                         :endpoint "us-east-1"}
+                  :dev  {:profile "asurion-soluto-nonprod.dev"
+                         :endpoint "us-east-1"}}}

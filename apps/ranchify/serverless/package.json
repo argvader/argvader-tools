@@ -1,0 +1,10 @@
+{
+  "name": "ranchify",
+  "version": "1.0.0",
+  "devDependencies": {
+    "serverless-offline": "^8.7.0"
+  },
+  "dependencies": {
+    "openai": "^3.2.1"
+  }
+}
