@@ -1,0 +1,3642 @@
+--79e6ad7--2018-01-12--Gary Paige
+1	1	package.json
+0	1	public/index.html
+53	18	src/components/ApplicationError/ApplicationError.js
+4	2	src/components/ApplicationError/ApplicationError.scss
+15	2	src/components/ApplicationError/ApplicationError.test.js
+0	1	src/components/Content/ContentDetail/ContentFeatures/BookmarkFeature.js
+0	2	src/components/Header/Header.js
+0	1	src/components/Header/Header.test.js
+48	13	src/components/NotFound/NotFound.js
+4	2	src/components/NotFound/NotFound.scss
+15	2	src/components/NotFound/NotFound.test.js
+8	1	src/reducers/routeStateReducer.js
+16	14	src/reducers/routeStateReducer.test.js
+
+--b51bf57--2018-01-12--pijus-kadisius
+1	1	package.json
+
+--438c7c5--2018-01-11--Gary Paige
+1	1	package.json
+2	3	src/components/Search/Search.js
+0	1	src/components/SearchBox/SearchBox.js
+10	10	src/components/SearchBox/SearchField.js
+1	0	src/components/SearchBox/SearchField.test.js
+2	2	src/constants/actionNames.js
+1	1	src/middleware/searchMiddleware.js
+4	4	src/middleware/searchMiddleware.test.js
+11	2	src/reducers/helixTabReducer.js
+2	0	src/selectors/analyticStateSelector.js
+1	1	src/selectors/tabSelector.js
+
+--9e64440--2018-01-10--pijus-kadisius
+1	1	src/clients/gapiClient.js
+
+--96941f7--2018-01-10--pijus-kadisius
+1	0	package.json
+15	7	test/features/pages/soluto-helix-page.js
+28	32	test/features/soluto-helix.feature
+3	0	test/features/step_definitions/soluto-helix.js
+3	3	test/features/support/environmentConfig.js
+
+--1075643--2018-01-10--Gary Paige
+1	1	public/index.html
+15	11	src/clients/gapiClient.js
+
+--35ec438--2018-01-04--Gary Paige
+1	1	src/components/HelixTabs/HelixTabs.js
+
+--e2c3035--2018-01-04--Ginu Philip Simon
+14	0	src/actions/activitiesActions.js
+16	0	src/actions/activitiesActions.test.js
+3	1	src/components/Activities/Activities.js
+46	0	src/components/Activities/Activities.scss
+23	4	src/components/Activities/Activity.js
+157	0	src/components/Activities/OnExDeviceInfo.js
+47	0	src/components/Activities/OnExDeviceInfo.test.js
+1	1	src/constants/Activities.js
+27	6	src/reducers/activityStatusReducers.js
+23	2	src/reducers/activityStatusReducers.test.js
+9	0	src/selectors/activitiesSelector.js
+15	1	src/selectors/activitiesSelector.test.js
+
+--7cb6e26--2018-01-04--Gary Paige
+2	2	src/App.js
+1	1	src/App.test.js
+1	1	src/components/Activities/Activities.js
+1	1	src/components/Activities/Activities.test.js
+2	2	src/components/Activities/Activity.js
+1	1	src/components/Activities/Activity.test.js
+1	1	src/components/ApplicationError/ApplicationError.js
+1	1	src/components/ApplicationError/ApplicationError.test.js
+2	2	src/components/BookmarkPanel/BookmarkPanel.js
+1	1	src/components/BookmarkPanel/BookmarkPanel.test.js
+1	1	src/components/Content/AlertList/AlertList.js
+1	1	src/components/Content/AlertList/AlertList.test.js
+1	1	src/components/Content/BookmarkList/BookmarkCard/BookmarkCard.js
+1	1	src/components/Content/BookmarkList/BookmarkCard/BookmarkCard.test.js
+1	1	src/components/Content/BookmarkList/BookmarkList.js
+1	1	src/components/Content/BookmarkList/BookmarkList.test.js
+1	1	src/components/Content/Content.js
+1	1	src/components/Content/Content.test.js
+2	2	src/components/Content/ContentDetail/ContentDetail.js
+3	3	src/components/Content/ContentDetail/ContentDetail.test.js
+3	3	src/components/Content/ContentDetail/ContentFeatures/BookmarkFeature.js
+1	1	src/components/Content/ContentDetail/ContentFeatures/BookmarkFeature.test.js
+1	1	src/components/Content/ContentDetail/ContentFeatures/FeedbackFeature.js
+1	1	src/components/Content/ContentDetail/ContentFeatures/FeedbackFeature.test.js
+4	4	src/components/Content/ContentDetail/ContentFeatures/ShareFeature.js
+1	1	src/components/Content/ContentDetail/ContentFeatures/ShareFeature.test.js
+1	1	src/components/Content/ContentHeader/ContentHeader.js
+1	1	src/components/Content/ContentHeader/ContentHeader.test.js
+1	1	src/components/Content/GeneralFeedback/GeneralFeedback.js
+1	1	src/components/Content/GeneralFeedback/GeneralFeedback.test.js
+1	1	src/components/Content/Landing/Landing.js
+1	1	src/components/Content/Landing/Landing.test.js
+1	1	src/components/ContentFlow/ContentDetail/ContentFlowDetail.js
+1	1	src/components/ContentFlow/ContentDetail/ContentFlowDetail.test.js
+2	2	src/components/ContentTabs/ContentTabs.js
+1	1	src/components/ContentTabs/ContentTabs.test.js
+1	1	src/components/Dashboard/Dashboard.js
+1	1	src/components/Dashboard/Dashboard.test.js
+2	2	src/components/Feedback/Feedback.js
+1	1	src/components/Feedback/Feedback.test.js
+2	2	src/components/Header/Header.js
+1	1	src/components/Header/Header.test.js
+2	2	src/components/Header/HeaderTasks.js
+1	1	src/components/Header/HeaderTasks.test.js
+4	4	src/components/HelixTabs/HelixSearchContainer.js
+1	1	src/components/HelixTabs/HelixSearchContainer.test.js
+3	3	src/components/HelixTabs/HelixTabs.js
+3	3	src/components/HelixTabs/HelixTabsContainer.js
+11	11	src/components/HelixTabs/HelixTabsContainer.test.js
+1	1	src/components/KnowledgeAlerts/KnowledgeAlert.js
+1	1	src/components/KnowledgeAlerts/KnowledgeAlert.test.js
+2	2	src/components/KnowledgeAlerts/KnowledgeAlerts.js
+1	1	src/components/KnowledgeAlerts/KnowledgeAlerts.test.js
+1	1	src/components/Loading/Loading.js
+1	1	src/components/Loading/Loading.test.js
+1	1	src/components/Login/Login.js
+1	1	src/components/Login/Login.test.js
+1	1	src/components/NotFound/NotFound.js
+1	1	src/components/NotFound/NotFound.test.js
+2	2	src/components/Search/Pagination.js
+1	1	src/components/Search/Pagination.test.js
+2	2	src/components/Search/ResultsCounter.js
+1	1	src/components/Search/ResultsCounter.test.js
+2	2	src/components/Search/Search.js
+1	1	src/components/Search/Search.test.js
+2	2	src/components/SearchBox/SearchBox.js
+1	1	src/components/SearchBox/SearchBox.test.js
+2	2	src/components/SearchBox/SearchField.js
+1	1	src/components/SearchBox/SearchField.test.js
+1	1	src/components/SearchResults/CardView/CardView.js
+1	1	src/components/SearchResults/CardView/CardView.test.js
+1	1	src/components/SearchResults/CardView/ResultCard/Footer.js
+1	1	src/components/SearchResults/CardView/ResultCard/Footer.test.js
+4	4	src/components/SearchResults/CardView/ResultCard/ResultCard.js
+1	1	src/components/SearchResults/CardView/ResultCard/ResultCard.test.js
+2	2	src/components/SearchResults/SearchResults.js
+1	1	src/components/SearchResults/SearchResults.test.js
+1	1	src/components/TabMenu/Tab.js
+1	1	src/components/TabMenu/Tab.test.js
+2	2	src/components/TabMenu/TabMenu.js
+1	1	src/components/TabMenu/TabMenu.test.js
+1	1	src/connectors/withSharedWorkerEventBus/__mocks__/connectSharedWorkerEventBus.js
+2	2	src/connectors/withSharedWorkerEventBus/connectSharedWorkerEventBus.js
+2	2	src/connectors/withSharedWorkerEventBus/connectSharedWorkerEventBus.test.js
+19	10	src/constants/contentTypes.js
+1	1	src/index.js
+1	1	src/littleroutes.js
+8	8	src/middleware/helixTabMiddleware.js
+2	2	src/reducers/helixTabReducer.js
+1	1	src/utils/form/semanticFormField.js
+
+--365fe5d--2018-01-04--Gary Paige
+1	1	package.json
+
+--1b35d13--2018-01-03--Gary Paige
+2	0	Dockerfile
+0	0	scripts/deploy.sh
+
+--8d72a1a--2018-01-03--Gary Paige
+3	2	env/features_dev.json
+9	0	env/features_public.json
+9	0	env/features_soco.json
+3	0	locales/en-US/common.json
+6	5	package.json
+0	80	public/iframe.html
+1	1	public/index.html
+7	5	scripts/deploy.sh
+1	1	src/App.js
+9	0	src/actions/searchActions.test.js
+11	2	src/clients/__mocks__/gapiClient.js
+4	2	src/clients/featureToggleClient.js
+0	1	src/clients/gapiClient.js
+38	0	src/clients/gapiClient.test.js
+26	12	src/clients/sharedWorkerEventBusClient.js
+31	0	src/clients/sharedWorkerEventBusClient.test.js
+0	25	src/components/ContentFlow/SearchResults/ContentFlowSearchResults.js
+0	39	src/components/ContentFlow/SearchResults/ContentFlowSearchResults.test.js
+0	2	src/components/ContentFlow/SearchResults/index.js
+5	2	src/components/HelixTabs/HelixTabs.js
+1	2	src/components/HelixTabs/HelixTabs.test.js
+12	35	src/components/Search/Pagination.js
+7	1	src/components/Search/Pagination.scss
+12	0	src/components/Search/Pagination.test.js
+2	2	src/components/Search/ResultsCounter.js
+32	68	src/components/Search/Search.js
+28	22	src/components/Search/Search.test.js
+2	1	src/components/SearchResults/CardView/CardView.js
+7	5	src/constants/actionNames.js
+20	17	src/littleroutes.js
+8	2	src/middleware/authenticationMiddleware.js
+4	1	src/middleware/authenticationMiddleware.test.js
+0	37	src/middleware/contentFlowMiddleware.js
+0	52	src/middleware/contentFlowMiddleware.test.js
+32	9	src/middleware/initializationMiddleware.js
+35	0	src/middleware/initializationMiddleware.test.js
+1	0	src/middleware/mixpanelMiddleware.test.js
+54	0	src/middleware/searchMiddleware.js
+61	0	src/middleware/searchMiddleware.test.js
+2	0	src/middleware/swebInMiddleware.js
+23	0	src/middleware/swebInMiddleware.test.js
+1	0	src/middleware/triageMiddleware.js
+3	0	src/middleware/triageMiddleware.test.js
+1	3	src/reducers/contentFlowReducer.js
+5	12	src/reducers/helixTabReducer.js
+2	0	src/reducers/helixTabReducer.test.js
+3	3	src/store.js
+5	1	src/utils/applicationConfig.js
+0	1	src/utils/eventBusWorker/__mocks__/index.js
+16	1	src/utils/eventBusWorker/index.js
+17	0	src/utils/eventBusWorker/onconnect.test.js
+33	0	src/utils/eventBusWorker/onmessage.test.js
+3	0	src/utils/pathBuilder.js
+24	0	src/utils/routeDecorators.js
+25	0	src/utils/routeDecorators.test.js
+20	1	tools/jest/jestSetup.js
+3	7	webpack.config.js
+
+--3bfef95--2018-01-03--Gary Paige
+9	0	env/features_dev.json
+2	2	locales/en-US/common.json
+4	0	locales/en-US/login.json
+0	15337	package-lock.json
+-	-	public/assets/images/LoaderTrans.gif
+62	0	public/assets/images/google-logo.svg
+-	-	public/assets/images/login-splash.jpg
+-	-	public/assets/images/logo.png
+2	0	public/index.html
+35	7	src/App.js
+30	3	src/App.test.js
+13	1	src/__mocks__/storeMock.js
+1	1	src/actions/activitiesActions.js
+16	0	src/actions/authenticationActions.js
+17	0	src/actions/authenticationActions.test.js
+12	0	src/actions/featureActions.js
+13	0	src/actions/featureActions.test.js
+1	1	src/actions/healthActions.js
+16	0	src/actions/helixStateActions.js
+19	0	src/actions/helixStateActions.test.js
+17	1	src/actions/mixpanelActions.js
+1	1	src/actions/searchActions.js
+3	3	src/actions/searchActions.test.js
+1	1	src/actions/sessionActions.test.js
+11	0	src/actions/sharedWorkerEventBusActions.test.js
+1	1	src/actions/tabActions.js
+4	4	src/actions/tabActions.test.js
+23	0	src/clients/__mocks__/gapiClient.js
+9	0	src/clients/featureToggleClient.js
+14	0	src/clients/featureToggleClient.test.js
+37	0	src/clients/gapiClient.js
+8	0	src/clients/gapiClient.test.js
+17	9	src/clients/mixpanelClient.js
+9	3	src/clients/mixpanelClient.test.js
+18	8	src/components/Content/ContentDetail/ContentDetail.js
+37	1	src/components/Content/ContentDetail/ContentDetail.test.js
+1	1	src/components/Content/ContentDetail/contentTransforms.js
+1	1	src/components/Content/ContentDetail/contentTransforms.test.js
+7	4	src/components/Dashboard/Dashboard.js
+2	0	src/components/Dashboard/Dashboard.scss
+11	4	src/components/Dashboard/Dashboard.test.js
+1	1	src/components/Header/Header.scss
+13	10	src/components/Header/HeaderTasks.js
+10	1	src/components/Header/HeaderTasks.test.js
+0	1	src/components/KnowledgeAlerts/KnowledgeAlerts.scss
+18	0	src/components/Loading/Loading.js
+25	0	src/components/Loading/Loading.scss
+11	0	src/components/Loading/Loading.test.js
+2	0	src/components/Loading/index.js
+45	0	src/components/Login/Login.js
+90	0	src/components/Login/Login.scss
+25	0	src/components/Login/Login.test.js
+2	0	src/components/Login/index.js
+3	3	src/components/NotFound/NotFound.scss
+5	6	src/components/SearchBox/SearchBox.js
+21	5	src/components/SearchBox/SearchBox.scss
+10	26	src/components/SearchBox/SearchField.js
+46	0	src/constants/actionNames.js
+0	32	src/constants/actionTypes.js
+12	13	src/littleroutes.js
+19	14	src/middleware/analyticsMiddleware.js
+12	0	src/middleware/analyticsMiddleware.test.js
+70	0	src/middleware/authenticationMiddleware.js
+130	0	src/middleware/authenticationMiddleware.test.js
+1	1	src/middleware/contentFlowMiddleware.js
+3	1	src/middleware/contentTabsMiddleware.js
+21	0	src/middleware/featureToggleMiddleware.js
+43	0	src/middleware/featureToggleMiddleware.test.js
+4	2	src/middleware/helixTabMiddleware.js
+1	1	src/middleware/helixTabMiddleware.test.js
+34	0	src/middleware/initializationMiddleware.js
+35	17	src/middleware/mixpanelMiddleware.js
+88	43	src/middleware/mixpanelMiddleware.test.js
+3	1	src/middleware/supportSessionMiddleware.js
+3	1	src/middleware/swebInMiddleware.js
+97	91	src/middleware/technicianMiddleware.js
+104	86	src/middleware/technicianMiddleware.test.js
+2	5	src/middleware/triageMiddleware.js
+17	0	src/reducers/authenticationReducer.js
+19	0	src/reducers/authenticationReducer.test.js
+28	0	src/reducers/contentFlowReducer.test.js
+14	0	src/reducers/featureToggleReducer.js
+24	0	src/reducers/featureToggleReducer.test.js
+0	17	src/reducers/health.js
+0	21	src/reducers/health.test.js
+17	0	src/reducers/healthReducer.js
+21	0	src/reducers/healthReducer.test.js
+27	0	src/reducers/helixStateReducer.js
+31	0	src/reducers/helixStateReducer.test.js
+8	2	src/reducers/index.js
+25	12	src/reducers/routeStateReducer.js
+17	13	src/reducers/routeStateReducer.test.js
+4	0	src/selectors/featureToggleSelector.js
+21	0	src/selectors/featureToggleSelector.test.js
+17	0	src/selectors/helixStateSelector.js
+21	0	src/selectors/helixStateSelector.test.js
+17	0	src/selectors/routeSelector.js
+22	0	src/selectors/routeSelector.test.js
+8	1	src/selectors/searchSelector.js
+6	1	src/selectors/searchSelector.test.js
+10	0	src/selectors/userSelector.js
+13	0	src/selectors/userSelector.test.js
+14	10	src/store.js
+2	0	src/store.test.js
+5	0	src/types.js
+7	0	src/utils/applicationConfig.js
+2	4	src/utils/pathBuilder.js
+10	124	src/utils/pathBuilder.test.js
+1	0	tools/jest/jestSetup.js
+5	1	webpack.config.js
+
+--13ebf5e--2018-01-03--Gary Paige
+1	1	public/index.html
+
+--5d8411d--2017-12-14--Gary Paige
+--2aa504c--2017-12-13--pijus-kadisius
+11	0	test/README.md
+9	0	test/features/support/environmentConfig.js
+
+--df76f65--2017-12-13--Gary Paige
+4	3	src/components/Search/Search.js
+
+--eb73313--2017-12-13--Gary Paige
+0	2	src/App.test.js
+
+--9caa7b6--2017-12-13--Gary Paige
+3	1	locales/en-US/common.json
+0	1	package.json
+0	14	src/App.js
+4	10	src/actions/mixpanelActions.js
+8	4	src/actions/mixpanelActions.test.js
+7	6	src/actions/searchActions.js
+0	9	src/actions/searchActions.test.js
+2	1	src/clients/algoliaClient.js
+2	2	src/clients/algoliaClient.test.js
+64	0	src/components/Search/Pagination.js
+48	0	src/components/Search/Pagination.scss
+29	0	src/components/Search/Pagination.test.js
+19	33	src/components/Search/Search.js
+2	26	src/components/Search/Search.test.js
+2	2	src/constants/actionTypes.js
+3	2	src/reducers/helixTabReducer.js
+2	15	src/reducers/helixTabReducer.test.js
+
+--56d4780--2017-12-13--Gary Paige
+36	0	src/components/SearchResults/CardView/ResultCard/Footer.js
+26	0	src/components/SearchResults/CardView/ResultCard/Footer.scss
+32	0	src/components/SearchResults/CardView/ResultCard/Footer.test.js
+9	5	src/components/SearchResults/CardView/ResultCard/ResultCard.js
+26	0	src/components/SearchResults/CardView/ResultCard/ResultCard.scss
+2	0	src/components/SearchResults/CardView/ResultCard/ResultCard.test.js
+
+--744b466--2017-12-13--pijus-kadisius
+1	1	test/features/soluto-helix.feature
+0	48	test/features/support/commandLineUitilityHelper.js
+54	0	test/features/support/environmentConfig.js
+3	3	test/features/support/hooks.js
+
+--99c0b29--2017-12-13--pijus-kadisius
+1	1	package.json
+
+--1b8401f--2017-12-11--pijus-kadisius
+1	1	test/features/pages/soluto-helix-page.js
+
+--e4331f5--2017-12-11--Gary Paige
+2	1	package.json
+14	0	src/App.js
+2	0	src/App.test.js
+
+--508a17c--2017-12-07--brennanbelew
+2	1	src/middleware/mixpanelMiddleware.js
+5	0	src/middleware/mixpanelMiddleware.test.js
+
+--fbe47f4--2017-12-07--brennanbelew
+1	0	env/features_dev.json
+7	3	src/components/Content/ContentDetail/ContentDetail.js
+29	0	src/components/Content/ContentDetail/ContentDetail.test.js
+1	1	src/components/Content/ContentDetail/contentTransforms.js
+1	1	src/components/Content/ContentDetail/contentTransforms.test.js
+
+--c2d5df4--2017-12-07--brennanbelew
+1	0	env/features_dev.json
+6	3	src/App.js
+15	1	src/App.test.js
+1	0	src/__mocks__/storeMock.js
+49	44	src/middleware/authenticationMiddleware.js
+14	0	src/middleware/authenticationMiddleware.test.js
+2	2	src/middleware/initializationMiddleware.js
+
+--a0c9175--2017-12-06--brennanbelew
+7	0	env/features_dev.json
+9	0	src/clients/featureToggleClient.js
+14	0	src/clients/featureToggleClient.test.js
+0	7	src/featureToggleConfig.json
+2	2	src/middleware/initializationMiddleware.js
+5	1	webpack.config.js
+
+--1c3f9aa--2017-12-06--Gary Paige
+-	-	public/assets/images/LoaderTrans.gif
+1	1	src/actions/searchActions.test.js
+1	1	src/components/Content/ContentDetail/ContentDetail.test.js
+1	1	src/components/Header/Header.scss
+9	10	src/components/Loading/Loading.js
+25	0	src/components/Loading/Loading.scss
+2	6	src/components/Loading/Loading.test.js
+
+--72b8f21--2017-12-05--brennanbelew
+9	2	src/App.js
+12	3	src/App.test.js
+9	1	src/__mocks__/storeMock.js
+12	0	src/actions/featureActions.js
+13	0	src/actions/featureActions.test.js
+17	9	src/clients/mixpanelClient.js
+9	3	src/clients/mixpanelClient.test.js
+11	5	src/components/Content/ContentDetail/ContentDetail.js
+8	1	src/components/Content/ContentDetail/ContentDetail.test.js
+7	4	src/components/Dashboard/Dashboard.js
+2	0	src/components/Dashboard/Dashboard.scss
+11	4	src/components/Dashboard/Dashboard.test.js
+13	10	src/components/Header/HeaderTasks.js
+10	1	src/components/Header/HeaderTasks.test.js
+0	1	src/components/KnowledgeAlerts/KnowledgeAlerts.scss
+3	3	src/components/NotFound/NotFound.scss
+5	1	src/constants/actionNames.js
+7	0	src/featureToggleConfig.json
+9	11	src/littleroutes.js
+16	13	src/middleware/analyticsMiddleware.js
+12	0	src/middleware/analyticsMiddleware.test.js
+21	0	src/middleware/featureToggleMiddleware.js
+43	0	src/middleware/featureToggleMiddleware.test.js
+7	1	src/middleware/initializationMiddleware.js
+32	16	src/middleware/mixpanelMiddleware.js
+88	43	src/middleware/mixpanelMiddleware.test.js
+93	89	src/middleware/technicianMiddleware.js
+104	86	src/middleware/technicianMiddleware.test.js
+14	0	src/reducers/featureToggleReducer.js
+24	0	src/reducers/featureToggleReducer.test.js
+3	1	src/reducers/index.js
+6	5	src/reducers/routeStateReducer.js
+16	13	src/reducers/routeStateReducer.test.js
+4	0	src/selectors/featureToggleSelector.js
+21	0	src/selectors/featureToggleSelector.test.js
+8	1	src/selectors/searchSelector.js
+6	1	src/selectors/searchSelector.test.js
+4	1	src/store.js
+2	4	src/utils/pathBuilder.js
+10	124	src/utils/pathBuilder.test.js
+
+--ce8480d--2017-11-30--Gary Paige
+2	1	locales/en-US/common.json
+4	0	locales/en-US/login.json
+0	15337	package-lock.json
+62	0	public/assets/images/google-logo.svg
+-	-	public/assets/images/login-splash.jpg
+-	-	public/assets/images/logo.png
+3	1	public/index.html
+23	5	src/App.js
+4	0	src/App.test.js
+3	0	src/__mocks__/storeMock.js
+1	1	src/actions/activitiesActions.js
+16	0	src/actions/authenticationActions.js
+17	0	src/actions/authenticationActions.test.js
+1	1	src/actions/healthActions.js
+16	0	src/actions/helixStateActions.js
+19	0	src/actions/helixStateActions.test.js
+17	1	src/actions/mixpanelActions.js
+1	1	src/actions/searchActions.js
+3	3	src/actions/searchActions.test.js
+1	1	src/actions/sessionActions.test.js
+11	0	src/actions/sharedWorkerEventBusActions.test.js
+1	1	src/actions/tabActions.js
+4	4	src/actions/tabActions.test.js
+23	0	src/clients/__mocks__/gapiClient.js
+37	0	src/clients/gapiClient.js
+8	0	src/clients/gapiClient.test.js
+19	0	src/components/Loading/Loading.js
+0	0	src/components/Loading/Loading.scss
+15	0	src/components/Loading/Loading.test.js
+2	0	src/components/Loading/index.js
+45	0	src/components/Login/Login.js
+90	0	src/components/Login/Login.scss
+25	0	src/components/Login/Login.test.js
+2	0	src/components/Login/index.js
+5	6	src/components/SearchBox/SearchBox.js
+21	5	src/components/SearchBox/SearchBox.scss
+10	26	src/components/SearchBox/SearchField.js
+42	0	src/constants/actionNames.js
+0	32	src/constants/actionTypes.js
+6	5	src/littleroutes.js
+3	1	src/middleware/analyticsMiddleware.js
+65	0	src/middleware/authenticationMiddleware.js
+116	0	src/middleware/authenticationMiddleware.test.js
+1	1	src/middleware/contentFlowMiddleware.js
+3	1	src/middleware/contentTabsMiddleware.js
+4	2	src/middleware/helixTabMiddleware.js
+1	1	src/middleware/helixTabMiddleware.test.js
+28	0	src/middleware/initializationMiddleware.js
+3	1	src/middleware/mixpanelMiddleware.js
+3	1	src/middleware/supportSessionMiddleware.js
+3	1	src/middleware/swebInMiddleware.js
+5	3	src/middleware/technicianMiddleware.js
+2	5	src/middleware/triageMiddleware.js
+17	0	src/reducers/authenticationReducer.js
+19	0	src/reducers/authenticationReducer.test.js
+28	0	src/reducers/contentFlowReducer.test.js
+0	17	src/reducers/health.js
+0	21	src/reducers/health.test.js
+17	0	src/reducers/healthReducer.js
+21	0	src/reducers/healthReducer.test.js
+27	0	src/reducers/helixStateReducer.js
+31	0	src/reducers/helixStateReducer.test.js
+6	2	src/reducers/index.js
+23	11	src/reducers/routeStateReducer.js
+1	0	src/reducers/routeStateReducer.test.js
+17	0	src/selectors/helixStateSelector.js
+21	0	src/selectors/helixStateSelector.test.js
+17	0	src/selectors/routeSelector.js
+22	0	src/selectors/routeSelector.test.js
+10	0	src/selectors/userSelector.js
+13	0	src/selectors/userSelector.test.js
+10	9	src/store.js
+2	0	src/store.test.js
+5	0	src/types.js
+7	0	src/utils/applicationConfig.js
+1	0	tools/jest/jestSetup.js
+
+--3bcd2eb--2017-12-05--pijus-kadisius
+1	1	package.json
+
+--90c9aa9--2017-12-05--Gary Paige
+4	0	locales/en-US/common.json
+5	0	locales/en-US/share.json
+2	2	package.json
+17	1	src/actions/mixpanelActions.js
+14	1	src/actions/searchActions.js
+9	0	src/actions/searchActions.test.js
+4	4	src/clients/algoliaClient.test.js
+18	0	src/clients/bitlyClient.js
+32	0	src/clients/bitlyClient.test.js
+25	0	src/components/Content/AlertList/AlertList.js
+11	0	src/components/Content/AlertList/AlertList.scss
+47	0	src/components/Content/AlertList/AlertList.test.js
+146	0	src/components/Content/BookmarkList/BookmarkCard/BookmarkCard.js
+181	0	src/components/Content/BookmarkList/BookmarkCard/BookmarkCard.scss
+120	0	src/components/Content/BookmarkList/BookmarkCard/BookmarkCard.test.js
+176	0	src/components/Content/BookmarkList/BookmarkCard/BookmarkCardEventHandlers.js
+161	0	src/components/Content/BookmarkList/BookmarkCard/BookmarkCardEventHandlers.test.js
+4	0	src/components/Content/BookmarkList/BookmarkCard/index.js
+49	0	src/components/Content/BookmarkList/BookmarkList.js
+17	0	src/components/Content/BookmarkList/BookmarkList.scss
+32	0	src/components/Content/BookmarkList/BookmarkList.test.js
+255	0	src/components/Content/ContentDetail/ContentDetail.js
+530	0	src/components/Content/ContentDetail/ContentDetail.scss
+157	0	src/components/Content/ContentDetail/ContentDetail.test.js
+30	0	src/components/Content/ContentDetail/ContentFeatures/BookmarkFeature.js
+51	0	src/components/Content/ContentDetail/ContentFeatures/BookmarkFeature.test.js
+18	0	src/components/Content/ContentDetail/ContentFeatures/FeedbackFeature.js
+23	0	src/components/Content/ContentDetail/ContentFeatures/FeedbackFeature.test.js
+131	0	src/components/Content/ContentDetail/ContentFeatures/ShareFeature.js
+63	0	src/components/Content/ContentDetail/ContentFeatures/ShareFeature.test.js
+6	0	src/components/Content/ContentDetail/ContentFeatures/index.js
+69	0	src/components/Content/ContentDetail/contentTransforms.js
+75	0	src/components/Content/ContentDetail/contentTransforms.test.js
+18	0	src/components/Content/ContentHeader/ContentHeader.js
+24	0	src/components/Content/ContentHeader/ContentHeader.scss
+22	0	src/components/Content/ContentHeader/ContentHeader.test.js
+1	0	src/components/Content/ContentHeader/index.js
+0	25	src/components/Content/DrawerContainer/AlertList/AlertList.js
+0	11	src/components/Content/DrawerContainer/AlertList/AlertList.scss
+0	47	src/components/Content/DrawerContainer/AlertList/AlertList.test.js
+0	146	src/components/Content/DrawerContainer/BookmarkList/BookmarkCard/BookmarkCard.js
+0	181	src/components/Content/DrawerContainer/BookmarkList/BookmarkCard/BookmarkCard.scss
+0	120	src/components/Content/DrawerContainer/BookmarkList/BookmarkCard/BookmarkCard.test.js
+0	176	src/components/Content/DrawerContainer/BookmarkList/BookmarkCard/BookmarkCardEventHandlers.js
+0	161	src/components/Content/DrawerContainer/BookmarkList/BookmarkCard/BookmarkCardEventHandlers.test.js
+0	4	src/components/Content/DrawerContainer/BookmarkList/BookmarkCard/index.js
+0	49	src/components/Content/DrawerContainer/BookmarkList/BookmarkList.js
+0	17	src/components/Content/DrawerContainer/BookmarkList/BookmarkList.scss
+0	32	src/components/Content/DrawerContainer/BookmarkList/BookmarkList.test.js
+0	248	src/components/Content/DrawerContainer/ContentDetail/ContentDetail.js
+0	420	src/components/Content/DrawerContainer/ContentDetail/ContentDetail.scss
+0	147	src/components/Content/DrawerContainer/ContentDetail/ContentDetail.test.js
+0	69	src/components/Content/DrawerContainer/ContentDetail/contentTransforms.js
+0	75	src/components/Content/DrawerContainer/ContentDetail/contentTransforms.test.js
+0	18	src/components/Content/DrawerContainer/ContentHeader/ContentHeader.js
+0	24	src/components/Content/DrawerContainer/ContentHeader/ContentHeader.scss
+0	22	src/components/Content/DrawerContainer/ContentHeader/ContentHeader.test.js
+0	1	src/components/Content/DrawerContainer/ContentHeader/index.js
+0	19	src/components/Content/DrawerContainer/GeneralFeedback/GeneralFeedback.js
+0	0	src/components/Content/DrawerContainer/GeneralFeedback/GeneralFeedback.scss
+0	16	src/components/Content/DrawerContainer/GeneralFeedback/GeneralFeedback.test.js
+19	0	src/components/Content/GeneralFeedback/GeneralFeedback.js
+0	0	src/components/Content/GeneralFeedback/GeneralFeedback.scss
+16	0	src/components/Content/GeneralFeedback/GeneralFeedback.test.js
+1	1	src/components/ContentFlow/ContentDetail/ContentFlowDetail.js
+1	1	src/components/ContentFlow/ContentDetail/ContentFlowDetail.test.js
+0	1	src/components/Feedback/Feedback.js
+8	8	src/components/Header/HeaderTasks.js
+4	4	src/components/HelixTabs/HelixTabs.js
+4	4	src/components/HelixTabs/HelixTabs.test.js
+37	4	src/components/Search/Search.js
+31	0	src/components/Search/Search.scss
+67	8	src/components/Search/Search.test.js
+0	3	src/components/SearchBox/SearchBox.js
+6	1	src/components/SearchBox/SearchBox.test.js
+1	1	src/components/SearchBox/SearchField.js
+24	2	src/components/SearchBox/SearchField.test.js
+2	2	src/components/SearchResults/CardView/ResultCard/ResultCard.js
+0	2	src/components/SearchResults/CardView/ResultCard/ResultCard.scss
+4	2	src/components/TabMenu/TabMenu.test.js
+4	1	src/constants/actionTypes.js
+2	2	src/i18n.js
+1	1	src/i18n.test.js
+10	0	src/reducers/helixTabReducer.js
+15	0	src/reducers/helixTabReducer.test.js
+7	0	src/selectors/tabSelector.test.js
+4	0	src/styles/semantic-ui/site/views/card.overrides
+7	0	src/utils/applicationConfig.js
+30	1	src/utils/applicationConfig.test.js
+
+--8866e0f--2017-12-05--Gary Paige
+10	2	src/components/Dashboard/Dashboard.scss
+
+--c7f993d--2017-12-05--Gary Paige
+2	2	src/actions/mixpanelActions.js
+6	2	src/actions/mixpanelActions.test.js
+11	7	src/components/Content/DrawerContainer/ContentDetail/ContentDetail.js
+6	2	src/components/Content/DrawerContainer/ContentDetail/ContentDetail.test.js
+4	2	src/components/KnowledgeAlerts/KnowledgeAlert.js
+2	0	src/components/SearchResults/CardView/ResultCard/ResultCard.js
+
+--55d4cd9--2017-11-30--pijus-kadisius
+1	1	package.json
+
+--1c69e92--2017-11-30--pijus-kadisius
+0	0	test/cucumber_reports/helix_cucumber_reports_qa.json
+
+--c635cf3--2017-11-30--Ginu Philip Simon
+6	2	src/actions/mixpanelActions.js
+19	2	src/actions/mixpanelActions.test.js
+8	4	src/components/Activities/Activity.js
+3	1	src/components/Activities/Activity.test.js
+
+--4b6d5f5--2017-11-30--Kris Unnikannan
+3	0	src/middleware/helixTabMiddleware.js
+2	1	src/utils/applicationConfig.js
+
+--8044f98--2017-11-29--David Wright
+0	0	test/cucumber_reports/helix_cucumber_reports_qa.json
+5	0	test/features/pages/soluto-helix-page.js
+13	0	test/features/soluto-helix.feature
+
+--c7c0642--2017-11-17--Ginu Philip Simon
+3	2	src/actions/activitiesActions.js
+3	2	src/actions/activitiesActions.test.js
+4	14	src/components/Header/HeaderTasks.js
+21	6	src/constants/Activities.js
+31	15	src/middleware/activitiesMiddleware.js
+13	1	src/middleware/activitiesMiddleware.test.js
+3	3	src/reducers/activityStatusReducers.js
+3	2	src/reducers/activityStatusReducers.test.js
+15	1	src/selectors/activitiesSelector.js
+10	6	src/selectors/activitiesSelector.test.js
+
+--93257c0--2017-11-17--Gary Paige
+6	4	src/components/Content/DrawerContainer/ContentDetail/ContentDetail.js
+6	1	src/components/Content/DrawerContainer/ContentDetail/contentTransforms.js
+13	0	src/components/Content/DrawerContainer/ContentDetail/contentTransforms.test.js
+
+--12c1265--2017-11-16--pijus-kadisius
+1	1	package.json
+
+--92d7d84--2017-11-16--pijus-kadisius
+4	1	package.json
+
+--c4036f2--2017-11-15--pijus-kadisius
+26	27	test/features/pages/soluto-helix-page.js
+41	41	test/features/soluto-helix.feature
+2	2	test/features/step_definitions/soluto-helix.js
+
+--502ef31--2017-11-15--Gary Paige
+2	1	locales/en-US/common.json
+94	0	public/assets/images/logo.svg
+1	0	src/components/Feedback/Feedback.js
+5	5	src/components/Header/Header.scss
+7	0	src/components/Header/HeaderTasks.scss
+0	67	src/components/Header/ResultsCounter.js
+0	7	src/components/Header/ResultsCounter.scss
+0	50	src/components/Header/ResultsCounter.test.js
+3	2	src/components/HelixTabs/HelixTabs.scss
+67	0	src/components/Search/ResultsCounter.js
+10	0	src/components/Search/ResultsCounter.scss
+50	0	src/components/Search/ResultsCounter.test.js
+9	4	src/components/Search/Search.js
+
+--1009768--2017-11-14--Ginu Philip Simon
+16	1	src/__mocks__/storeMock.js
+15	0	src/actions/activitiesActions.js
+20	0	src/actions/activitiesActions.test.js
+11	1	src/actions/mixpanelActions.js
+22	0	src/actions/mixpanelActions.test.js
+9	3	src/actions/searchActions.js
+11	0	src/actions/searchActions.test.js
+64	0	src/components/Activities/Activities.js
+58	0	src/components/Activities/Activities.scss
+29	0	src/components/Activities/Activities.test.js
+99	0	src/components/Activities/Activity.js
+59	0	src/components/Activities/Activity.test.js
+2	0	src/components/Activities/index.js
+17	0	src/components/ContentFlow/ContentDetail/ContentFlowDetail.js
+28	0	src/components/ContentFlow/ContentDetail/ContentFlowDetail.test.js
+2	0	src/components/ContentFlow/ContentDetail/index.js
+25	0	src/components/ContentFlow/SearchResults/ContentFlowSearchResults.js
+39	0	src/components/ContentFlow/SearchResults/ContentFlowSearchResults.test.js
+2	0	src/components/ContentFlow/SearchResults/index.js
+22	1	src/components/Header/HeaderTasks.js
+13	1	src/components/Header/HeaderTasks.test.js
+20	5	src/components/HelixTabs/HelixSearchContainer.js
+38	4	src/components/HelixTabs/HelixSearchContainer.test.js
+33	0	src/components/HelixTabs/HelixTabs.js
+1	1	src/components/HelixTabs/HelixTabs.scss
+21	1	src/components/HelixTabs/HelixTabs.test.js
+9	0	src/components/HelixTabs/HelixTabsContainer.js
+15	1	src/components/HelixTabs/HelixTabsContainer.test.js
+12	4	src/components/SearchResults/CardView/ResultCard/ResultCard.js
+41	2	src/components/SearchResults/CardView/ResultCard/ResultCard.test.js
+46	0	src/constants/Activities.js
+9	2	src/constants/actionTypes.js
+4	0	src/constants/contentTypes.js
+11	2	src/littleroutes.js
+29	0	src/middleware/activitiesMiddleware.js
+43	0	src/middleware/activitiesMiddleware.test.js
+37	0	src/middleware/contentFlowMiddleware.js
+52	0	src/middleware/contentFlowMiddleware.test.js
+3	0	src/middleware/helixTabMiddleware.js
+27	0	src/models/activity.js
+19	0	src/models/subactivity.js
+33	0	src/reducers/activityStatusReducers.js
+48	0	src/reducers/activityStatusReducers.test.js
+24	0	src/reducers/contentFlowReducer.js
+5	1	src/reducers/index.js
+10	0	src/selectors/activitiesSelector.js
+13	0	src/selectors/activitiesSelector.test.js
+17	0	src/selectors/contentFlowSelector.js
+4	1	src/selectors/pathBuilderSelector.js
+4	0	src/store.js
+16	1	src/utils/pathBuilder.js
+90	0	src/utils/pathBuilder.test.js
+
+--0396290--2017-11-09--Gary Paige
+1	1	src/components/ContentTabs/ContentTabs.js
+0	10	src/components/ContentTabs/ContentTabs.scss
+
+--3568b2d--2017-11-08--pijus-kadisius
+1	1	package.json
+
+--c3bbb60--2017-11-08--Daniel Nalbach
+2	4	src/components/Content/DrawerContainer/ContentDetail/ContentDetail.js
+0	13	src/components/Content/DrawerContainer/ContentDetail/ContentDetail.test.js
+
+--6d329b8--2017-11-07--Gary Paige
+5	5	src/components/HelixTabs/HelixTabs.scss
+
+--5769d2c--2017-11-07--pijus-kadisius
+4	0	test/features/pages/soluto-helix-page.js
+1	2	test/features/soluto-helix.feature
+3	0	test/features/step_definitions/soluto-helix.js
+
+--0810bb8--2017-11-07--pijus-kadisius
+34	97	test/features/pages/soluto-helix-page.js
+31	31	test/features/soluto-helix.feature
+10	67	test/features/step_definitions/soluto-helix.js
+
+--6410610--2017-11-07--Gary Paige
+12	0	src/App.js
+23	2	src/App.test.js
+10	0	src/actions/mixpanelActions.js
+18	0	src/actions/mixpanelActions.test.js
+1	1	tools/jest/jestSetup.js
+
+--c404e61--2017-11-07--pijus-kadisius
+1	1	package.json
+
+--9838fd6--2017-11-06--Gary Paige
+10	2	src/actions/healthActions.js
+14	0	src/actions/healthActions.test.js
+3	1	src/clients/__mocks__/algoliasearch.js
+7	11	src/clients/algoliaClient.js
+19	3	src/clients/algoliaClient.test.js
+14	0	src/components/KnowledgeAlerts/KnowledgeAlerts.js
+4	0	src/components/KnowledgeAlerts/KnowledgeAlerts.test.js
+14	0	src/components/Search/Search.js
+3	1	src/constants/actionTypes.js
+9	2	src/middleware/technicianMiddleware.js
+3	3	src/middleware/technicianMiddleware.test.js
+
+--ae3f62b--2017-11-06--Gary Paige
+10	11	src/components/ContentTabs/ContentTabs.js
+16	2	src/components/ContentTabs/ContentTabs.scss
+9	0	src/components/ContentTabs/ContentTabs.test.js
+17	8	src/components/HelixTabs/HelixTabs.scss
+5	3	src/components/HelixTabs/HelixTabsContainer.js
+18	4	src/styles/semantic-ui/site/modules/tab.overrides
+4	0	src/utils/applicationConfig.js
+
+--923730d--2017-10-31--Gary Paige
+3	5	src/App.js
+1	1	src/App.test.js
+5	4	src/actions/healthActions.js
+2	4	src/actions/healthActions.test.js
+3	2	src/constants/actionTypes.js
+2	1	src/middleware/analyticsMiddleware.js
+2	1	src/middleware/mixpanelMiddleware.js
+43	0	src/middleware/triageMiddleware.js
+33	0	src/middleware/triageMiddleware.test.js
+14	0	src/selectors/analyticStateSelector.js
+2	0	src/store.js
+
+--1042112--2017-10-31--pijus-kadisius
+11	1	test/README.md
+21	8	test/features/support/commandLineUitilityHelper.js
+
+--1b96ce8--2017-10-31--pijus-kadisius
+1	1	package.json
+
+--857d8a7--2017-10-27--Gary Paige
+1	0	locales/en-US/feedback.json
+1	1	package.json
+2	2	src/components/Content/DrawerContainer/ContentDetail/ContentDetail.js
+3	3	src/components/ContentTabs/ContentTabs.js
+4	5	src/components/Feedback/Feedback.js
+1	0	src/components/Feedback/Feedback.test.js
+3	3	src/components/Header/HeaderTasks.js
+7	1	src/middleware/analyticsMiddleware.js
+19	3	src/middleware/analyticsMiddleware.test.js
+6	2	src/middleware/mixpanelMiddleware.js
+
+--8f772b9--2017-10-27--Daniel Nalbach
+5	3	src/components/Content/DrawerContainer/ContentDetail/ContentDetail.js
+26	0	src/components/Content/DrawerContainer/ContentDetail/ContentDetail.test.js
+12	1	src/components/Content/DrawerContainer/ContentDetail/contentTransforms.js
+6	0	src/components/Content/DrawerContainer/ContentDetail/contentTransforms.test.js
+
+--51df4b1--2017-10-25--pijus-kadisius
+5	1	test/features/pages/soluto-helix-page.js
+3	0	test/features/step_definitions/soluto-helix.js
+
+--bf499e3--2017-10-25--pijus-kadisius
+1	4	test/features/pages/soluto-helix-page.js
+1	0	test/features/step_definitions/soluto-helix.js
+
+--4a7bcd3--2017-10-24--pijus-kadisius
+25	10	test/features/pages/soluto-helix-page.js
+14	1	test/features/soluto-helix.feature
+16	5	test/features/step_definitions/soluto-helix.js
+
+--c635e7a--2017-10-24--pijus-kadisius
+1	1	package.json
+
+--95a4470--2017-10-24--Gary Paige
+0	5	src/actions/mixpanelActions.js
+0	9	src/actions/mixpanelActions.test.js
+1	6	src/middleware/helixTabMiddleware.js
+
+--41a908a--2017-10-24--Gary Paige
+3	3	src/components/ContentTabs/ContentTabs.js
+19	0	src/components/ContentTabs/ContentTabs.scss
+1	1	src/components/ContentTabs/ContentTabs.test.js
+12	3	src/components/SearchResults/CardView/ResultCard/ResultCard.scss
+
+--d91ebdc--2017-10-24--pijus-kadisius
+13	6	test/features/pages/soluto-helix-page.js
+3	6	test/features/soluto-helix.feature
+3	0	test/features/step_definitions/soluto-helix.js
+
+--720c783--2017-10-20--pijus-kadisius
+1	1	package.json
+
+--243dee2--2017-10-19--Gary Paige
+1	0	src/middleware/analyticsMiddleware.js
+1	1	src/middleware/analyticsMiddleware.test.js
+3	1	src/middleware/mixpanelMiddleware.js
+7	1	src/middleware/mixpanelMiddleware.test.js
+
+--a2a5fdc--2017-10-19--Gary Paige
+4	2	src/components/Feedback/Feedback.js
+
+--c6809b5--2017-10-19--Gary Paige
+2	1	src/middleware/mixpanelMiddleware.js
+
+--85636be--2017-10-18--Daniel Nalbach
+16	1	src/__mocks__/storeMock.js
+6	1	src/actions/mixpanelActions.js
+13	0	src/actions/mixpanelActions.test.js
+13	1	src/middleware/helixTabMiddleware.js
+11	0	src/middleware/helixTabMiddleware.test.js
+
+--a9da793--2017-10-18--Jeff Tougas
+4	8	src/clients/socoConfigClient.js
+8	3	src/utils/applicationConfig.js
+5	2	src/utils/applicationConfig.test.js
+
+--35fdcb2--2017-10-18--Gary Paige
+1	1	package.json
+1	1	src/components/Content/DrawerContainer/ContentDetail/ContentDetail.test.js
+
+--d36349c--2017-10-18--Gary Paige
+9	9	src/littleroutes.js
+
+--382bacc--2017-10-18--Jeff Tougas
+3	1	src/components/SearchBox/SearchField.js
+
+--eead478--2017-10-18--Gary Paige
+9	3	src/components/Content/DrawerContainer/ContentDetail/ContentDetail.js
+1	1	src/components/Content/DrawerContainer/ContentDetail/ContentDetail.test.js
+2	4	src/components/SearchResults/CardView/ResultCard/ResultCard.js
+1	2	src/middleware/helixTabMiddleware.js
+
+--78e4af1--2017-10-14--Jeff Tougas
+1	0	package.json
+17	6	webpack.config.js
+
+--3e6a882--2017-10-13--Gary Paige
+1	0	.flowconfig
+4177	2856	package-lock.json
+12	5	package.json
+12	0	public/assets/images/Alert.svg
+12	0	public/assets/images/Bookmark.svg
+1	0	public/assets/images/smc.svg
+2	2	src/App.js
+29	10	src/__mocks__/storeMock.js
+0	41	src/actions/contentDetailActions.js
+0	69	src/actions/contentDetailActions.test.js
+26	36	src/actions/mixpanelActions.js
+42	81	src/actions/mixpanelActions.test.js
+7	5	src/actions/searchActions.js
+7	7	src/actions/searchActions.test.js
+1	1	src/actions/sessionActions.test.js
+24	0	src/actions/tabActions.js
+30	0	src/actions/tabActions.test.js
+8	6	src/clients/algoliaClient.js
+13	4	src/clients/analyticsClient.js
+8	1	src/clients/analyticsClient.test.js
+1	1	src/clients/dapulseClient.js
+1	1	src/clients/mixpanelClient.js
+3	3	src/clients/technicianClient.js
+1	1	src/clients/technicianClient.test.js
+1	1	src/components/ApplicationError/ApplicationError.js
+1	2	src/components/ApplicationError/ApplicationError.scss
+78	0	src/components/BookmarkPanel/BookmarkPanel.js
+41	0	src/components/BookmarkPanel/BookmarkPanel.scss
+43	0	src/components/BookmarkPanel/BookmarkPanel.test.js
+10	125	src/components/Content/Content.js
+45	1	src/components/Content/Content.scss
+14	89	src/components/Content/Content.test.js
+3	3	src/components/Content/DrawerContainer/AlertList/AlertList.js
+4	0	src/components/Content/DrawerContainer/AlertList/AlertList.scss
+6	3	src/components/Content/DrawerContainer/BookmarkList/BookmarkCard/BookmarkCard.js
+1	0	src/components/Content/DrawerContainer/BookmarkList/BookmarkCard/BookmarkCard.scss
+9	2	src/components/Content/DrawerContainer/BookmarkList/BookmarkCard/BookmarkCard.test.js
+1	1	src/components/Content/DrawerContainer/BookmarkList/BookmarkCard/BookmarkCardEventHandlers.js
+6	9	src/components/Content/DrawerContainer/BookmarkList/BookmarkList.js
+11	0	src/components/Content/DrawerContainer/BookmarkList/BookmarkList.scss
+0	1	src/components/Content/DrawerContainer/BookmarkList/BookmarkList.test.js
+127	31	src/components/Content/DrawerContainer/ContentDetail/ContentDetail.js
+63	27	src/components/Content/DrawerContainer/ContentDetail/ContentDetail.scss
+57	11	src/components/Content/DrawerContainer/ContentDetail/ContentDetail.test.js
+14	1	src/components/Content/DrawerContainer/ContentDetail/contentTransforms.js
+14	0	src/components/Content/DrawerContainer/ContentDetail/contentTransforms.test.js
+3	1	src/components/Content/DrawerContainer/ContentHeader/ContentHeader.scss
+0	106	src/components/Content/DrawerContainer/ContentToolbar/ContentToolbar.js
+0	68	src/components/Content/DrawerContainer/ContentToolbar/ContentToolbar.scss
+0	66	src/components/Content/DrawerContainer/ContentToolbar/ContentToolbar.test.js
+0	1	src/components/Content/DrawerContainer/ContentToolbar/index.js
+0	256	src/components/Content/DrawerContainer/DrawerContainer.js
+0	30	src/components/Content/DrawerContainer/DrawerContainer.scss
+0	85	src/components/Content/DrawerContainer/DrawerContainer.test.js
+4	3	src/components/Content/DrawerContainer/GeneralFeedback/GeneralFeedback.js
+0	0	src/components/Content/DrawerContainer/GeneralFeedback/GeneralFeedback.scss
+5	0	src/components/Content/DrawerContainer/GeneralFeedback/GeneralFeedback.test.js
+12	0	src/components/Content/Landing/Landing.js
+26	0	src/components/Content/Landing/Landing.scss
+16	0	src/components/Content/Landing/Landing.test.js
+2	0	src/components/Content/Landing/index.js
+91	0	src/components/ContentTabs/ContentTabs.js
+27	0	src/components/ContentTabs/ContentTabs.scss
+58	0	src/components/ContentTabs/ContentTabs.test.js
+18	42	src/components/Dashboard/Dashboard.js
+43	32	src/components/Dashboard/Dashboard.scss
+0	5	src/components/Dashboard/Dashboard.test.js
+114	213	src/components/Feedback/Feedback.js
+62	7	src/components/Feedback/Feedback.scss
+12	172	src/components/Feedback/Feedback.test.js
+20	60	src/components/Header/Header.js
+61	97	src/components/Header/Header.scss
+5	40	src/components/Header/Header.test.js
+98	0	src/components/Header/HeaderTasks.js
+21	0	src/components/Header/HeaderTasks.scss
+48	0	src/components/Header/HeaderTasks.test.js
+4	4	src/components/Header/ResultsCounter.js
+3	1	src/components/Header/index.js
+68	0	src/components/HelixTabs/HelixSearchContainer.js
+38	0	src/components/HelixTabs/HelixSearchContainer.test.js
+84	0	src/components/HelixTabs/HelixTabs.js
+27	0	src/components/HelixTabs/HelixTabs.scss
+75	0	src/components/HelixTabs/HelixTabs.test.js
+142	0	src/components/HelixTabs/HelixTabsContainer.js
+98	0	src/components/HelixTabs/HelixTabsContainer.test.js
+5	2	src/components/KnowledgeAlerts/KnowledgeAlert.js
+12	1	src/components/KnowledgeAlerts/KnowledgeAlert.test.js
+6	6	src/components/KnowledgeAlerts/KnowledgeAlerts.js
+29	15	src/components/KnowledgeAlerts/KnowledgeAlerts.scss
+0	119	src/components/MostRecent/MostRecent.js
+0	37	src/components/MostRecent/MostRecent.scss
+0	176	src/components/MostRecent/MostRecent.test.js
+0	2	src/components/MostRecent/index.js
+2	2	src/components/NotFound/NotFound.js
+90	0	src/components/Search/Search.js
+35	0	src/components/Search/Search.test.js
+6	6	src/components/SearchBox/SearchBox.js
+2	2	src/components/SearchBox/SearchBox.scss
+27	10	src/components/SearchBox/SearchField.js
+2	17	src/components/SearchBox/SearchField.test.js
+1	2	src/components/SearchResults/CardView/CardView.js
+2	1	src/components/SearchResults/CardView/CardView.test.js
+38	43	src/components/SearchResults/CardView/ResultCard/ResultCard.js
+13	9	src/components/SearchResults/CardView/ResultCard/ResultCard.scss
+5	16	src/components/SearchResults/CardView/ResultCard/ResultCard.test.js
+0	22	src/components/SearchResults/ListView/ListView.js
+0	30	src/components/SearchResults/ListView/ListView.test.js
+0	139	src/components/SearchResults/ListView/ResultList/ResultList.js
+0	54	src/components/SearchResults/ListView/ResultList/ResultList.scss
+0	54	src/components/SearchResults/ListView/ResultList/ResultList.test.js
+0	4	src/components/SearchResults/ListView/ResultList/index.js
+2	62	src/components/SearchResults/SearchResults.js
+1	54	src/components/SearchResults/SearchResults.scss
+0	50	src/components/SearchResults/SearchResults.test.js
+8	4	src/components/TabMenu/TabMenu.js
+1	0	src/components/TabMenu/TabMenu.scss
+1	1	src/connectors/withSharedWorkerEventBus/__mocks__/connectSharedWorkerEventBus.js
+2	2	src/connectors/withSharedWorkerEventBus/connectSharedWorkerEventBus.js
+1	1	src/connectors/withSharedWorkerEventBus/connectSharedWorkerEventBus.test.js
+0	4	src/constants/ActionTypes.js
+19	0	src/constants/actionTypes.js
+2	0	src/constants/contentTypes.js
+13	0	src/constants/serviceHeaderConstants.js
+2	0	src/index.js
+7	8	src/index.scss
+11	7	src/littleroutes.js
+6	3	src/middleware/analyticsMiddleware.js
+1	1	src/middleware/analyticsMiddleware.test.js
+23	0	src/middleware/contentTabsMiddleware.js
+31	0	src/middleware/contentTabsMiddleware.test.js
+115	0	src/middleware/helixTabMiddleware.js
+70	0	src/middleware/helixTabMiddleware.test.js
+9	4	src/middleware/mixpanelMiddleware.js
+1	1	src/middleware/mixpanelMiddleware.test.js
+1	1	src/middleware/supportSessionMiddleware.js
+1	1	src/middleware/supportSessionMiddleware.test.js
+2	4	src/middleware/swebInMiddleware.js
+3	4	src/middleware/swebOutMiddleware.js
+5	5	src/middleware/technicianMiddleware.test.js
+2	1	src/models/technician.js
+0	23	src/reducers/contentDetailReducer.js
+0	24	src/reducers/contentDetailReducer.test.js
+61	0	src/reducers/helixTabReducer.js
+75	0	src/reducers/helixTabReducer.test.js
+8	9	src/reducers/index.js
+1	0	src/reducers/routeStateReducer.js
+4	1	src/reducers/routeStateReducer.test.js
+0	15	src/reducers/searchReducer.js
+0	20	src/reducers/searchReducer.test.js
+4	4	src/selectors/healthSelector.js
+1	1	src/selectors/healthSelector.test.js
+3	2	src/selectors/pathBuilderSelector.js
+18	11	src/selectors/searchSelector.js
+3	3	src/selectors/searchSelector.test.js
+12	12	src/selectors/socoSelector.js
+1	1	src/selectors/socoSelector.test.js
+23	0	src/selectors/tabSelector.js
+36	0	src/selectors/tabSelector.test.js
+12	7	src/store.js
+85	1	src/styles/palette.scss
+3	0	src/styles/semantic-ui/site/collections/breadcrumb.overrides
+23	0	src/styles/semantic-ui/site/collections/form.overrides
+1	0	src/styles/semantic-ui/site/collections/form.variables
+59	0	src/styles/semantic-ui/site/elements/button.overrides
+55	0	src/styles/semantic-ui/site/elements/button.variables
+56	0	src/styles/semantic-ui/site/elements/icon.overrides
+1	0	src/styles/semantic-ui/site/elements/input.variables
+162	0	src/styles/semantic-ui/site/globals/site.variables
+9	0	src/styles/semantic-ui/site/modules/checkbox.variables
+33	0	src/styles/semantic-ui/site/modules/dropdown.overrides
+39	0	src/styles/semantic-ui/site/modules/dropdown.variables
+37	0	src/styles/semantic-ui/site/modules/tab.overrides
+93	0	src/styles/semantic-ui/theme.config
+32	1	src/utils/applicationConfig.js
+27	0	src/utils/breadcrumbsBuilder.js
+24	0	src/utils/breadcrumbsBuilder.test.js
+75	0	src/utils/form/semanticFormField.js
+35	0	src/utils/form/semanticFormField.test.js
+5	0	src/utils/form/validation.js
+26	0	src/utils/form/validation.test.js
+20	11	src/utils/pathBuilder.js
+10	10	src/utils/pathBuilder.test.js
+29	0	webpack.config.js
+
+--a29e02d--2017-10-13--Gary Paige
+5	5	src/utils/carrier.js
+
+--40204dd--2017-10-13--Jeff Tougas
+1	1	src/utils/carrier.js
+
+--3fc04e3--2017-10-13--Jeff Tougas
+2	1	src/utils/carrier.js
+
+--65ffb8f--2017-10-12--Scott Clark
+6	1	scripts/deploy.sh
+
+--3909e83--2017-10-09--Jeff Tougas
+1	0	.node-version
+1	0	.nvmrc
+
+--17ba632--2017-10-06--pijus-kadisius
+1	1	test/features/support/commandLineUitilityHelper.js
+
+--1d9f77e--2017-10-06--pijus-kadisius
+54	0	test/features/support/qtest/parse-qtest.sh
+42	0	test/features/support/qtest/submit-qtest.sh
+
+--66c0d50--2017-10-03--Gary Paige
+1	1	package.json
+
+--f5bc66d--2017-09-28--Daniel Nalbach
+1	0	src/utils/client.js
+
+--380c55b--2017-09-27--pijus-kadisius
+20	2	test/README.md
+28	27	test/features/soluto-helix.feature
+22	6	test/features/support/commandLineUitilityHelper.js
+3	3	test/features/support/hooks.js
+
+--549e9fe--2017-09-27--pijus-kadisius
+1	1	package.json
+
+--85e0d9c--2017-09-27--Daniel Nalbach
+14016	0	package-lock.json
+5	0	src/__mocks__/mixpanelMiddleware.js
+7	0	src/__mocks__/react-cookie.js
+2	1	src/__mocks__/storeMock.js
+3	0	src/middleware/analyticsMiddleware.js
+32	1	src/middleware/analyticsMiddleware.test.js
+3	1	src/middleware/mixpanelMiddleware.js
+26	11	src/middleware/mixpanelMiddleware.test.js
+2	2	src/middleware/technicianMiddleware.test.js
+
+--ff223c2--2017-09-25--Gary Paige
+2	3	src/components/SearchResults/CardView/ResultCard/ResultCard.js
+
+--45c0a19--2017-09-20--Jeff Tougas
+5	5	webpack.config.js
+
+--f16f3b5--2017-09-15--pijus-kadisius
+1	1	package.json
+
+--2cc9f92--2017-09-15--Gary Paige
+7	2	src/clients/socoConfigClient.js
+1	1	src/reducers/routeStateReducer.test.js
+4	0	src/utils/applicationConfig.js
+4	0	src/utils/applicationConfig.test.js
+5	3	src/utils/carrier.js
+9	4	src/utils/carrier.test.js
+
+--73d50fd--2017-09-14--Jeff Tougas
+0	7	src/App.test.js
+2	0	src/store.test.js
+
+--a0ac5af--2017-09-14--pijus-kadisius
+3	1	package.json
+
+--d35dce3--2017-09-14--Jeff Tougas
+1	14	src/App.js
+9	0	src/actions/sharedWorkerEventBusActions.js
+28	0	src/clients/sharedWorkerEventBusClient.js
+0	24	src/middleware/sharedWorkerMiddleware.js
+0	55	src/middleware/sharedWorkerMiddleware.test.js
+24	0	src/middleware/supportSessionMiddleware.js
+55	0	src/middleware/supportSessionMiddleware.test.js
+27	0	src/middleware/swebInMiddleware.js
+15	0	src/middleware/swebOutMiddleware.js
+8	2	src/store.js
+
+--f3ae944--2017-09-14--pijus-kadisius
+38	0	test/README.md
+
+--2d14e73--2017-09-07--pijus-kadisius
+5	2	package.json
+0	0	test/cucumber_reports/.keep
+19	0	test/features/support/commandLineUitilityHelper.js
+3	3	test/features/support/hooks.js
+
+--117ed6d--2017-09-07--pijus-kadisius
+1	1	package.json
+
+--1e4fe6a--2017-09-07--Gary Paige
+4	5	src/clients/algoliaClient.js
+9	2	src/clients/algoliaClient.test.js
+1	0	src/utils/carrier.js
+
+--4bce4d1--2017-09-05--Gary Paige
+5	2	src/components/Content/DrawerContainer/ContentDetail/ContentDetail.scss
+
+--836f1a3--2017-08-30--Gary Paige
+9	1	src/clients/socoConfigClient.js
+
+--0de8e44--2017-08-30--Gary Paige
+1	1	src/utils/applicationConfig.js
+2	2	src/utils/applicationConfig.test.js
+
+--5986089--2017-08-29--Gary Paige
+1	2	src/clients/analyticsClient.js
+5	1	src/clients/analyticsClient.test.js
+19	14	src/clients/socoConfigClient.js
+4	28	src/clients/socoConfigClient.test.js
+2	3	src/clients/technicianClient.js
+6	4	src/clients/technicianClient.test.js
+0	17	src/middleware/analyticsDispatcher.js
+0	16	src/middleware/analyticsDispatcher.test.js
+17	0	src/middleware/analyticsMiddleware.js
+16	0	src/middleware/analyticsMiddleware.test.js
+0	0	src/middleware/contentDetailMiddleware.js
+0	38	src/middleware/mixpanelDispatcher.js
+0	39	src/middleware/mixpanelDispatcher.test.js
+38	0	src/middleware/mixpanelMiddleware.js
+39	0	src/middleware/mixpanelMiddleware.test.js
+0	112	src/middleware/technicianDispatcher.js
+0	118	src/middleware/technicianDispatcher.test.js
+112	0	src/middleware/technicianMiddleware.js
+118	0	src/middleware/technicianMiddleware.test.js
+1	1	src/models/technician.js
+2	0	src/reducers/routeStateReducer.js
+3	1	src/reducers/routeStateReducer.test.js
+57	40	src/selectors/socoSelector.js
+6	6	src/store.js
+
+--6b3478f--2017-08-29--pijus-kadisius
+1	1	package.json
+
+--8e05e79--2017-08-29--Gary Paige
+7	10	src/components/Content/DrawerContainer/ContentDetail/ContentDetail.js
+8	2	src/components/Content/DrawerContainer/ContentDetail/ContentDetail.test.js
+
+--15807fc--2017-08-28--Gary Paige
+1	1	package.json
+2	2	src/components/Content/DrawerContainer/BookmarkList/BookmarkCard/BookmarkCard.js
+1	1	src/components/Content/DrawerContainer/BookmarkList/BookmarkCard/BookmarkCardEventHandlers.js
+2	2	src/components/Content/DrawerContainer/DrawerContainer.js
+2	3	src/components/Dashboard/Dashboard.js
+6	7	src/components/Header/Header.js
+2	3	src/components/KnowledgeAlerts/KnowledgeAlert.js
+2	2	src/components/MostRecent/MostRecent.js
+2	5	src/components/SearchResults/CardView/ResultCard/ResultCard.js
+2	5	src/components/SearchResults/ListView/ResultList/ResultList.js
+1	1	src/reducers/routeStateReducer.js
+10	2	src/reducers/routeStateReducer.test.js
+5	5	src/selectors/pathBuilderSelector.js
+15	12	src/utils/pathBuilder.js
+21	10	src/utils/pathBuilder.test.js
+
+--758d1f1--2017-08-28--Daniel Nalbach
+6	1	src/actions/mixpanelActions.js
+9	0	src/actions/mixpanelActions.test.js
+7	1	src/components/SearchResults/SearchResults.js
+23	1	src/components/SearchResults/SearchResults.test.js
+
+--357bcc3--2017-08-25--Gary Paige
+3	36	src/App.js
+1	18	src/App.test.js
+1	1	src/__mocks__/storeMock.js
+0	9	src/actions/carrierActions.js
+0	13	src/actions/carrierActions.test.js
+3	5	src/middleware/mixpanelDispatcher.js
+0	16	src/reducers/currentCarrier.js
+0	19	src/reducers/currentCarrier.test.js
+2	4	src/reducers/index.js
+0	18	src/reducers/routeSchemeReducer.js
+0	30	src/reducers/routeSchemeReducer.test.js
+26	0	src/reducers/routeStateReducer.js
+56	0	src/reducers/routeStateReducer.test.js
+1	1	src/selectors/pathBuilderSelector.js
+10	3	src/selectors/searchSelector.js
+7	2	src/selectors/searchSelector.test.js
+1	2	src/store.js
+1	1	src/utils/client.js
+
+--417884b--2017-08-25--pijus-kadisius
+1	1	package.json
+
+--c526f2f--2017-08-25--Daniel Nalbach
+2	2	src/clients/analyticsClient.js
+13	3	src/clients/socoConfigClient.js
+27	3	src/clients/socoConfigClient.test.js
+3	3	src/clients/technicianClient.js
+
+--cbedb7c--2017-08-23--Daniel Nalbach
+8	8	src/components/Content/DrawerContainer/BookmarkList/BookmarkCard/BookmarkCardEventHandlers.js
+
+--fa21007--2017-08-23--Jeff Tougas
+1	1	scripts/deploy.sh
+
+--1bb22d2--2017-08-23--pijus-kadisius
+2	2	test/features/pages/soluto-helix-page.js
+
+--e2f1143--2017-08-23--Daniel Nalbach
+26	1	src/actions/mixpanelActions.js
+45	0	src/actions/mixpanelActions.test.js
+10	5	src/components/Content/DrawerContainer/BookmarkList/BookmarkCard/BookmarkCard.js
+6	1	src/components/Content/DrawerContainer/BookmarkList/BookmarkCard/BookmarkCard.test.js
+40	15	src/components/Content/DrawerContainer/BookmarkList/BookmarkCard/BookmarkCardEventHandlers.js
+32	7	src/components/Content/DrawerContainer/BookmarkList/BookmarkCard/BookmarkCardEventHandlers.test.js
+
+--eeeec1a--2017-08-23--Daniel Nalbach
+3	1	locales/en-US/common.json
+9	6	src/__mocks__/storeMock.js
+7	0	src/actions/technicianActions.js
+10	1	src/actions/technicianActions.test.js
+8	51	src/clients/technicianClient.js
+29	37	src/clients/technicianClient.test.js
+35	13	src/components/Content/DrawerContainer/BookmarkList/BookmarkCard/BookmarkCard.js
+8	1	src/components/Content/DrawerContainer/BookmarkList/BookmarkCard/BookmarkCard.scss
+37	3	src/components/Content/DrawerContainer/BookmarkList/BookmarkCard/BookmarkCard.test.js
+151	0	src/components/Content/DrawerContainer/BookmarkList/BookmarkCard/BookmarkCardEventHandlers.js
+136	0	src/components/Content/DrawerContainer/BookmarkList/BookmarkCard/BookmarkCardEventHandlers.test.js
+10	5	src/components/Content/DrawerContainer/BookmarkList/BookmarkList.js
+2	1	src/components/Content/DrawerContainer/BookmarkList/BookmarkList.test.js
+5	0	src/constants/technicianKeys.js
+28	6	src/middleware/technicianDispatcher.js
+37	15	src/middleware/technicianDispatcher.test.js
+57	0	src/models/technician.js
+82	0	src/models/technician.test.js
+39	19	src/reducers/technicianReducer.js
+52	24	src/reducers/technicianReducer.test.js
+14	6	src/selectors/socoSelector.js
+23	15	src/selectors/socoSelector.test.js
+
+--39c4f93--2017-08-22--Gary Paige
+2	2	src/components/Header/Header.js
+
+--1e785f8--2017-08-22--pijus-kadisius
+13	12	test/features/pages/soluto-helix-page.js
+
+--8f63c1f--2017-08-17--Alex Petty
+1	1	package.json
+2	1	src/connectors/withSharedWorkerEventBus/connectSharedWorkerEventBus.js
+17	6	webpack.config.js
+
+--66a0eef--2017-08-17--Alex Petty
+1	1	package.json
+1	2	src/connectors/withSharedWorkerEventBus/connectSharedWorkerEventBus.js
+6	17	webpack.config.js
+
+--6f36dce--2017-08-17--Gary Paige
+3	2	src/components/Content/DrawerContainer/ContentDetail/ContentDetail.scss
+
+--4980707--2017-08-17--pijus-kadisius
+1	1	package.json
+
+--e3f037d--2017-08-17--Gary Paige
+3	4	src/components/Header/Header.js
+
+--fde7571--2017-08-17--Alex Petty
+7	2	src/components/Header/Header.js
+16	7	src/components/Header/Header.scss
+0	4	src/components/Header/ResultsCounter.scss
+
+--b48ddda--2017-08-17--pijus-kadisius
+5	1	package.json
+88	0	test/features/pages/soluto-helix-page.js
+58	0	test/features/soluto-helix.feature
+70	0	test/features/step_definitions/soluto-helix.js
+28	0	test/features/support/hooks.js
+
+--0e23aae--2017-08-16--pijus-kadisius
+1	1	package.json
+
+--e224813--2017-08-15--Gary Paige
+6	6	package.json
+0	0	src/middleware/contentDetailMiddleware.js
+
+--a8cd3ea--2017-08-09--Gary Paige
+2	1	src/reducers/routeSchemeReducer.js
+7	0	src/reducers/routeSchemeReducer.test.js
+
+--faf57bd--2017-08-08--Gary Paige
+5	3	src/components/Content/DrawerContainer/BookmarkList/BookmarkCard/BookmarkCard.js
+1	0	src/components/Content/DrawerContainer/BookmarkList/BookmarkCard/BookmarkCard.test.js
+5	5	src/components/Content/DrawerContainer/DrawerContainer.js
+2	1	src/components/Content/DrawerContainer/DrawerContainer.test.js
+5	3	src/components/Dashboard/Dashboard.js
+1	0	src/components/Dashboard/Dashboard.test.js
+11	5	src/components/Header/Header.js
+4	0	src/components/Header/Header.test.js
+10	3	src/components/KnowledgeAlerts/KnowledgeAlert.js
+5	3	src/components/MostRecent/MostRecent.js
+5	2	src/components/MostRecent/MostRecent.test.js
+5	3	src/components/SearchResults/CardView/ResultCard/ResultCard.js
+1	0	src/components/SearchResults/CardView/ResultCard/ResultCard.test.js
+5	3	src/components/SearchResults/ListView/ResultList/ResultList.js
+1	0	src/components/SearchResults/ListView/ResultList/ResultList.test.js
+29	11	src/littleroutes.js
+2	0	src/reducers/index.js
+17	0	src/reducers/routeSchemeReducer.js
+23	0	src/reducers/routeSchemeReducer.test.js
+12	0	src/selectors/pathBuilderSelector.js
+1	0	src/utils/carrier.js
+25	4	src/utils/pathBuilder.js
+108	8	src/utils/pathBuilder.test.js
+
+--54ae413--2017-08-08--Gary Paige
+6	0	src/components/Content/DrawerContainer/ContentDetail/ContentDetail.scss
+
+--72450fb--2017-08-08--pijus-kadisius
+1	1	package.json
+
+--dcb9b43--2017-08-07--Gary Paige
+5	3	src/components/Content/DrawerContainer/ContentDetail/ContentDetail.js
+1	1	src/components/Content/DrawerContainer/ContentDetail/ContentDetail.scss
+16	1	src/components/Content/DrawerContainer/ContentDetail/ContentDetail.test.js
+
+--7270144--2017-08-07--pijus-kadisius
+1	1	package.json
+
+--e58bf40--2017-08-03--Alex Petty
+2	3	src/clients/technicianClient.test.js
+
+--056be01--2017-08-02--jacobmassengill
+12	12	src/clients/technicianClient.js
+18	1	src/clients/technicianClient.test.js
+4	3	src/middleware/technicianDispatcher.js
+2	2	src/middleware/technicianDispatcher.test.js
+
+--474889a--2017-07-31--Gary Paige
+1	2	src/components/Content/DrawerContainer/ContentHeader/ContentHeader.test.js
+
+--0b8bba0--2017-07-31--Gary Paige
+0	4	src/App.scss
+205	41	src/components/Content/DrawerContainer/ContentDetail/ContentDetail.scss
+0	1	src/components/Content/DrawerContainer/ContentHeader/ContentHeader.js
+1	2	src/components/Content/DrawerContainer/ContentHeader/ContentHeader.scss
+2	1	src/components/Content/DrawerContainer/ContentToolbar/ContentToolbar.scss
+1	0	src/index.scss
+9	0	src/styles/icons.scss
+7	1	src/styles/palette.scss
+
+--bc9bfd1--2017-07-26--Gary Paige
+5	1	src/components/Content/DrawerContainer/ContentDetail/ContentDetail.js
+67	1	src/components/Content/DrawerContainer/ContentDetail/ContentDetail.scss
+2	2	src/styles/icons.scss
+
+--382ebd2--2017-07-25--Alex Petty
+1	1	package.json
+
+--77a9af6--2017-07-20--brennanbelew
+10	0	src/actions/mixpanelActions.js
+26	0	src/actions/mixpanelActions.test.js
+1	1	src/clients/dapulseClient.js
+36	24	src/components/Feedback/Feedback.js
+0	6	src/components/Feedback/Feedback.scss
+61	24	src/components/Feedback/Feedback.test.js
+
+--e597cf8--2017-07-20--Gary Paige
+81	0	src/components/Content/DrawerContainer/ContentDetail/ContentDetail.scss
+
+--60a80b3--2017-07-20--pijus-kadisius
+1	1	package.json
+
+--a87accd--2017-07-18--Alex Petty
+0	1	package.json
+1	2	src/components/Content/Content.js
+
+--602e4a2--2017-07-12--pijus-kadisius
+1	1	package.json
+
+--ccf00fd--2017-07-12--Gary Paige
+5	3	src/middleware/mixpanelDispatcher.js
+15	2	src/middleware/mixpanelDispatcher.test.js
+
+--2d499f3--2017-07-11--brennanbelew
+4	2	src/components/KnowledgeAlerts/KnowledgeAlerts.scss
+
+--56e1585--2017-07-11--Gary Paige
+1	1	src/components/MostRecent/MostRecent.js
+10	5	src/components/MostRecent/MostRecent.test.js
+
+--3ba216d--2017-07-11--Jeff Tougas
+3	1	webpack.config.js
+
+--c77c010--2017-07-05--Gary Paige
+1	1	src/components/Content/DrawerContainer/AlertList/AlertList.js
+13	13	src/components/KnowledgeAlerts/KnowledgeAlerts.js
+2	2	src/components/KnowledgeAlerts/KnowledgeAlerts.test.js
+5	2	src/components/MostRecent/MostRecent.js
+
+--6f0d9e4--2017-07-05--Gary Paige
+4	2	src/App.js
+2	1	src/components/Content/DrawerContainer/BookmarkList/BookmarkCard/BookmarkCard.js
+2	1	src/components/Content/DrawerContainer/BookmarkList/BookmarkList.js
+2	1	src/components/Content/DrawerContainer/ContentToolbar/ContentToolbar.js
+27	25	src/components/Content/DrawerContainer/DrawerContainer.js
+7	4	src/components/Content/DrawerContainer/DrawerContainer.test.js
+2	1	src/components/Dashboard/Dashboard.js
+2	1	src/components/Header/Header.js
+2	1	src/components/KnowledgeAlerts/KnowledgeAlerts.js
+4	3	src/components/MostRecent/MostRecent.js
+5	1	src/components/MostRecent/MostRecent.test.js
+2	1	src/components/SearchBox/SearchField.js
+2	1	src/components/SearchResults/CardView/ResultCard/ResultCard.js
+2	1	src/components/SearchResults/ListView/ResultList/ResultList.js
+2	1	src/middleware/analyticsDispatcher.js
+4	2	src/middleware/mixpanelDispatcher.js
+2	1	src/middleware/sharedWorkerMiddleware.js
+8	6	src/middleware/technicianDispatcher.js
+18	0	src/selectors/healthSelector.js
+27	0	src/selectors/healthSelector.test.js
+27	0	src/selectors/searchSelector.js
+39	0	src/selectors/searchSelector.test.js
+38	0	src/selectors/socoSelector.js
+36	0	src/selectors/socoSelector.test.js
+
+--7bee757--2017-06-29--brennanbelew
+1	1	locales/en-US/feedback.json
+1	1	src/components/Feedback/Feedback.js
+
+--079688c--2017-06-29--Jeff Tougas
+3	1	src/utils/eventBusWorker/onmessage.js
+
+--44aff7b--2017-06-27--pijus-kadisius
+1	1	package.json
+
+--7ea1ad4--2017-06-27--Jeff Tougas
+1	0	.eslintrc.yaml
+0	2	src/App.js
+1	1	src/connectors/withSharedWorkerEventBus/connectSharedWorkerEventBus.js
+2	1	src/connectors/withSharedWorkerEventBus/connectSharedWorkerEventBus.test.js
+6	0	src/utils/eventBusWorker/onmessage.js
+
+--8aa1582--2017-06-26--brennanbelew
+5	0	src/actions/mixpanelActions.js
+10	0	src/actions/mixpanelActions.test.js
+1	1	src/components/Content/DrawerContainer/ContentToolbar/ContentToolbar.js
+2	1	src/components/Content/DrawerContainer/DrawerContainer.js
+11	3	src/components/Header/Header.js
+13	1	src/components/Header/Header.test.js
+
+--5fa0af1--2017-06-26--brennanbelew
+1	1	src/components/MostRecent/MostRecent.js
+
+--01b4e5a--2017-06-23--Gary Paige
+4	1	src/components/Content/DrawerContainer/ContentDetail/ContentDetail.js
+6	0	src/components/Content/DrawerContainer/ContentDetail/ContentDetail.scss
+9	1	src/components/Content/DrawerContainer/ContentDetail/ContentDetail.test.js
+2	1	src/components/Content/DrawerContainer/DrawerContainer.js
+
+--b1f8854--2017-06-23--brennanbelew
+20	3	src/components/Dashboard/Dashboard.js
+16	3	src/components/Dashboard/Dashboard.test.js
+
+--bdc05ad--2017-06-23--Muhamed Brifkani
+1	1	src/components/Content/DrawerContainer/ContentToolbar/ContentToolbar.js
+6	1	src/components/Content/DrawerContainer/ContentToolbar/ContentToolbar.scss
+
+--0449e7d--2017-06-23--brennanbelew
+1	1	locales/en-US/common.json
+-	-	public/assets/images/mostRecent_icon.png
+-	-	public/assets/images/mostViewed_icon.png
+3	3	src/actions/mixpanelActions.js
+3	3	src/actions/mixpanelActions.test.js
+4	4	src/components/Dashboard/Dashboard.js
+2	2	src/components/Dashboard/Dashboard.scss
+1	1	src/components/Dashboard/Dashboard.test.js
+3	2	src/components/KnowledgeAlerts/KnowledgeAlerts.scss
+113	0	src/components/MostRecent/MostRecent.js
+37	0	src/components/MostRecent/MostRecent.scss
+164	0	src/components/MostRecent/MostRecent.test.js
+2	0	src/components/MostRecent/index.js
+0	108	src/components/MostViewed/MostViewed.js
+0	37	src/components/MostViewed/MostViewed.scss
+0	148	src/components/MostViewed/MostViewed.test.js
+0	2	src/components/MostViewed/index.js
+
+--57ebc03--2017-06-22--Gary Paige
+4	0	locales/en-US/contentTypes.json
+2	2	package.json
+17	4	src/components/Content/DrawerContainer/AlertList/AlertList.js
+1	1	src/components/Content/DrawerContainer/AlertList/AlertList.scss
+8	3	src/components/Content/DrawerContainer/AlertList/AlertList.test.js
+11	4	src/components/Content/DrawerContainer/BookmarkList/BookmarkList.js
+1	0	src/components/Content/DrawerContainer/BookmarkList/BookmarkList.test.js
+18	9	src/components/Content/DrawerContainer/ContentDetail/ContentDetail.js
+4	0	src/components/Content/DrawerContainer/ContentDetail/ContentDetail.scss
+0	94	src/components/Content/DrawerContainer/ContentDetail/ContentToolbar/ContentToolbar.js
+0	77	src/components/Content/DrawerContainer/ContentDetail/ContentToolbar/ContentToolbar.scss
+0	65	src/components/Content/DrawerContainer/ContentDetail/ContentToolbar/ContentToolbar.test.js
+0	1	src/components/Content/DrawerContainer/ContentDetail/ContentToolbar/index.js
+19	0	src/components/Content/DrawerContainer/ContentHeader/ContentHeader.js
+23	0	src/components/Content/DrawerContainer/ContentHeader/ContentHeader.scss
+23	0	src/components/Content/DrawerContainer/ContentHeader/ContentHeader.test.js
+1	0	src/components/Content/DrawerContainer/ContentHeader/index.js
+105	0	src/components/Content/DrawerContainer/ContentToolbar/ContentToolbar.js
+62	0	src/components/Content/DrawerContainer/ContentToolbar/ContentToolbar.scss
+66	0	src/components/Content/DrawerContainer/ContentToolbar/ContentToolbar.test.js
+1	0	src/components/Content/DrawerContainer/ContentToolbar/index.js
+5	11	src/components/Content/DrawerContainer/DrawerContainer.js
+4	4	src/components/Content/DrawerContainer/DrawerContainer.test.js
+8	2	src/components/Content/DrawerContainer/GeneralFeedback/GeneralFeedback.js
+10	2	src/styles/icons.scss
+2	0	src/styles/palette.scss
+1	2	src/utils/eventBusWorker/index.js
+1	0	webpack.config.js
+
+--7d359f6--2017-06-21--brennanbelew
+3	0	locales/en-US/bookmarks.json
+34	20	src/components/Content/DrawerContainer/BookmarkList/BookmarkCard/BookmarkCard.js
+20	0	src/components/Content/DrawerContainer/BookmarkList/BookmarkCard/BookmarkCard.scss
+11	1	src/components/Content/DrawerContainer/BookmarkList/BookmarkCard/BookmarkCard.test.js
+8	0	src/middleware/technicianDispatcher.js
+16	1	src/middleware/technicianDispatcher.test.js
+
+--75b472b--2017-06-21--pijus-kadisius
+1	1	package.json
+
+--4e88e93--2017-06-19--Gary Paige
+1	1	src/components/Content/DrawerContainer/DrawerContainer.js
+4	0	src/components/Content/DrawerContainer/DrawerContainer.scss
+
+--581a1e8--2017-06-19--Gary Paige
+1	1	package.json
+6	6	src/App.js
+1	1	src/actions/contentDetailActions.js
+3	3	src/clients/dapulseClient.js
+1	1	src/clients/dapulseClient.test.js
+3	3	src/components/Content/Content.js
+4	4	src/components/Content/DrawerContainer/BookmarkList/BookmarkCard/BookmarkCard.js
+1	0	src/components/Content/DrawerContainer/ContentDetail/ContentDetail.js
+3	3	src/components/Content/DrawerContainer/ContentDetail/ContentToolbar/ContentToolbar.js
+5	8	src/components/Content/DrawerContainer/DrawerContainer.js
+10	3	src/components/Content/DrawerContainer/DrawerContainer.test.js
+3	3	src/components/Feedback/Feedback.js
+1	1	src/components/Feedback/Feedback.test.js
+2	2	src/components/KnowledgeAlerts/KnowledgeAlerts.js
+10	1	src/components/KnowledgeAlerts/KnowledgeAlerts.test.js
+1	1	src/components/SearchBox/SearchBox.js
+2	2	src/components/SearchBox/SearchField.js
+2	2	src/components/SearchResults/CardView/ResultCard/ResultCard.js
+2	1	src/components/SearchResults/CardView/ResultCard/ResultCard.test.js
+2	2	src/components/SearchResults/ListView/ResultList/ResultList.js
+4	1	src/components/SearchResults/ListView/ResultList/ResultList.test.js
+4	4	src/components/TabMenu/TabMenu.js
+1	1	src/connectors/withSharedWorkerEventBus/connectSharedWorkerEventBus.js
+2	2	src/connectors/withSharedWorkerEventBus/connectSharedWorkerEventBus.test.js
+1	1	src/utils/eventBusWorker/index.js
+
+--19c1655--2017-06-16--pijus-kadisius
+1	1	package.json
+
+--13e3a0e--2017-06-15--Daniel Nalbach
+1	1	.eslintrc.yaml
+3	0	src/__mocks__/storeMock.js
+11	0	src/actions/searchActions.js
+14	0	src/actions/searchActions.test.js
+7	1	src/components/SearchBox/SearchField.js
+11	1	src/components/SearchBox/SearchField.test.js
+4	2	src/middleware/mixpanelDispatcher.js
+5	0	src/middleware/mixpanelDispatcher.test.js
+3	1	src/reducers/index.js
+15	0	src/reducers/searchReducer.js
+20	0	src/reducers/searchReducer.test.js
+4	2	src/reducers/session.test.js
+1	0	src/store.js
+
+--3886ef1--2017-06-15--brennanbelew
+19	0	src/clients/analyticsClient.js
+31	0	src/clients/analyticsClient.test.js
+16	0	src/middleware/analyticsDispatcher.js
+16	0	src/middleware/analyticsDispatcher.test.js
+2	0	src/store.js
+5	0	webpack.config.js
+
+--005608f--2017-06-15--Daniel Nalbach
+5	10	src/actions/mixpanelActions.js
+8	18	src/actions/mixpanelActions.test.js
+2	2	src/components/KnowledgeAlerts/KnowledgeAlert.js
+2	8	src/components/SearchBox/SearchBox.js
+0	2	src/components/SearchBox/SearchBox.test.js
+1	8	src/components/SearchBox/SearchField.js
+0	2	src/components/SearchBox/SearchField.test.js
+4	3	src/components/SearchResults/CardView/ResultCard/ResultCard.js
+4	3	src/components/SearchResults/ListView/ResultList/ResultList.js
+
+--27e7ab2--2017-06-14--Daniel Nalbach
+5	24	src/App.js
+0	2	src/App.test.js
+11	1	src/actions/mixpanelActions.js
+21	0	src/actions/mixpanelActions.test.js
+23	0	src/middleware/sharedWorkerMiddleware.js
+55	0	src/middleware/sharedWorkerMiddleware.test.js
+2	4	src/reducers/session.js
+3	1	src/store.js
+
+--27cd37b--2017-06-13--Gary Paige
+1	1	package.json
+
+--cef998d--2017-06-12--brennanbelew
+74	0	src/actions/mixpanelActions.test.js
+
+--50d6896--2017-06-09--Daniel Nalbach
+24	4	src/actions/mixpanelActions.js
+54	6	src/actions/mixpanelActions.test.js
+37	13	src/components/Content/Content.js
+14	0	src/components/Content/Content.test.js
+3	1	src/components/Content/DrawerContainer/ContentDetail/ContentDetail.js
+2	1	src/components/Content/DrawerContainer/ContentDetail/ContentDetail.test.js
+5	2	src/components/SearchResults/CardView/CardView.js
+5	3	src/components/SearchResults/CardView/ResultCard/ResultCard.js
+2	2	src/components/SearchResults/CardView/ResultCard/ResultCard.test.js
+5	2	src/components/SearchResults/ListView/ListView.js
+5	4	src/components/SearchResults/ListView/ResultList/ResultList.js
+2	2	src/components/SearchResults/ListView/ResultList/ResultList.test.js
+
+--1cde9b0--2017-06-08--brennanbelew
+1	1	README.md
+2	1	src/middleware/mixpanelDispatcher.js
+4	307	src/utils/carrier.test.js
+41	0	src/utils/client.js
+28	0	src/utils/client.test.js
+
+--b03f5a0--2017-06-07--Jeff Tougas
+6	1	src/components/Content/DrawerContainer/ContentDetail/ContentDetail.js
+7	0	src/components/Content/DrawerContainer/ContentDetail/ContentToolbar/ContentToolbar.js
+
+--2ee97d3--2017-06-07--pijus-kadisius
+1	1	package.json
+
+--152d868--2017-06-07--Jeff Tougas
+1	0	.eslintrc.yaml
+0	440	flow-typed/npm/jest_v18.x.x.js
+459	0	flow-typed/npm/jest_v19.x.x.js
+2	1	locales/en-US/common.json
+6	1	package.json
+10	1	src/__mocks__/storeMock.js
+31	1	src/actions/mixpanelActions.js
+14	0	src/actions/technicianActions.js
+20	0	src/actions/technicianActions.test.js
+18	1	src/clients/algoliaClient.js
+20	0	src/clients/socoConfigClient.js
+13	0	src/clients/socoConfigClient.test.js
+75	0	src/clients/technicianClient.js
+44	0	src/clients/technicianClient.test.js
+2	0	src/components/Content/Content.js
+11	0	src/components/Content/Content.test.js
+99	0	src/components/Content/DrawerContainer/BookmarkList/BookmarkCard/BookmarkCard.js
+153	0	src/components/Content/DrawerContainer/BookmarkList/BookmarkCard/BookmarkCard.scss
+63	0	src/components/Content/DrawerContainer/BookmarkList/BookmarkCard/BookmarkCard.test.js
+4	0	src/components/Content/DrawerContainer/BookmarkList/BookmarkCard/index.js
+39	0	src/components/Content/DrawerContainer/BookmarkList/BookmarkList.js
+6	0	src/components/Content/DrawerContainer/BookmarkList/BookmarkList.scss
+31	0	src/components/Content/DrawerContainer/BookmarkList/BookmarkList.test.js
+1	1	src/components/Content/DrawerContainer/ContentDetail/ContentDetail.js
+1	1	src/components/Content/DrawerContainer/ContentDetail/ContentDetail.scss
+40	5	src/components/Content/DrawerContainer/ContentDetail/ContentToolbar/ContentToolbar.js
+42	8	src/components/Content/DrawerContainer/ContentDetail/ContentToolbar/ContentToolbar.scss
+42	13	src/components/Content/DrawerContainer/ContentDetail/ContentToolbar/ContentToolbar.test.js
+6	1	src/components/Content/DrawerContainer/DrawerContainer.js
+14	6	src/components/Header/Header.js
+26	8	src/components/Header/Header.scss
+7	1	src/components/Header/Header.test.js
+10	3	src/components/SearchResults/CardView/ResultCard/ResultCard.js
+12	0	src/components/SearchResults/CardView/ResultCard/ResultCard.scss
+1	0	src/components/SearchResults/CardView/ResultCard/ResultCard.test.js
+11	4	src/components/SearchResults/ListView/ResultList/ResultList.js
+12	1	src/components/SearchResults/ListView/ResultList/ResultList.scss
+2	1	src/components/SearchResults/ListView/ResultList/ResultList.test.js
+8	5	src/components/SearchResults/SearchResults.scss
+1	0	src/constants/contentTypes.js
+7	15	src/littleroutes.js
+79	0	src/middleware/technicianDispatcher.js
+81	0	src/middleware/technicianDispatcher.test.js
+24	0	src/reducers/contentDetailReducer.test.js
+3	1	src/reducers/index.js
+78	0	src/reducers/technicianReducer.js
+70	0	src/reducers/technicianReducer.test.js
+4	0	src/store.js
+11	0	src/styles/icons.scss
+5	2	src/styles/palette.scss
+15	19	src/utils/pathBuilder.js
+1	0	tools/jest/jestSetup.js
+9	0	webpack.config.js
+
+--61a5950--2017-06-05--pijus-kadisius
+1	1	package.json
+
+--43e4ea6--2017-06-03--Gary Paige
+3	2	src/components/Content/DrawerContainer/ContentDetail/contentTransforms.js
+4	4	src/components/Content/DrawerContainer/ContentDetail/contentTransforms.test.js
+
+--e2f025b--2017-06-02--Gary Paige
+2	1	src/components/SearchResults/SearchResults.js
+
+--f0ef39c--2017-06-02--Daniel Nalbach
+6	1	src/actions/mixpanelActions.js
+9	0	src/actions/mixpanelActions.test.js
+1	0	src/components/SearchResults/SearchResults.js
+7	1	src/components/SearchResults/SearchResults.test.js
+
+--d0796e5--2017-06-02--Daniel Nalbach
+3	3	src/utils/applicationConfig.test.js
+
+--84b7a30--2017-06-02--Daniel Nalbach
+5	0	src/components/SearchResults/CardView/ResultCard/ResultCard.scss
+0	6	src/index.scss
+
+--b0b2a50--2017-06-02--Daniel Nalbach
+2	1	package.json
+3	0	src/middleware/mixpanelDispatcher.js
+6	1	src/middleware/mixpanelDispatcher.test.js
+6	0	src/utils/applicationConfig.js
+4	0	src/utils/applicationConfig.test.js
+
+--29185bf--2017-06-02--Gary Paige
+11	2	src/components/KnowledgeAlerts/KnowledgeAlert.js
+3	2	src/middleware/mixpanelDispatcher.js
+1	1	src/utils/applicationConfig.js
+
+--0747a74--2017-06-02--Gary Paige
+3	37	src/utils/applicationConfig.js
+0	40	src/utils/applicationConfig.test.js
+1	0	src/utils/carrier.js
+
+--5c6d9b6--2017-06-02--Gary Paige
+6	16	src/components/Content/DrawerContainer/ContentDetail/ContentDetail.js
+7	1	src/components/Content/DrawerContainer/ContentDetail/ContentDetail.scss
+13	0	src/components/Content/DrawerContainer/ContentDetail/ContentDetail.test.js
+39	0	src/components/Content/DrawerContainer/ContentDetail/contentTransforms.js
+42	0	src/components/Content/DrawerContainer/ContentDetail/contentTransforms.test.js
+0	5	src/components/SearchResults/CardView/ResultCard/ResultCard.js
+4	0	src/utils/applicationConfig.js
+
+--53cde74--2017-06-01--Gary Paige
+2	1	src/store.js
+
+--8fa41b7--2017-05-31--Muhamed Brifkani
+0	1	package.json
+0	15	src/App.js
+0	6	src/utils/applicationConfig.js
+0	6	src/utils/applicationConfig.test.js
+
+--6a3af2c--2017-05-30--Alex Petty
+1	2	package.json
+26	3	src/App.js
+1	4	src/App.test.js
+0	56	src/Routes.js
+0	35	src/Routes.test.js
+11	0	src/__mocks__/routerActionsMock.js
+0	16	src/__mocks__/routerMock.js
+1	0	src/__mocks__/storeMock.js
+14	9	src/components/Content/Content.js
+2	10	src/components/Content/Content.test.js
+10	9	src/components/Content/DrawerContainer/ContentDetail/ContentDetail.js
+3	5	src/components/Content/DrawerContainer/ContentDetail/ContentDetail.test.js
+8	5	src/components/Content/DrawerContainer/DrawerContainer.js
+2	2	src/components/Content/DrawerContainer/DrawerContainer.test.js
+1	2	src/components/Content/index.js
+2	2	src/components/Dashboard/Dashboard.js
+3	3	src/components/Header/Header.js
+14	5	src/components/KnowledgeAlerts/KnowledgeAlert.js
+2	6	src/components/KnowledgeAlerts/KnowledgeAlert.test.js
+8	7	src/components/MostViewed/MostViewed.js
+3	3	src/components/MostViewed/MostViewed.test.js
+14	5	src/components/SearchResults/CardView/ResultCard/ResultCard.js
+2	4	src/components/SearchResults/CardView/ResultCard/ResultCard.test.js
+1	2	src/components/SearchResults/CardView/ResultCard/index.js
+14	5	src/components/SearchResults/ListView/ResultList/ResultList.js
+2	4	src/components/SearchResults/ListView/ResultList/ResultList.test.js
+1	2	src/components/SearchResults/ListView/ResultList/index.js
+9	3	src/index.js
+27	0	src/littleroutes.js
+4	7	src/reducers/index.js
+20	8	src/store.js
+1	0	tools/test.js
+
+--7a60c1d--2017-05-30--Muhamed Brifkani
+2	2	src/components/Dashboard/Dashboard.js
+1	2	src/components/SearchBox/SearchBox.js
+3	5	src/components/SearchBox/SearchField.js
+
+--fc77f4d--2017-05-30--Jeff Tougas
+53	33	src/clients/dapulseClient.js
+1	1	src/utils/applicationConfig.js
+
+--c3343b8--2017-05-24--Gary Paige
+4	4	package.json
+11	42	src/App.js
+35	52	src/App.test.js
+3	1	src/Routes.js
+2	2	src/Routes.test.js
+16	0	src/__mocks__/storeMock.js
+1	1	src/actions/contentDetailActions.js
+1	1	src/actions/contentDetailActions.test.js
+121	0	src/actions/mixpanelActions.js
+255	0	src/actions/mixpanelActions.test.js
+30	0	src/clients/__mocks__/algoliasearch.js
+13	0	src/clients/__mocks__/mixpanel-browser.js
+80	0	src/clients/algoliaClient.js
+55	0	src/clients/algoliaClient.test.js
+83	0	src/clients/dapulseClient.js
+47	0	src/clients/dapulseClient.test.js
+20	0	src/clients/mixpanelClient.js
+19	0	src/clients/mixpanelClient.test.js
+21	13	src/components/Content/Content.js
+12	51	src/components/Content/Content.test.js
+1	1	src/components/Content/DrawerContainer/AlertList/AlertList.test.js
+16	9	src/components/Content/DrawerContainer/ContentDetail/ContentDetail.js
+10	21	src/components/Content/DrawerContainer/ContentDetail/ContentDetail.test.js
+18	9	src/components/Content/DrawerContainer/ContentDetail/ContentToolbar/ContentToolbar.js
+9	12	src/components/Content/DrawerContainer/ContentDetail/ContentToolbar/ContentToolbar.test.js
+17	10	src/components/Content/DrawerContainer/DrawerContainer.js
+15	31	src/components/Content/DrawerContainer/DrawerContainer.test.js
+2	5	src/components/Dashboard/Dashboard.test.js
+23	17	src/components/Feedback/Feedback.js
+44	18	src/components/Feedback/Feedback.test.js
+15	4	src/components/Header/Header.js
+13	27	src/components/Header/Header.test.js
+2	14	src/components/Header/ResultsCounter.test.js
+15	10	src/components/KnowledgeAlerts/KnowledgeAlerts.js
+6	16	src/components/KnowledgeAlerts/KnowledgeAlerts.test.js
+15	9	src/components/MostViewed/MostViewed.js
+19	19	src/components/MostViewed/MostViewed.test.js
+18	10	src/components/SearchBox/SearchBox.js
+21	35	src/components/SearchBox/SearchBox.test.js
+25	16	src/components/SearchBox/SearchField.js
+26	46	src/components/SearchBox/SearchField.test.js
+15	9	src/components/SearchResults/CardView/ResultCard/ResultCard.js
+11	15	src/components/SearchResults/CardView/ResultCard/ResultCard.test.js
+2	2	src/components/SearchResults/ListView/ListView.js
+16	9	src/components/SearchResults/ListView/ResultList/ResultList.js
+12	16	src/components/SearchResults/ListView/ResultList/ResultList.test.js
+18	14	src/components/SearchResults/SearchResults.js
+22	39	src/components/SearchResults/SearchResults.test.js
+0	30	src/middleware/__mocks__/algoliasearch.js
+0	80	src/middleware/algoliaClient.js
+0	55	src/middleware/algoliaClient.test.js
+0	83	src/middleware/dapulseClient.js
+0	47	src/middleware/dapulseClient.test.js
+29	0	src/middleware/mixpanelDispatcher.js
+16	0	src/middleware/mixpanelDispatcher.test.js
+2	0	src/store.js
+16	0	src/store.test.js
+0	130	src/utils/mixpanelEvents.js
+0	149	src/utils/mixpanelEvents.test.js
+
+--8360902--2017-05-24--pijus-kadisius
+1	1	package.json
+
+--496fc34--2017-05-23--Jeff Tougas
+4	3	src/middleware/dapulseClient.js
+
+--f6ecb69--2017-05-23--Jeff Tougas
+2	2	src/utils/applicationConfig.js
+5	0	webpack.config.js
+
+--942a546--2017-05-19--Muhamed Brifkani
+6	1	src/components/Header/Header.js
+5	1	src/components/Header/Header.test.js
+6	1	src/utils/mixpanelEvents.js
+6	0	src/utils/mixpanelEvents.test.js
+
+--4ec3bf6--2017-05-19--Muhamed Brifkani
+1	1	README.md
+10	0	locales/en-US/common.json
+27	0	locales/en-US/feedback.json
+0	10	locales/en/common.json
+0	27	locales/en/feedback.json
+2	3	package.json
+1	1	public/index.html
+1	1	src/components/ApplicationError/ApplicationError.js
+4	1	src/components/Content/DrawerContainer/ContentDetail/ContentToolbar/ContentToolbar.js
+8	5	src/components/Content/DrawerContainer/DrawerContainer.js
+1	1	src/components/Dashboard/Dashboard.js
+13	7	src/components/Feedback/Feedback.js
+34	23	src/components/Header/Header.js
+8	8	src/components/Header/Header.scss
+10	0	src/components/Header/Header.test.js
+1	1	src/components/Header/ResultsCounter.js
+2	2	src/components/MostViewed/MostViewed.js
+10	6	src/components/SearchBox/SearchBox.js
+9	1	src/components/SearchBox/SearchBox.test.js
+28	52	src/components/SearchBox/SearchField.js
+0	45	src/components/SearchBox/SearchField.scss
+3	32	src/components/SearchBox/SearchField.test.js
+27	0	src/components/SearchResults/CardView/CardView.js
+31	0	src/components/SearchResults/CardView/CardView.test.js
+118	0	src/components/SearchResults/CardView/ResultCard/ResultCard.js
+43	0	src/components/SearchResults/CardView/ResultCard/ResultCard.scss
+57	0	src/components/SearchResults/CardView/ResultCard/ResultCard.test.js
+5	0	src/components/SearchResults/CardView/ResultCard/index.js
+19	0	src/components/SearchResults/ListView/ListView.js
+30	0	src/components/SearchResults/ListView/ListView.test.js
+114	0	src/components/SearchResults/ListView/ResultList/ResultList.js
+43	0	src/components/SearchResults/ListView/ResultList/ResultList.scss
+55	0	src/components/SearchResults/ListView/ResultList/ResultList.test.js
+5	0	src/components/SearchResults/ListView/ResultList/index.js
+0	118	src/components/SearchResults/ResultCard/ResultCard.js
+0	43	src/components/SearchResults/ResultCard/ResultCard.scss
+0	43	src/components/SearchResults/ResultCard/ResultCard.test.js
+0	5	src/components/SearchResults/ResultCard/index.js
+55	15	src/components/SearchResults/SearchResults.js
+58	0	src/components/SearchResults/SearchResults.scss
+44	5	src/components/SearchResults/SearchResults.test.js
+1	0	src/styles/palette.scss
+11	11	src/utils/mixpanelEvents.js
+12	13	src/utils/mixpanelEvents.test.js
+
+--510a322--2017-05-19--Jeff Tougas
+4	1	src/components/Content/DrawerContainer/ContentDetail/ContentDetail.js
+5	0	src/components/SearchResults/ResultCard/ResultCard.js
+
+--66eb29f--2017-05-18--Alex Petty
+1	0	package.json
+23	1	src/components/MostViewed/MostViewed.js
+83	12	src/components/MostViewed/MostViewed.test.js
+
+--a35b314--2017-05-18--Jeff Tougas
+3	0	.eslintrc.yaml
+1	1	src/App.js
+1	1	src/components/Content/Content.js
+1	1	src/components/Header/Header.js
+1	1	src/components/KnowledgeAlerts/KnowledgeAlert.js
+1	1	src/components/KnowledgeAlerts/KnowledgeAlerts.js
+1	1	src/components/MostViewed/MostViewed.js
+1	1	src/components/SearchResults/SearchResults.js
+1	1	src/components/TabMenu/Tab.js
+1	1	src/components/TabMenu/TabMenu.js
+1	1	src/connectors/withSharedWorkerEventBus/connectSharedWorkerEventBus.test.js
+1	1	src/utils/applicationConfig.js
+
+--f40c23d--2017-05-18--Jeff Tougas
+2	1	Dockerfile
+
+--0ec244b--2017-05-17--Muhamed Brifkani
+1	3	src/utils/applicationConfig.js
+
+--1d0780d--2017-05-17--Muhamed Brifkani
+17	12	src/components/Feedback/Feedback.js
+12	3	src/components/Feedback/Feedback.test.js
+
+--0630cca--2017-05-17--Muhamed Brifkani
+2	2	src/components/SearchBox/SearchField.js
+
+--f649b75--2017-05-15--Muhamed Brifkani
+1	1	locales/en/common.json
+1	1	src/components/SearchBox/SearchField.js
+1	1	src/middleware/algoliaClient.js
+1	1	src/middleware/algoliaClient.test.js
+
+--6ff56c0--2017-05-15--Gary Paige
+2	10	src/App.js
+3	7	src/components/KnowledgeAlerts/KnowledgeAlerts.js
+2	1	src/components/KnowledgeAlerts/KnowledgeAlerts.test.js
+3	7	src/components/MostViewed/MostViewed.js
+2	1	src/components/MostViewed/MostViewed.test.js
+12	5	src/middleware/algoliaClient.js
+5	0	src/middleware/algoliaClient.test.js
+20	0	src/utils/applicationConfig.js
+21	1	src/utils/applicationConfig.test.js
+1	0	src/utils/carrier.js
+
+--211a85f--2017-05-15--Gary Paige
+-	-	public/assets/images/logo.png
+1	1	src/components/Header/Header.scss
+
+--885d3b0--2017-05-15--Daniel Nalbach
+6	4	src/components/SearchBox/SearchField.js
+75	16	src/components/SearchBox/SearchField.test.js
+
+--ee55400--2017-05-09--Jeff Tougas
+27	0	locales/en/feedback.json
+4	2	src/App.js
+2	0	src/Routes.js
+3	1	src/components/Content/Content.js
+31	2	src/components/Content/DrawerContainer/ContentDetail/ContentDetail.js
+19	1	src/components/Content/DrawerContainer/ContentDetail/ContentDetail.scss
+40	0	src/components/Content/DrawerContainer/ContentDetail/ContentToolbar/ContentToolbar.js
+43	0	src/components/Content/DrawerContainer/ContentDetail/ContentToolbar/ContentToolbar.scss
+39	0	src/components/Content/DrawerContainer/ContentDetail/ContentToolbar/ContentToolbar.test.js
+1	0	src/components/Content/DrawerContainer/ContentDetail/ContentToolbar/index.js
+68	7	src/components/Content/DrawerContainer/DrawerContainer.js
+12	0	src/components/Content/DrawerContainer/GeneralFeedback/GeneralFeedback.js
+11	0	src/components/Content/DrawerContainer/GeneralFeedback/GeneralFeedback.test.js
+251	47	src/components/Feedback/Feedback.js
+62	24	src/components/Feedback/Feedback.scss
+168	7	src/components/Feedback/Feedback.test.js
+4	1	src/components/Header/Header.js
+19	3	src/components/Header/Header.scss
+1	0	src/constants/contentTypes.js
+37	31	src/middleware/dapulseClient.js
+31	1	src/utils/mixpanelEvents.js
+12	0	src/utils/mixpanelEvents.test.js
+9	1	src/utils/pathBuilder.js
+
+--ae44043--2017-05-08--Gary Paige
+1	0	.gitignore
+3	3	src/App.js
+9	8	src/utils/applicationConfig.js
+44	40	src/utils/applicationConfig.test.js
+1	0	webpack.config.js
+
+--789475f--2017-05-08--Gary Paige
+1	3	scripts/build.sh
+
+--c960c5a--2017-05-08--Jeff Tougas
+4	3	scripts/deploy.sh
+1	1	src/Routes.test.js
+1	1	src/components/Content/Content.test.js
+1	1	src/components/Content/DrawerContainer/DrawerContainer.test.js
+1	1	src/components/MostViewed/MostViewed.test.js
+1	1	src/i18n.js
+1	1	src/i18n.test.js
+1	1	src/utils/applicationConfig.js
+1	1	src/utils/applicationConfig.test.js
+6	6	src/utils/pathBuilder.test.js
+7	3	webpack.config.js
+
+--b28a88f--2017-05-05--Gary Paige
+3	1	Dockerfile
+2	1	package.json
+9	0	scripts/build.sh
+4	0	src/components/Content/DrawerContainer/ContentDetail/ContentDetail.scss
+5	1	src/components/Header/Header.js
+19	1	src/components/Header/Header.scss
+12	0	webpack.config.js
+
+--658c7c3--2017-05-02--Gary Paige
+4	4	src/middleware/algoliaClient.test.js
+2	2	src/utils/applicationConfig.test.js
+
+--970ad04--2017-05-02--Gary Paige
+24	7	src/components/Content/DrawerContainer/ContentDetail/ContentDetail.js
+2	2	src/components/Content/DrawerContainer/ContentDetail/ContentDetail.test.js
+4	4	src/utils/applicationConfig.js
+2	2	src/utils/applicationConfig.test.js
+
+--8c486cc--2017-05-02--Muhamed Brifkani
+1	0	src/utils/applicationConfig.js
+19	0	src/utils/applicationConfig.test.js
+
+--3d4a809--2017-05-01--Muhamed Brifkani
+1	0	.eslintrc.yaml
+1	1	src/middleware/__mocks__/algoliasearch.js
+76	0	src/middleware/dapulseClient.js
+47	0	src/middleware/dapulseClient.test.js
+46	0	src/utils/applicationConfig.js
+18	0	src/utils/applicationConfig.test.js
+
+--05a9fcc--2017-05-01--Gary Paige
+7	0	src/utils/applicationConfig.js
+25	0	src/utils/carrier.js
+288	0	src/utils/carrier.test.js
+
+--adb08f6--2017-04-28--Gary Paige
+2	1	locales/en/common.json
+-	-	public/assets/images/resizeDrawerIcon.png
+0	22	public/assets/images/resizeDrawerIcon.svg
+1	1	src/App.js
+26	0	src/components/Content/DrawerContainer/AlertList/AlertList.test.js
+16	0	src/components/Content/DrawerContainer/ContentDetail/ContentDetail.scss
+1	1	src/components/Content/DrawerContainer/DrawerContainer.js
+3	2	src/components/Content/DrawerContainer/DrawerContainer.scss
+1	1	src/components/Dashboard/Dashboard.scss
+6	1	src/components/KnowledgeAlerts/KnowledgeAlerts.js
+2	2	src/components/KnowledgeAlerts/KnowledgeAlerts.scss
+26	3	src/components/KnowledgeAlerts/KnowledgeAlerts.test.js
+1	0	src/components/MostViewed/MostViewed.scss
+26	0	src/components/MostViewed/MostViewed.test.js
+30	0	src/middleware/__mocks__/algoliasearch.js
+43	11	src/middleware/algoliaClient.js
+30	4	src/middleware/algoliaClient.test.js
+30	16	src/utils/applicationConfig.js
+24	0	src/utils/applicationConfig.test.js
+6	1	src/utils/mixpanelEvents.js
+7	0	src/utils/mixpanelEvents.test.js
+
+--4167bec--2017-04-25--Gary Paige
+1	1	src/utils/applicationConfig.js
+
+--1bd3d9b--2017-04-25--Gary Paige
+5	1	.babelrc
+5	1	locales/en/common.json
+3	2	package.json
+22	0	public/assets/images/resizeDrawerIcon.svg
+3	1	src/Routes.js
+41	0	src/actions/contentDetailActions.js
+69	0	src/actions/contentDetailActions.test.js
+46	216	src/components/Content/Content.js
+3	34	src/components/Content/Content.scss
+58	23	src/components/Content/Content.test.js
+12	0	src/components/Content/DrawerContainer/AlertList/AlertList.js
+7	0	src/components/Content/DrawerContainer/AlertList/AlertList.scss
+16	0	src/components/Content/DrawerContainer/AlertList/AlertList.test.js
+70	0	src/components/Content/DrawerContainer/ContentDetail/ContentDetail.js
+9	0	src/components/Content/DrawerContainer/ContentDetail/ContentDetail.scss
+54	0	src/components/Content/DrawerContainer/ContentDetail/ContentDetail.test.js
+182	0	src/components/Content/DrawerContainer/DrawerContainer.js
+25	0	src/components/Content/DrawerContainer/DrawerContainer.scss
+90	0	src/components/Content/DrawerContainer/DrawerContainer.test.js
+61	4	src/components/Dashboard/Dashboard.js
+71	0	src/components/Dashboard/Dashboard.scss
+18	1	src/components/Dashboard/Dashboard.test.js
+19	3	src/components/Header/Header.js
+16	0	src/components/Header/Header.scss
+24	1	src/components/Header/Header.test.js
+1	1	src/components/Header/ResultsCounter.scss
+12	4	src/components/KnowledgeAlerts/KnowledgeAlert.js
+21	1	src/components/KnowledgeAlerts/KnowledgeAlert.test.js
+30	39	src/components/KnowledgeAlerts/KnowledgeAlerts.js
+3	47	src/components/KnowledgeAlerts/KnowledgeAlerts.scss
+6	30	src/components/MostViewed/MostViewed.js
+21	72	src/components/MostViewed/MostViewed.scss
+0	2	src/components/SearchBox/SearchBox.js
+33	9	src/components/SearchBox/SearchBox.test.js
+16	3	src/components/SearchBox/SearchField.js
+11	3	src/components/SearchBox/SearchField.test.js
+2	4	src/components/SearchResults/ResultCard/ResultCard.js
+1	2	src/components/SearchResults/SearchResults.js
+1	1	src/components/TabMenu/TabMenu.scss
+3	0	src/constants/contentTypes.js
+1	1	src/index.scss
+41	0	src/middleware/algoliaClient.js
+24	0	src/middleware/algoliaClient.test.js
+23	0	src/reducers/contentDetailReducer.js
+2	0	src/reducers/index.js
+3	1	src/store.js
+2	1	src/styles/palette.scss
+1	1	src/utils/mixpanelEvents.js
+9	1	src/utils/pathBuilder.js
+25	9	src/utils/pathBuilder.test.js
+
+--0512b08--2017-04-20--Gary Paige
+6	1	src/utils/applicationConfig.js
+39	1	src/utils/applicationConfig.test.js
+
+--97e01b8--2017-04-17--Gary Paige
+-	-	public/assets/images/mostViewed_icon.png
+5	1	src/components/Dashboard/Dashboard.js
+8	0	src/components/Dashboard/Dashboard.test.js
+3	2	src/components/KnowledgeAlerts/KnowledgeAlerts.scss
+107	0	src/components/MostViewed/MostViewed.js
+87	0	src/components/MostViewed/MostViewed.scss
+50	0	src/components/MostViewed/MostViewed.test.js
+2	0	src/components/MostViewed/index.js
+
+--5649f63--2017-04-17--Gary Paige
+5	0	locales/en/common.json
+8	1	package.json
+8	5	src/components/Header/ResultsCounter.js
+5	1	src/components/Header/ResultsCounter.test.js
+6	3	src/components/KnowledgeAlerts/KnowledgeAlerts.js
+7	1	src/components/KnowledgeAlerts/KnowledgeAlerts.test.js
+5	2	src/components/SearchBox/SearchField.js
+7	0	src/components/SearchBox/SearchField.test.js
+37	0	src/i18n.js
+11	0	src/i18n.test.js
+5	1	src/index.js
+5	0	webpack.config.js
+
+--198374b--2017-04-17--Gary Paige
+7	0	src/components/KnowledgeAlerts/KnowledgeAlerts.js
+19	1	src/components/KnowledgeAlerts/KnowledgeAlerts.test.js
+0	1	src/components/TabMenu/TabMenu.js
+17	2	src/utils/mixpanelEvents.js
+32	23	src/utils/mixpanelEvents.test.js
+
+--ebe122f--2017-04-13--Gary Paige
+4	2	src/components/TabMenu/TabMenu.js
+
+--701547a--2017-04-12--Gary Paige
+-	-	public/assets/images/alertLandingModule_icon.png
+-	-	public/assets/images/logo.png
+1	1	public/index.html
+1	1	src/Routes.js
+1	1	src/components/Content/Content.scss
+2	1	src/components/Dashboard/Dashboard.js
+1	3	src/components/Header/Header.js
+2	3	src/components/Header/Header.scss
+2	2	src/components/Header/Header.test.js
+28	0	src/components/KnowledgeAlerts/KnowledgeAlert.js
+16	0	src/components/KnowledgeAlerts/KnowledgeAlert.test.js
+99	0	src/components/KnowledgeAlerts/KnowledgeAlerts.js
+84	0	src/components/KnowledgeAlerts/KnowledgeAlerts.scss
+28	0	src/components/KnowledgeAlerts/KnowledgeAlerts.test.js
+2	0	src/components/KnowledgeAlerts/index.js
+18	0	src/components/TabMenu/Tab.js
+16	0	src/components/TabMenu/Tab.test.js
+79	0	src/components/TabMenu/TabMenu.js
+42	0	src/components/TabMenu/TabMenu.scss
+31	0	src/components/TabMenu/TabMenu.test.js
+5	0	src/components/TabMenu/index.js
+5	1	src/index.scss
+0	1541	src/styles/orig.css
+3	0	src/styles/palette.scss
+9	1	src/utils/applicationConfig.js
+1	1	webpack.config.js
+
+--34413b8--2017-04-12--Jeff Tougas
+4	4	package.json
+
+--e1d5c92--2017-04-10--Gary Paige
+2	2	src/actions/healthActions.test.js
+11	2	src/components/Content/Content.js
+34	1	src/components/Content/Content.test.js
+2	1	src/components/Content/index.js
+10	0	src/components/Dashboard/Dashboard.js
+16	0	src/components/Dashboard/Dashboard.test.js
+2	0	src/components/Dashboard/index.js
+3	3	src/components/Header/Header.scss
+
+--afe76a9--2017-04-07--Jeff Tougas
+3	11	src/components/Header/Header.scss
+
+--4b8d603--2017-04-07--Jeff Tougas
+3	6	src/App.test.js
+
+--5d1cfe1--2017-04-07--Jeff Tougas
+0	3	src/components/Header/Header.js
+
+--dcef8d1--2017-04-07--Jeff Tougas
+0	1	src/App.js
+
+--af556f5--2017-04-07--Gary Paige
+17	5	src/App.js
+0	3	src/App.test.js
+0	1	src/components/Header/Header.js
+1	1	src/utils/mixpanelEvents.js
+2	2	src/utils/mixpanelEvents.test.js
+
+--f744c56--2017-04-04--Gary Paige
+1	1	package.json
+
+--37fa998--2017-04-04--Gary Paige
+1	0	package.json
+16	0	src/App.js
+6	0	src/utils/applicationConfig.js
+6	0	src/utils/applicationConfig.test.js
+
+--825abbe--2017-04-03--Muhamed Brifkani
+1	1	src/components/Content/Content.js
+
+--026a9eb--2017-04-03--Muhamed Brifkani
+9	1	src/components/Content/Content.js
+
+--a60e7aa--2017-04-03--Gary Paige
+1	0	package.json
+35	4	src/App.js
+9	7	src/App.test.js
+5	2	src/Routes.js
+9	0	src/actions/carrierActions.js
+13	0	src/actions/carrierActions.test.js
+9	3	src/components/Content/Content.js
+1	8	src/index.js
+16	0	src/reducers/currentCarrier.js
+19	0	src/reducers/currentCarrier.test.js
+2	0	src/reducers/index.js
+2	1	src/store.js
+37	7	src/utils/applicationConfig.js
+17	6	src/utils/applicationConfig.test.js
+15	13	src/utils/mixpanelEvents.js
+18	10	src/utils/mixpanelEvents.test.js
+
+--0d39eb8--2017-03-30--Jeff Tougas
+1	1	webpack.config.js
+
+--c3bbc45--2017-03-29--Muhamed Brifkani
+1	0	.eslintrc.yaml
+23	6	src/App.js
+48	0	src/App.test.js
+1	1	src/components/Content/Content.js
+1	1	src/constants/healthStates.js
+3	3	src/utils/applicationConfig.js
+0	4	src/utils/applicationConfig.test.js
+3	2	src/utils/carrier.js
+
+--3f4ad96--2017-03-29--argvader
+-	-	public/assets/images/question.png
+34	6	src/App.js
+31	12	src/App.test.js
+16	16	src/Routes.js
+1	1	src/Routes.test.js
+16	0	src/__mocks__/routerMock.js
+10	0	src/actions/healthActions.js
+15	0	src/actions/healthActions.test.js
+16	4	src/components/Content/Content.js
+2	1	src/components/Content/Content.test.js
+21	0	src/components/NotFound/NotFound.js
+43	0	src/components/NotFound/NotFound.scss
+24	0	src/components/NotFound/NotFound.test.js
+2	0	src/components/NotFound/index.js
+8	3	src/components/SearchResults/ResultCard/ResultCard.js
+9	2	src/components/SearchResults/ResultCard/ResultCard.test.js
+0	43	src/connectors/withErrors/ErrorHandler.js
+0	59	src/connectors/withErrors/ErrorHandler.test.js
+0	2	src/connectors/withErrors/index.js
+6	0	src/constants/healthStates.js
+17	0	src/reducers/health.js
+21	0	src/reducers/health.test.js
+2	1	src/reducers/index.js
+19	0	src/reducers/session.test.js
+7	3	src/store.js
+1	1	src/utils/applicationConfig.js
+1	1	src/utils/applicationConfig.test.js
+13	0	src/utils/pathBuilder.js
+15	0	src/utils/pathBuilder.test.js
+2	2	webpack.config.js
+
+--3cb0b49--2017-03-27--Jeff Tougas
+--9e1215b--2017-03-27--Jeff Tougas
+26	15	src/components/Content/Content.js
+9	2	src/components/Content/Content.test.js
+
+--3980b05--2017-03-27--Jeff Tougas
+--25f5e07--2017-03-27--Jeff Tougas
+1	1	package.json
+
+--4132e93--2017-03-24--Jeff Tougas
+--d3c92ef--2017-03-23--Muhamed Brifkani
+1	1	package.json
+
+--6f73e50--2017-03-23--Muhamed Brifkani
+6	35	src/components/SearchBox/SearchField.test.js
+17	36	src/components/SearchResults/SearchResults.test.js
+
+--71a68c1--2017-03-23--Muhamed Brifkani
+--5445887--2017-03-23--Muhamed Brifkani
+3	3	package.json
+1	1	src/Routes.js
+5	1	src/Routes.test.js
+0	9	src/actions/index.js
+10	0	src/actions/sessionActions.js
+14	0	src/actions/sessionActions.test.js
+6	0	src/reducers/createReducer.js
+3	1	src/reducers/index.js
+13	10	src/reducers/session.js
+
+--57e4120--2017-03-23--Jeff Tougas
+--f257044--2017-03-23--Jeff Tougas
+3	3	src/components/SearchResults/SearchResults.test.js
+
+--7879f6e--2017-03-23--Jeff Tougas
+2	0	.eslintrc.yaml
+12	2	src/components/Content/Content.js
+18	1	src/utils/mixpanelEvents.js
+11	3	src/utils/mixpanelEvents.test.js
+
+--54ed5d3--2017-03-22--Muhamed Brifkani
+3	3	src/Routes.js
+3	0	src/actions/index.js
+3	3	src/components/SearchResults/SearchResults.test.js
+4	0	src/constants/ActionTypes.js
+
+--68f2f3e--2017-03-22--Muhamed Brifkani
+5	1	src/store.js
+
+--90eb294--2017-03-22--Muhamed Brifkani
+0	52	src/router.js
+
+--d4ee661--2017-03-22--Muhamed Brifkani
+17	2	src/Routes.js
+7	4	src/index.js
+
+--3e32ba2--2017-03-22--Muhamed Brifkani
+--cff843d--2017-03-22--Muhamed Brifkani
+5	1	package.json
+5	5	src/App.js
+6	0	src/actions/index.js
+11	0	src/reducers/index.js
+13	0	src/reducers/session.js
+29	11	src/router.js
+14	0	src/store.js
+
+--bb8d94a--2017-03-21--argvader
+--cc4d546--2017-03-21--argvader
+--37933ff--2017-03-21--argvader
+--f367773--2017-03-21--Muhamed Brifkani
+1	1	src/components/SearchBox/SearchField.test.js
+
+--b323820--2017-03-19--Gary Paige
+1	1	package.json
+13	1	src/Routes.test.js
+1	1	src/components/Header/ResultsCounter.js
+1	3	webpack.config.js
+
+--bf2f394--2017-03-20--Muhamed Brifkani
+7	6	src/components/SearchResults/SearchResults.js
+75	0	src/components/SearchResults/SearchResults.test.js
+
+--25b7d33--2017-03-19--Gary Paige
+5	1	src/Routes.js
+1	1	src/Routes.test.js
+
+--d4c21c9--2017-03-19--Gary Paige
+2	2	package.json
+28	0	src/Routes.js
+19	0	src/Routes.test.js
+1	4	src/components/Header/ResultsCounter.js
+58	0	src/components/Header/ResultsCounter.test.js
+30	4	src/connectors/withErrors/ErrorHandler.test.js
+18	0	src/index.js
+0	34	src/router.js
+4	2	webpack.config.js
+
+--aa742fa--2017-03-17--Muhamed Brifkani
+--9f1af4e--2017-03-17--Jeff Tougas
+--6e064d8--2017-03-17--Gary Paige
+1	1	webpack.config.js
+
+--305bbb2--2017-03-17--Gary Paige
+1	0	.eslintrc.yaml
+9	12	src/App.test.js
+3	3	src/components/ApplicationError/ApplicationError.test.js
+9	9	src/components/Content/Content.test.js
+5	5	src/components/Feedback/Feedback.test.js
+4	4	src/components/Header/Header.test.js
+17	21	src/components/SearchBox/SearchBox.test.js
+36	38	src/components/SearchBox/SearchField.test.js
+13	14	src/components/SearchResults/ResultCard/ResultCard.test.js
+6	6	src/connectors/withErrors/ErrorHandler.test.js
+13	10	src/connectors/withSharedWorkerEventBus/connectSharedWorkerEventBus.test.js
+10	10	src/utils/applicationConfig.test.js
+9	10	src/utils/carrier.test.js
+29	13	src/utils/mixpanelEvents.test.js
+5	6	src/utils/operatingSystem.test.js
+
+--9687714--2017-03-17--Gary Paige
+0	2	.eslintignore
+
+--30305f4--2017-03-17--argvader
+--bea1402--2017-03-17--Jeff Tougas
+0	1	public/index.html
+
+--20d9fba--2017-03-17--argvader
+--9b1b4c4--2017-03-17--Gary Paige
+3	1	package.json
+-	-	public/assets/images/derp.png
+2	1	public/index.html
+41	31	src/App.js
+1	1	src/App.test.js
+0	35	src/applicationConfig.js
+26	0	src/components/ApplicationError/ApplicationError.js
+43	0	src/components/ApplicationError/ApplicationError.scss
+24	0	src/components/ApplicationError/ApplicationError.test.js
+2	0	src/components/ApplicationError/index.js
+5	9	src/components/Content/Content.js
+1	2	src/components/Content/Content.test.js
+1	1	src/components/Header/Header.js
+2	0	src/components/Header/index.js
+0	29	src/connectors/connectSharedWorkerEventBus/__mocks__/connectSharedWorkerEventBus.js
+0	47	src/connectors/connectSharedWorkerEventBus/connectSharedWorkerEventBus.js
+0	97	src/connectors/connectSharedWorkerEventBus/connectSharedWorkerEventBus.test.js
+0	2	src/connectors/connectSharedWorkerEventBus/index.js
+43	0	src/connectors/withErrors/ErrorHandler.js
+33	0	src/connectors/withErrors/ErrorHandler.test.js
+2	0	src/connectors/withErrors/index.js
+29	0	src/connectors/withSharedWorkerEventBus/__mocks__/connectSharedWorkerEventBus.js
+47	0	src/connectors/withSharedWorkerEventBus/connectSharedWorkerEventBus.js
+97	0	src/connectors/withSharedWorkerEventBus/connectSharedWorkerEventBus.test.js
+2	0	src/connectors/withSharedWorkerEventBus/index.js
+0	23	src/index.js
+34	0	src/router.js
+1	0	src/styles/palette.scss
+35	0	src/utils/applicationConfig.js
+30	0	src/utils/applicationConfig.test.js
+5	1	src/utils/mixpanelEvents.js
+62	24	src/utils/mixpanelEvents.test.js
+3	5	webpack.config.js
+
+--8b94999--2017-03-16--Muhamed Brifkani
+--31f7ec2--2017-03-16--Muhamed Brifkani
+19	2	src/utils/mixpanelEvents.test.js
+
+--7b48463--2017-03-16--Muhamed Brifkani
+0	1	src/components/Header/Header.js
+1	1	src/components/Header/Header.test.js
+
+--cc95b85--2017-03-16--Muhamed Brifkani
+1	1	src/components/Content/Content.scss
+
+--d77adac--2017-03-16--Muhamed Brifkani
+--418ff58--2017-03-16--Jeff Tougas
+--e064cb9--2017-03-16--Jeff Tougas
+3	1	package.json
+6	8	src/App.js
+34	1	src/components/Content/Content.js
+37	2	src/components/Content/Content.test.js
+4	1	src/components/Content/index.js
+0	15	src/components/NotFound/NotFound.js
+0	2	src/components/NotFound/index.js
+13	12	src/components/SearchResults/ResultCard/ResultCard.js
+12	5	src/components/SearchResults/ResultCard/ResultCard.test.js
+5	0	src/components/SearchResults/ResultCard/index.js
+1	1	src/components/SearchResults/SearchResults.js
+2	2	src/connectors/connectSharedWorkerEventBus/__mocks__/connectSharedWorkerEventBus.js
+1	0	src/index.js
+
+--7845f07--2017-03-16--Muhamed Brifkani
+1	1	src/components/Feedback/Feedback.test.js
+1	6	src/components/Header/Header.test.js
+0	28	src/components/LaunchKana/LaunchKana.js
+0	11	src/components/LaunchKana/LaunchKana.scss
+0	25	src/components/LaunchKana/LaunchKana.test.js
+0	2	src/components/LaunchKana/index.js
+39	0	src/components/SearchBox/SearchBox.test.js
+2	0	src/components/SearchBox/SearchField.js
+40	33	src/components/SearchBox/SearchField.scss
+92	0	src/components/SearchBox/SearchField.test.js
+
+--6bfde8f--2017-03-16--Muhamed Brifkani
+1	1	src/components/Header/Header.js
+12	1	src/components/SearchBox/SearchBox.js
+12	7	src/components/SearchBox/SearchField.js
+6	2	src/utils/mixpanelEvents.js
+
+--7ea2fe9--2017-03-16--Muhamed Brifkani
+10	0	src/components/Feedback/Feedback.scss
+1	0	src/components/Header/Header.js
+30	0	src/components/Header/Header.test.js
+0	30	src/components/Header/Navbar.test.js
+6	2	src/components/SearchBox/SearchBox.js
+1	0	src/components/SearchBox/SearchBox.scss
+6	5	src/components/SearchBox/SearchField.js
+
+--5c8b445--2017-03-15--Muhamed Brifkani
+51	22	src/components/SearchBox/SearchBox.js
+3	17	src/components/SearchBox/SearchField.js
+
+--2077910--2017-03-15--Muhamed Brifkani
+--36f7781--2017-03-15--Muhamed Brifkani
+4	0	src/components/Header/Header.scss
+9	3	src/components/SearchBox/SearchBox.js
+1	1	src/components/SearchBox/SearchBox.scss
+6	7	src/components/SearchBox/SearchField.js
+
+--36dc6d7--2017-03-15--Jeff Tougas
+--787fe05--2017-03-15--Muhamed Brifkani
+1	0	src/App.scss
+1	1	src/components/Header/Header.scss
+1	1	src/components/Header/ResultsCounter.scss
+0	2	src/components/LaunchKana/LaunchKana.scss
+1	2	src/components/SearchResults/ResultCard/ResultCard.scss
+12	0	src/index.scss
+
+--685e71d--2017-03-15--Muhamed Brifkani
+4	0	src/App.scss
+3	0	src/components/Content/Content.scss
+4	0	src/components/Feedback/Feedback.scss
+7	0	src/components/Header/Header.scss
+3	0	src/components/LaunchKana/LaunchKana.scss
+2	0	src/components/SearchBox/SearchBox.scss
+5	0	src/components/SearchResults/ResultCard/ResultCard.scss
+1	0	src/components/SearchResults/SearchResults.scss
+
+--c3af904--2017-03-15--Muhamed Brifkani
+1	1	src/components/Content/Content.js
+1	1	src/components/SearchBox/SearchBox.js
+26	9	src/components/SearchBox/SearchField.js
+5	1	src/components/SearchBox/SearchField.scss
+
+--b011e3c--2017-03-14--Muhamed Brifkani
+2	3	package.json
+
+--718e59d--2017-03-14--Muhamed Brifkani
+2	2	src/components/Content/Content.js
+29	0	src/components/Header/Header.js
+0	30	src/components/Header/Header.test.js
+0	29	src/components/Header/HeaderComponent.js
+30	0	src/components/Header/Navbar.test.js
+2	0	src/components/SearchBox/SearchField.js
+
+--ec3e87f--2017-03-14--Muhamed Brifkani
+2	7	src/components/Content/Content.js
+0	33	src/components/Header/Header.js
+29	0	src/components/Header/HeaderComponent.js
+1	1	src/components/SearchBox/SearchField.js
+
+--d99a99b--2017-03-14--Muhamed Brifkani
+1	1	src/components/Header/Header.js
+1	0	src/components/SearchBox/SearchBox.scss
+20	43	src/components/SearchBox/SearchField.js
+34	70	src/components/SearchBox/SearchField.scss
+3	1	src/index.scss
+9	1	src/utils/mixpanelEvents.js
+
+--d410fff--2017-03-13--Muhamed Brifkani
+5	4	src/components/Header/Header.js
+14	2	src/components/Header/Header.scss
+1	2	src/components/Header/ResultsCounter.scss
+1	1	src/components/SearchBox/SearchBox.js
+1	0	src/components/SearchBox/SearchBox.scss
+6	7	src/components/SearchBox/SearchField.js
+
+--cdd5b0d--2017-03-13--Muhamed Brifkani
+--83d1583--2017-03-10--Muhamed Brifkani
+--ba32d10--2017-03-10--Muhamed Brifkani
+6	7	src/components/Content/Content.js
+36	18	src/components/Content/Content.scss
+1	2	src/components/Feedback/Feedback.js
+4	1	src/components/Feedback/Feedback.scss
+1	4	src/components/LaunchKana/LaunchKana.js
+4	4	src/components/LaunchKana/LaunchKana.scss
+5	3	src/components/SearchBox/SearchBox.js
+11	0	src/components/SearchBox/SearchBox.scss
+4	7	src/components/SearchResults/ResultCard/ResultCard.js
+12	0	src/components/SearchResults/ResultCard/ResultCard.scss
+3	2	src/components/SearchResults/SearchResults.js
+8	0	src/components/SearchResults/SearchResults.scss
+
+--5846032--2017-03-10--Jeff Tougas
+--d9f2823--2017-03-10--Jeff Tougas
+--c473119--2017-03-10--Muhamed Brifkani
+3	1	package.json
+5	2	src/components/Content/Content.js
+4	4	src/components/Header/Header.js
+1	1	src/components/Header/Header.scss
+4	2	src/components/SearchBox/SearchBox.js
+1	0	src/components/SearchBox/SearchBox.scss
+69	17	src/components/SearchBox/SearchField.js
+70	0	src/components/SearchBox/SearchField.scss
+
+--6db9075--2017-03-10--Jeff Tougas
+29	0	src/utils/mixpanelEvents.test.js
+
+--3aa17c8--2017-03-09--Gary Paige
+53	399	README.md
+
+--4171150--2017-03-09--Jeff Tougas
+--1e33c07--2017-03-09--Jeff Tougas
+4	4	package.json
+1	1	scripts/build.sh
+
+--ee47477--2017-03-09--Muhamed Brifkani
+--54a5506--2017-03-08--Gary Paige
+5	2	src/App.test.js
+5	1	src/components/Content/Content.js
+0	1	src/index.js
+7	3	src/utils/mixpanelEvents.js
+
+--40e2e2c--2017-03-08--Jeff Tougas
+--278abc7--2017-03-08--Jeff Tougas
+4	0	.eslintrc.yaml
+1	1	package.json
+0	1	src/index.js
+
+--a123d99--2017-03-08--Jeff Tougas
+--c87391f--2017-03-08--Jeff Tougas
+2	0	.dockerignore
+
+--1c0ed74--2017-03-08--Jeff Tougas
+4	4	package.json
+
+--a5a843d--2017-03-08--Jeff Tougas
+3	1	Dockerfile
+
+--357a3ae--2017-03-08--Jeff Tougas
+--dc4ed4a--2017-03-07--Muhamed Brifkani
+--20ac6e7--2017-03-07--Gary Paige
+0	1	src/index.js
+
+--0a78ea8--2017-03-07--Muhamed Brifkani
+--4edeeee--2017-03-07--Muhamed Brifkani
+1	1	src/applicationConfig.js
+
+--9739b8b--2017-03-06--Jeff Tougas
+4	1	.eslintrc.yaml
+13	0	.flowconfig
+440	0	flow-typed/npm/jest_v18.x.x.js
+3	0	flow/CSSModule.js.flow
+5	1	package.json
+1	0	scripts/build.sh
+8	0	src/App.js
+1	0	src/App.test.js
+2	1	src/applicationConfig.js
+34	9	src/components/Content/Content.js
+1	0	src/components/Content/Content.test.js
+2	1	src/components/Content/index.js
+2	1	src/components/Feedback/Feedback.js
+1	0	src/components/Feedback/Feedback.test.js
+2	1	src/components/Feedback/index.js
+1	0	src/components/Header/Header.js
+1	0	src/components/Header/Header.test.js
+11	6	src/components/Header/ResultsCounter.js
+1	0	src/components/LaunchKana/LaunchKana.js
+1	0	src/components/LaunchKana/LaunchKana.test.js
+2	1	src/components/LaunchKana/index.js
+1	0	src/components/NotFound/NotFound.js
+2	1	src/components/NotFound/index.js
+2	7	src/components/SearchBox/SearchBox.js
+11	7	src/components/SearchBox/SearchField.js
+1	0	src/components/SearchBox/index.js
+19	8	src/components/SearchResults/ResultCard/ResultCard.js
+1	0	src/components/SearchResults/ResultCard/ResultCard.test.js
+12	8	src/components/SearchResults/SearchResults.js
+2	1	src/components/SearchResults/index.js
+8	2	src/connectors/connectSharedWorkerEventBus/__mocks__/connectSharedWorkerEventBus.js
+6	6	src/connectors/connectSharedWorkerEventBus/connectSharedWorkerEventBus.js
+1	0	src/connectors/connectSharedWorkerEventBus/connectSharedWorkerEventBus.test.js
+2	1	src/connectors/connectSharedWorkerEventBus/index.js
+1	0	src/index.js
+2	1	src/utils/carrier.js
+1	0	src/utils/carrier.test.js
+3	2	src/utils/eventBusWorker/__mocks__/index.js
+3	0	src/utils/eventBusWorker/index.js
+6	1	src/utils/eventBusWorker/onconnect.js
+18	14	src/utils/eventBusWorker/onmessage.js
+9	8	src/utils/mixpanelEvents.js
+3	2	src/utils/operatingSystem.js
+1	0	src/utils/operatingSystem.test.js
+
+--ba0dbd3--2017-03-06--Muhamed Brifkani
+--0d12e14--2017-03-06--Jeff Tougas
+--4411d16--2017-03-06--Muhamed Brifkani
+1	1	src/components/Feedback/index.js
+2	2	src/components/Header/Header.js
+1	1	src/components/LaunchKana/index.js
+
+--b328503--2017-03-06--Muhamed Brifkani
+14	0	src/components/NotFound/NotFound.js
+1	0	src/components/NotFound/index.js
+0	14	src/components/SearchBox/NotFound/NotFound.js
+0	1	src/components/SearchBox/NotFound/index.js
+
+--06112a6--2017-03-06--Muhamed Brifkani
+1	8	src/components/SearchBox/SearchBox.scss
+
+--9b17e01--2017-03-06--Muhamed Brifkani
+--b21d00a--2017-03-06--Muhamed Brifkani
+1	2	src/App.js
+1	0	src/components/Feedback/Feedback.js
+24	0	src/components/Feedback/Feedback.test.js
+0	14	src/components/NotFound/NotFound.js
+0	1	src/components/NotFound/index.js
+14	0	src/components/SearchBox/NotFound/NotFound.js
+1	0	src/components/SearchBox/NotFound/index.js
+8	1	src/components/SearchBox/SearchBox.scss
+
+--c8612de--2017-03-06--Jeff Tougas
+--e2fffea--2017-03-06--Jeff Tougas
+1	1	package.json
+6	5	webpack.config.js
+
+--a0d397a--2017-03-06--Muhamed Brifkani
+--f413a22--2017-03-06--Muhamed Brifkani
+--b2f7a2b--2017-03-06--argvader
+--cbc1ac6--2017-03-06--Gary Paige
+2	1	src/App.js
+2	2	src/components/Header/Header.scss
+5	0	src/components/Header/Header.test.js
+0	1	src/components/Header/ResultsCounter.js
+5	1	src/components/Header/ResultsCounter.scss
+1	0	src/components/LaunchKana/LaunchKana.scss
+1	1	src/components/SearchBox/SearchBox.scss
+12	5	src/components/SearchResults/ResultCard/ResultCard.js
+1	0	src/components/SearchResults/ResultCard/ResultCard.scss
+1	1	src/components/SearchResults/ResultCard/ResultCard.test.js
+1	1	src/components/SearchResults/SearchResults.js
+1	0	src/index.scss
+
+--8e30a0b--2017-03-06--Gary Paige
+2	0	src/components/Header/Header.js
+2	2	src/components/Header/Header.scss
+15	1	src/components/Header/Header.test.js
+63	0	src/components/Header/ResultsCounter.js
+8	0	src/components/Header/ResultsCounter.scss
+2	1	src/components/LaunchKana/LaunchKana.scss
+
+--9a461b9--2017-03-03--Gary Paige
+5	0	src/components/SearchResults/ResultCard/ResultCard.scss
+
+--80ff3df--2017-03-03--Gary Paige
+5	7	src/components/Content/Content.js
+2	1	src/components/Content/Content.scss
+1	1	src/components/Header/Header.scss
+10	0	src/components/Header/Header.test.js
+6	0	src/index.scss
+1	0	src/styles/palette.scss
+
+--a3294a5--2017-03-03--Muhamed Brifkani
+1	1	src/components/LaunchKana/LaunchKana.js
+
+--a5f9e82--2017-03-03--Muhamed Brifkani
+5	1	src/applicationConfig.js
+4	1	src/components/Header/Header.js
+3	0	src/components/Header/Header.scss
+27	0	src/components/LaunchKana/LaunchKana.js
+3	0	src/components/LaunchKana/LaunchKana.scss
+24	0	src/components/LaunchKana/LaunchKana.test.js
+1	0	src/components/LaunchKana/index.js
+6	3	src/utils/mixpanelEvents.js
+
+--388e011--2017-03-03--Gary Paige
+23	0	src/components/Content/Content.scss
+14	20	src/components/Header/Header.js
+1	1	src/components/SearchBox/SearchField.js
+58	0	src/index.scss
+
+--2dcfe51--2017-03-02--Gary Paige
+1	0	public/index.html
+4	4	src/components/Content/Content.js
+0	0	src/components/Content/Content.scss
+0	1536	src/components/Content/index.scss
+7	1	src/components/Header/Header.js
+34	1	src/components/Header/Header.scss
+5	14	src/components/SearchBox/SearchBox.js
+8	0	src/components/SearchBox/SearchBox.scss
+1	1	src/components/SearchBox/SearchField.js
+3	3	src/components/SearchResults/ResultCard/ResultCard.js
+8	28	src/components/SearchResults/ResultCard/ResultCard.scss
+28	36	src/index.scss
+1541	0	src/styles/orig.css
+2	0	src/styles/palette.scss
+
+--e3fe1f5--2017-03-02--Gary Paige
+1	0	package.json
+0	84	src/App.css
+1	1	src/App.js
+84	0	src/App.scss
+4	12	src/components/Content/Content.js
+0	1536	src/components/Content/index.css
+1536	0	src/components/Content/index.scss
+22	0	src/components/Header/Header.js
+9	0	src/components/Header/Header.scss
+5	4	src/components/SearchBox/SearchBox.js
+0	41	src/components/SearchResults/ResultCard/ResultCard.css
+1	1	src/components/SearchResults/ResultCard/ResultCard.js
+41	0	src/components/SearchResults/ResultCard/ResultCard.scss
+0	39	src/index.css
+1	1	src/index.js
+40	0	src/index.scss
+1	0	src/styles/palette.scss
+39	22	webpack.config.js
+
+--1b0bad5--2017-03-06--Muhamed Brifkani
+2	2	src/components/Feedback/Feedback.js
+4	1	src/components/Feedback/Feedback.scss
+
+--594b3a8--2017-03-06--argvader
+--c086098--2017-03-06--Gary Paige
+2	3	src/App.js
+2	2	src/components/Header/Header.scss
+5	0	src/components/Header/Header.test.js
+0	1	src/components/Header/ResultsCounter.js
+4	0	src/components/Header/ResultsCounter.scss
+1	0	src/components/LaunchKana/LaunchKana.scss
+1	1	src/components/SearchBox/SearchBox.scss
+12	4	src/components/SearchResults/ResultCard/ResultCard.js
+1	0	src/components/SearchResults/ResultCard/ResultCard.scss
+1	1	src/components/SearchResults/SearchResults.js
+
+--413a65f--2017-03-06--Gary Paige
+2	0	src/components/Header/Header.js
+2	2	src/components/Header/Header.scss
+15	1	src/components/Header/Header.test.js
+63	0	src/components/Header/ResultsCounter.js
+8	0	src/components/Header/ResultsCounter.scss
+2	1	src/components/LaunchKana/LaunchKana.scss
+
+--cb39d29--2017-03-05--Muhamed Brifkani
+81	0	src/components/Feedback/Feedback.js
+3	0	src/components/Feedback/Feedback.scss
+1	0	src/components/Feedback/index.js
+4	0	src/components/Header/Header.js
+10	4	src/components/Header/Header.scss
+1	2	src/components/LaunchKana/LaunchKana.js
+11	0	src/components/LaunchKana/LaunchKana.scss
+5	1	src/utils/mixpanelEvents.js
+
+--5b2d127--2017-03-04--Muhamed Brifkani
+--65367fe--2017-03-03--Gary Paige
+5	0	src/components/SearchResults/ResultCard/ResultCard.scss
+
+--24078dc--2017-03-03--Gary Paige
+5	7	src/components/Content/Content.js
+2	1	src/components/Content/Content.scss
+1	1	src/components/Header/Header.scss
+10	0	src/components/Header/Header.test.js
+6	0	src/index.scss
+1	0	src/styles/palette.scss
+
+--86420f3--2017-03-03--Jeff Tougas
+1	1	scripts/build.sh
+1	1	webpack.config.js
+
+--3e61b6b--2017-03-03--Muhamed Brifkani
+1	1	src/components/LaunchKana/LaunchKana.js
+
+--29ea41a--2017-03-03--Muhamed Brifkani
+5	1	src/applicationConfig.js
+4	1	src/components/Header/Header.js
+3	0	src/components/Header/Header.scss
+27	0	src/components/LaunchKana/LaunchKana.js
+3	0	src/components/LaunchKana/LaunchKana.scss
+24	0	src/components/LaunchKana/LaunchKana.test.js
+1	0	src/components/LaunchKana/index.js
+6	2	src/utils/mixpanelEvents.js
+
+--a7d0380--2017-03-03--Jeff Tougas
+--2da0f54--2017-03-03--Gary Paige
+23	0	src/components/Content/Content.scss
+14	20	src/components/Header/Header.js
+1	1	src/components/SearchBox/SearchField.js
+58	0	src/index.scss
+
+--69d57e7--2017-03-03--Jeff Tougas
+1	1	scripts/build.sh
+1	1	webpack.config.js
+
+--9b72639--2017-03-03--Muhamed Brifkani
+1	21	src/App.js
+0	1	src/App.test.js
+
+--077c97f--2017-03-02--Gary Paige
+1	0	public/index.html
+4	4	src/components/Content/Content.js
+0	0	src/components/Content/Content.scss
+0	1536	src/components/Content/index.scss
+7	1	src/components/Header/Header.js
+34	1	src/components/Header/Header.scss
+5	14	src/components/SearchBox/SearchBox.js
+8	0	src/components/SearchBox/SearchBox.scss
+1	1	src/components/SearchBox/SearchField.js
+3	3	src/components/SearchResults/ResultCard/ResultCard.js
+8	28	src/components/SearchResults/ResultCard/ResultCard.scss
+28	36	src/index.scss
+1541	0	src/styles/orig.css
+2	0	src/styles/palette.scss
+
+--7178211--2017-03-02--Gary Paige
+1	0	package.json
+0	84	src/App.css
+1	1	src/App.js
+84	0	src/App.scss
+4	12	src/components/Content/Content.js
+0	1536	src/components/Content/index.css
+1536	0	src/components/Content/index.scss
+22	0	src/components/Header/Header.js
+9	0	src/components/Header/Header.scss
+5	4	src/components/SearchBox/SearchBox.js
+0	41	src/components/SearchResults/ResultCard/ResultCard.css
+1	1	src/components/SearchResults/ResultCard/ResultCard.js
+41	0	src/components/SearchResults/ResultCard/ResultCard.scss
+0	39	src/index.css
+1	1	src/index.js
+40	0	src/index.scss
+1	0	src/styles/palette.scss
+39	22	webpack.config.js
+
+--ab39c4e--2017-03-02--Gary Paige
+5	0	src/App.js
+0	1	src/utils/mixpanelEvents.js
+
+--db7ef05--2017-03-02--Gary Paige
+1	2	src/App.js
+
+--92b6744--2017-03-01--Gary Paige
+2	1	package.json
+3	13	src/App.js
+2	2	src/index.js
+5	0	src/utils/mixpanelEvents.js
+
+--eb1ee2c--2017-03-01--Brifkani, Muhamed
+--a821654--2017-03-01--Jeff Tougas
+3	0	.eslintrc.yaml
+2	7	src/connectors/connectSharedWorkerEventBus/connectSharedWorkerEventBus.test.js
+15	0	src/utils/eventBusWorker/__mocks__/index.js
+
+--bfee00d--2017-03-01--Jeff Tougas
+2	35	src/utils/eventBusWorker/index.js
+9	0	src/utils/eventBusWorker/onconnect.js
+21	0	src/utils/eventBusWorker/onmessage.js
+1	1	webpack.config.js
+
+--d1c152c--2017-03-01--Jeff Tougas
+1	0	package.json
+2	2	src/App.js
+1	1	src/App.test.js
+2	2	src/components/Content/Content.js
+0	23	src/connectors/connectSharedWorker/__mocks__/connectSharedWorker.js
+0	43	src/connectors/connectSharedWorker/connectSharedWorker.js
+0	101	src/connectors/connectSharedWorker/connectSharedWorker.test.js
+0	1	src/connectors/connectSharedWorker/index.js
+23	0	src/connectors/connectSharedWorkerEventBus/__mocks__/connectSharedWorkerEventBus.js
+47	0	src/connectors/connectSharedWorkerEventBus/connectSharedWorkerEventBus.js
+101	0	src/connectors/connectSharedWorkerEventBus/connectSharedWorkerEventBus.test.js
+1	0	src/connectors/connectSharedWorkerEventBus/index.js
+36	0	src/utils/eventBusWorker/index.js
+17	1	webpack.config.js
+
+--10c55ce--2017-03-01--Tougas, Jeffrey
+--5f7e711--2017-03-01--Jeff Tougas
+0	5	src/connectors/connectSharedWorker/connectSharedWorker.test.js
+
+--2e76269--2017-03-01--Jeff Tougas
+6	2	src/components/Content/Content.js
+
+--46518fb--2017-02-23--Jeff Tougas
+9	9	src/components/Content/Content.js
+17	10	src/connectors/connectSharedWorker/__mocks__/connectSharedWorker.js
+3	3	webpack.config.js
+
+--5f332f4--2017-02-23--Jeff Tougas
+17	1	src/App.test.js
+16	0	src/connectors/connectSharedWorker/__mocks__/connectSharedWorker.js
+99	6	src/connectors/connectSharedWorker/connectSharedWorker.test.js
+
+--99ac1ba--2017-02-23--Jeff Tougas
+9	18	src/App.js
+5	9	src/components/Content/Content.js
+43	0	src/connectors/connectSharedWorker/connectSharedWorker.js
+13	0	src/connectors/connectSharedWorker/connectSharedWorker.test.js
+1	0	src/connectors/connectSharedWorker/index.js
+
+--c3fc1cc--2017-02-21--Paige, Gary
+--bf59ad9--2017-02-21--Tougas, Jeffrey
+--2a4c335--2017-02-21--Jeff Tougas
+1	1	src/App.js
+
+--aa1ffed--2017-02-21--Jeff Tougas
+5	0	.eslintrc.yaml
+1	0	.gitignore
+39	0	public/iframe.html
+50	4	src/App.js
+17	0	src/components/Content/Content.js
+1	1	src/components/Content/Content.test.js
+1	1	src/utils/carrier.test.js
+11	0	src/utils/operatingSystem.js
+32	0	src/utils/operatingSystem.test.js
+10	1	webpack.config.js
+
+--1fe68ad--2017-02-20--Gary Paige
+1	0	src/components/Content/Content.js
+41	0	src/components/SearchResults/ResultCard/ResultCard.css
+4	20	src/components/SearchResults/ResultCard/ResultCard.js
+4	0	src/index.css
+
+--b0823cf--2017-02-16--Paige, Gary
+--b947727--2017-02-15--Gary Paige
+1	1	src/applicationConfig.js
+
+--9e8ee3e--2017-02-15--Paige, Gary
+--faf358d--2017-02-15--Gary Paige
+0	24	src/utils/mixPanelEvents.js
+24	0	src/utils/mixpanelEvents.js
+
+--d0e483c--2017-02-15--Paige, Gary
+--9da7b8b--2017-02-15--Gary Paige
+6	0	.eslintrc.yaml
+1	0	package.json
+22	1	src/applicationConfig.js
+7	7	src/components/Content/Content.js
+3	3	src/components/SearchBox/SearchField.js
+4	4	src/components/SearchResults/ResultCard/ResultCard.js
+2	9	src/index.js
+2	2	src/utils/mixPanelEvents.js
+
+--696b3cf--2017-02-15--Gary Paige
+1	0	package.json
+4	1	src/applicationConfig.js
+2	1	src/components/SearchResults/ResultCard/ResultCard.test.js
+7	1	src/index.js
+
+--0f0af2f--2017-02-14--Gary Paige
+2	1	package.json
+10	0	src/App.js
+21	5	src/components/Content/Content.js
+5	12	src/components/SearchBox/SearchBox.js
+51	0	src/components/SearchBox/SearchField.js
+11	8	src/components/SearchResults/ResultCard/ResultCard.js
+24	0	src/utils/mixPanelEvents.js
+
+--eecf71c--2017-02-14--Brifkani, Muhamed
+--4f257ee--2017-02-14--Jeff Tougas
+1	1	scripts/deploy.sh
+
+--b5f75c6--2017-02-14--Jeff Tougas
+3	17	scripts/deploy.sh
+
+--878e5b0--2017-02-14--Brifkani, Muhamed
+--507f77a--2017-02-13--Muhamed Brifkani
+2	1	src/App.js
+
+--8c1223f--2017-02-13--Muhamed Brifkani
+6	2	src/App.test.js
+1	1	src/components/SearchResults/ResultCard/ResultCard.test.js
+
+--e3060a1--2017-02-13--Muhamed Brifkani
+3	1	src/App.js
+
+--4006eb7--2017-02-13--Muhamed Brifkani
+1	6	src/App.js
+1	1	src/index.js
+
+--336af50--2017-02-13--Tougas, Jeffrey
+--4bcefcf--2017-02-13--Muhamed Brifkani
+--64eb2c8--2017-02-13--Paige, Gary
+--b90487d--2017-02-13--Paige, Gary
+--6411212--2017-02-10--Muhamed Brifkani
+2	10	src/App.js
+7	8	src/components/Content/Content.js
+1	1	src/components/Content/index.js
+1	1	src/components/NotFound/NotFound.js
+1	1	src/components/NotFound/index.js
+22	16	src/components/SearchBox/SearchBox.js
+1	1	src/components/SearchBox/index.js
+14	13	src/components/SearchResults/SearchResults.js
+1	1	src/components/SearchResults/index.js
+0	40	src/components/searchFilters/ApplyTags/ApplyTags.js
+0	1	src/components/searchFilters/ApplyTags/index.js
+0	59	src/components/searchFilters/CheckBoxRefinementList/CheckBoxRefinementList.js
+0	1	src/components/searchFilters/CheckBoxRefinementList/index.js
+0	41	src/components/searchFilters/NestedList/NestedList.js
+0	1	src/components/searchFilters/NestedList/index.js
+0	32	src/components/searchFilters/SelectFieldRefinementList/SelectFieldRefinementList.js
+0	1	src/components/searchFilters/SelectFieldRefinementList/index.js
+0	30	src/components/searchFilters/SortBy/SortBy.js
+0	1	src/components/searchFilters/SortBy/index.js
+0	5	src/components/searchFilters/index.js
+
+--ee5c3fd--2017-02-10--Muhamed Brifkani
+21	22	src/components/SearchResults/ResultCard/ResultCard.js
+
+--6fe268d--2017-02-10--Gary Paige
+9	0	package.json
+
+--db7afb6--2017-02-10--Gary Paige
+2	2	package.json
+2	23	src/App.js
+9	20	src/components/Content/Content.js
+
+--bb764e8--2017-02-09--Tougas, Jeffrey
+--b7c6aef--2017-02-09--Gary Paige
+1	6	src/components/SearchResults/ResultCard/ResultCard.js
+
+--8f1c654--2017-02-09--Gary Paige
+1	1	src/components/Content/Content.js
+1	1	src/components/SearchBox/SearchBox.js
+5	0	src/index.css
+
+--86e3cf8--2017-02-08--Brifkani, Muhamed
+--b6ba996--2017-02-09--Laidlaw
+15	7	src/components/SearchResults/ResultCard/ResultCard.js
+
+--f7cd545--2017-02-09--Laidlaw
+15	7	src/components/SearchResults/ResultCard/ResultCard.js
+
+--4f1e26a--2017-02-08--Laidlaw
+3	3	src/components/SearchResults/ResultCard/ResultCard.js
+
+--b7efe10--2017-02-08--Laidlaw
+8	6	src/components/Content/Content.js
+
+--36e23e1--2017-02-08--Laidlaw
+2	2	src/components/Content/Content.js
+4	1	src/components/SearchResults/SearchResults.js
+
+--9f0a1fc--2017-02-08--Laidlaw
+17	16	src/components/SearchResults/ResultCard/ResultCard.js
+
+--59c0b94--2017-02-08--Laidlaw
+4	1	src/App.css
+
+--c81d75a--2017-02-09--Tougas, Jeffrey
+--a4459ac--2017-02-09--Muhamed Brifkani
+6	6	src/index.js
+
+--5191e7d--2017-02-09--Muhamed Brifkani
+--3e5e44e--2017-02-09--Tougas, Jeffrey
+--b8b8308--2017-02-09--Gary Paige
+1	1	src/components/Content/Content.js
+6	7	src/components/SearchBox/SearchBox.js
+
+--7184cd6--2017-02-09--Muhamed Brifkani
+2	1	src/applicationConfig.js
+1	1	src/index.js
+
+--2d74651--2017-02-09--Muhamed Brifkani
+--444fa1a--2017-02-09--Tougas, Jeffrey
+--142c13b--2017-02-08--Jeff Tougas
+2	2	public/iframe.html
+1	1	src/components/Content/Content.js
+
+--b3ae035--2017-02-08--Gary Paige
+1	1	package.json
+15	9	src/App.js
+11	27	src/components/Content/Content.js
+1	1	src/components/SearchResults/ResultCard/ResultCard.js
+
+--08ffe19--2017-02-08--Gary Paige
+14	0	src/components/NotFound/NotFound.js
+1	0	src/components/NotFound/index.js
+2	0	src/index.js
+
+--cd0ba20--2017-02-08--Brifkani, Muhamed
+--25c9c64--2017-02-07--Laidlaw
+17	5	src/components/SearchResults/ResultCard/ResultCard.js
+
+--777d03c--2017-02-07--Laidlaw
+17	5	src/components/SearchResults/ResultCard/ResultCard.js
+
+--8aa0ec7--2017-02-07--Laidlaw
+15	4	src/components/Content/Content.js
+
+--0f071a1--2017-02-07--Laidlaw
+2	0	src/components/Content/Content.js
+
+--687238d--2017-02-07--Laidlaw
+2	2	public/iframe.html
+
+--7d80d28--2017-02-08--Muhamed Brifkani
+--ed8154d--2017-02-08--Muhamed Brifkani
+1	1	package.json
+
+--4e76581--2017-02-08--Muhamed Brifkani
+9	5	src/components/SearchResults/ResultCard/ResultCard.js
+
+--55a623f--2017-02-08--Muhamed Brifkani
+--b11c2f4--2017-02-08--Brifkani, Muhamed
+--a7ec3cb--2017-02-08--Tougas, Jeffrey
+--f7fcf83--2017-02-08--Muhamed Brifkani
+26	28	src/components/SearchResults/ResultCard/ResultCard.js
+0	4	src/components/SearchResults/SearchResults.js
+
+--860f8f4--2017-02-08--Muhamed Brifkani
+--de57ea0--2017-02-08--Gary Paige
+5	0	src/applicationConfig.js
+6	2	src/index.js
+1	1	webpack.config.js
+
+--9b90113--2017-02-07--Gary Paige
+51	51	package.json
+1	5	src/App.js
+
+--ce57cee--2017-02-07--Muhamed Brifkani
+5	1	package.json
+36	30	src/components/SearchResults/ResultCard/ResultCard.js
+10	10	src/components/SearchResults/SearchResults.js
+9	3	src/index.js
+
+--cc552b0--2017-02-07--Paige, Gary
+--31fc63f--2017-02-07--Tougas, Jeffrey
+--6fe2703--2017-02-07--Laidlaw
+5	0	webpack.config.js
+
+--c821055--2017-02-07--Gary Paige
+2	1	.eslintignore
+12	2	.eslintrc.yaml
+11	11	src/App.js
+17	0	src/App.test.js
+0	17	src/__tests__/App.js
+21	21	src/components/Content/Content.js
+14	0	src/components/Content/Content.test.js
+0	14	src/components/Content/__tests__/Content.js
+0	44	src/utils/__tests__/carrier.js
+44	0	src/utils/carrier.test.js
+
+--d77370b--2017-02-07--Gary Paige
+1	0	.eslintignore
+5	1	package.json
+11	13	src/App.js
+0	13	src/App.test.js
+17	0	src/__tests__/App.js
+14	0	src/components/Content/__tests__/Content.js
+0	1	src/components/SearchResults/ResultCard/ResultCard.js
+44	0	src/utils/__tests__/carrier.js
+
+--94e1ad5--2017-02-07--Tougas, Jeffrey
+--1e0f938--2017-02-07--Laidlaw, Alan
+--bf15de7--2017-02-07--Jeff Tougas
+1	1	Dockerfile
+
+--0c1bb67--2017-02-06--Jeff Tougas
+2	4	Dockerfile
+8	0	scripts/build.sh
+28	0	scripts/deploy.sh
+
+--1de798c--2017-02-07--Gary Paige
+23	8	src/App.js
+6	4	src/components/Content/Content.js
+1	1	src/index.js
+12	0	src/utils/carrier.js
+
+--9633dff--2017-02-07--Tougas, Jeffrey
+--47e44bf--2017-02-06--Muhamed Brifkani
+2	1	src/components/Content/Content.js
+
+--a3363e8--2017-02-06--Muhamed Brifkani
+9	0	.eslintrc.yaml
+75	166	src/components/Content/Content.js
+
+--8e4d823--2017-02-06--Tougas, Jeffrey
+--6987df3--2017-02-05--Gary Paige
+1	0	package.json
+
+--d676499--2017-02-03--Gary Paige
+2	0	package.json
+
+--1d0831f--2017-02-03--Gary Paige
+6	1	.eslintrc.yaml
+0	12	jest/cssTransform.js
+0	9	jest/fileTransform.js
+4	5	package.json
+28	29	src/App.js
+2	2	src/index.js
+12	0	tools/jest/cssTransform.js
+9	0	tools/jest/fileTransform.js
+31	0	tools/test.js
+25	25	webpack.config.js
+
+--17446be--2017-02-03--Laidlaw
+6	1	src/components/Content/index.css
+
+--5672073--2017-02-03--Laidlaw
+41	0	public/iframe.html
+
+--ed998ca--2017-02-02--Gary Paige
+3	0	.babelrc
+2	1	.eslintrc.yaml
+12	0	jest/cssTransform.js
+9	0	jest/fileTransform.js
+20	1	package.json
+
+--02b9060--2017-02-02--Gary Paige
+19	0	.babelrc
+10	0	.eslintrc.yaml
+42	10	package.json
+1	10	public/index.html
+0	1	src/App.js
+177	0	webpack.config.js
+
+--978a0f3--2017-02-02--Tougas, Jeffrey
+--82648fd--2017-02-01--Gary Paige
+0	7	.storybook/config.js
+0	61	main.js
+19	14	package.json
+4	18	src/App.js
+3	5	src/App.test.js
+0	1531	src/Content/index.css
+0	286	src/Content/index.js
+0	84	src/Home/index.js
+0	50	src/SearchBox/index.js
+0	113	src/SearchResults/ResultCard/index.js
+0	59	src/SearchResults/index.js
+226	0	src/components/Content/Content.js
+1531	0	src/components/Content/index.css
+1	0	src/components/Content/index.js
+40	0	src/components/SearchBox/SearchBox.js
+1	0	src/components/SearchBox/index.js
+84	0	src/components/SearchResults/ResultCard/ResultCard.js
+48	0	src/components/SearchResults/SearchResults.js
+1	0	src/components/SearchResults/index.js
+40	0	src/components/searchFilters/ApplyTags/ApplyTags.js
+1	0	src/components/searchFilters/ApplyTags/index.js
+59	0	src/components/searchFilters/CheckBoxRefinementList/CheckBoxRefinementList.js
+1	0	src/components/searchFilters/CheckBoxRefinementList/index.js
+41	0	src/components/searchFilters/NestedList/NestedList.js
+1	0	src/components/searchFilters/NestedList/index.js
+32	0	src/components/searchFilters/SelectFieldRefinementList/SelectFieldRefinementList.js
+1	0	src/components/searchFilters/SelectFieldRefinementList/index.js
+30	0	src/components/searchFilters/SortBy/SortBy.js
+1	0	src/components/searchFilters/SortBy/index.js
+5	0	src/components/searchFilters/index.js
+2	4	src/index.js
+0	42	src/searchFilters/ApplyTags/index.js
+0	66	src/searchFilters/CheckBoxRefinementList/index.js
+0	45	src/searchFilters/NestedList/index.js
+0	34	src/searchFilters/SelectFieldRefinementList/index.js
+0	33	src/searchFilters/SortBy/index.js
+0	11	src/stories/index.js
+0	138	src/techNotifications/index.js
+
+--dcbdf13--2017-02-01--Tougas, Jeffrey
+--cd0ed42--2017-01-30--Jeff Tougas
+1531	0	src/Content/index.css
+6	7	src/Content/index.js
+
+--955c182--2017-01-25--Jeff Tougas
+7	0	.storybook/config.js
+6	3	package.json
+11	0	src/stories/index.js
+138	0	src/techNotifications/index.js
+
+--07517c4--2017-01-18--Jeff Tougas
+1	0	package.json
+54	0	src/App.css
+50	18	src/Content/index.js
+
+--069aa17--2017-01-17--Jeff Tougas
+1	1	src/searchFilters/CheckBoxRefinementList/index.js
+2	2	src/searchFilters/NestedList/index.js
+1	1	src/searchFilters/SelectFieldRefinementList/index.js
+
+--f99569a--2017-01-16--Jeff Tougas
+2	2	src/SearchResults/ResultCard/index.js
+
+--d3ff624--2017-01-16--Jeff Tougas
+2	1	src/SearchResults/ResultCard/index.js
+
+--1c96dbe--2017-01-16--Jeff Tougas
+2	2	src/Content/index.js
+
+--6cb0901--2017-01-16--Jeff Tougas
+--3e7a838--2017-01-16--Jeff Tougas
+--ac81a29--2017-01-16--Jeff Tougas
+1	1	src/SearchResults/ResultCard/index.js
+1	1	src/SearchResults/index.js
+
+--0f6fdf5--2017-01-16--Laidlaw
+1	1	src/App.css
+0	1	src/App.js
+12	2	src/Content/index.js
+34	13	src/SearchResults/ResultCard/index.js
+3	3	src/SearchResults/index.js
+7	2	src/searchFilters/NestedList/index.js
+
+--d0126ba--2017-01-16--Laidlaw
+23	2	src/Content/index.js
+0	84	src/CustomHits/index.js
+84	0	src/Home/index.js
+91	0	src/SearchResults/ResultCard/index.js
+59	0	src/SearchResults/index.js
+42	0	src/searchFilters/ApplyTags/index.js
+
+--085feb9--2017-01-13--Jeff Tougas
+4	3	package.json
+26	5	src/Content/index.js
+34	0	src/searchFilters/SelectFieldRefinementList/index.js
+
+--01e31bb--2017-01-13--Jeff Tougas
+1	1	src/Content/index.js
+
+--497b804--2017-01-13--Jeff Tougas
+--43b75c0--2017-01-13--Jeff Tougas
+8	5	src/SearchBox/index.js
+
+--ccfc04c--2017-01-12--Laidlaw
+--217decc--2017-01-12--Laidlaw
+1	1	src/Content/index.js
+
+--af2bdd6--2017-01-12--Laidlaw
+1	1	src/Content/index.js
+15	11	src/CustomHits/index.js
+
+--1bd698c--2017-01-12--Laidlaw
+3	0	src/App.css
+5	2	src/App.js
+2	5	src/Content/index.js
+9	9	src/CustomHits/index.js
+43	12	src/searchFilters/CheckBoxRefinementList/index.js
+1	1	src/searchFilters/NestedList/index.js
+
+--38a7bb1--2017-01-12--Laidlaw
+--6120cb7--2017-01-12--Jeff Tougas
+--d97adb9--2017-01-12--Laidlaw
+15	4	src/App.js
+25	14	src/Content/index.js
+
+--cf507f1--2017-01-12--Jeff Tougas
+13	7	src/Content/index.js
+
+--cdddead--2017-01-12--Jeff Tougas
+6	3	src/Content/index.js
+
+--3d60996--2017-01-12--Jeff Tougas
+2	1	src/Content/index.js
+
+--5293a96--2017-01-12--Laidlaw
+12	1	src/App.js
+20	16	src/Content/index.js
+
+--61bae3f--2017-01-12--Jeff Tougas
+--b3ef4c1--2017-01-12--Laidlaw
+4	357	src/App.js
+177	0	src/Content/index.js
+80	0	src/CustomHits/index.js
+47	0	src/SearchBox/index.js
+35	0	src/searchFilters/CheckBoxRefinementList/index.js
+40	0	src/searchFilters/NestedList/index.js
+33	0	src/searchFilters/SortBy/index.js
+
+--5f1f741--2017-01-12--Jeff Tougas
+1	0	README.md
+
+--0496669--2017-01-12--Jeff Tougas
+2	0	README.md
+
+--f3ff9dd--2017-01-12--Jeff Tougas
+15	0	Dockerfile
+
+--1c75c19--2017-01-12--Jeff Tougas
+4	4	package.json
+
+--4796e12--2017-01-11--Jeff Tougas
+2	1	package.json
+
+--42f6bc4--2017-01-11--Jeff Tougas
+15	0	.gitignore
+1244	0	README.md
+61	0	main.js
+27	0	package.json
+-	-	public/favicon.ico
+32	0	public/index.html
+24	0	src/App.css
+435	0	src/App.js
+15	0	src/App.test.js
+30	0	src/index.css
+14	0	src/index.js

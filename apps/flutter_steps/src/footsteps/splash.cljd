@@ -1,0 +1,4 @@
+(ns footsteps.splash
+     (:require ["package:flutter/material.dart" :as m]
+               ["package:flutter_native_splash/flutter_native_splash.dart" :as splash]
+               [cljd.flutter :as f]))

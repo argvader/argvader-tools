@@ -1,0 +1,32 @@
+frameworkVersion: '>=3'
+service: pss-slack-ranchify
+plugins:
+  - serverless-offline
+provider:
+  name: aws
+  role: 'arn:aws:iam::693621191777:role/svc-pss-ae-prod-lambda'
+  runtime: nodejs14.x
+  timeout: 30
+  stackTags:
+    BUSINESS_UNIT: PSS
+    PLATFORM: SOLUTO
+    CLIENT: NONE
+    BUSINESS_REGION: NORTHAMERICA
+  environment:
+    API_VERSION: 1.9.0
+    NODE_ENV: prod
+    SERVICE_NAME: slack-ranchify
+    AWS_XRAY_CONTEXT_MISSING: LOG_ERROR
+  apiGateway:
+    minimumCompressionSize: 0
+  tracing: true
+package:
+  individually: true
+
+functions:
+  define:
+    handler: ranchify.handler
+    events:
+      - http:
+          path: ranchify
+          method: post

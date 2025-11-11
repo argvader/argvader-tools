@@ -1,0 +1,35 @@
+{:paths ["src/cljs"
+         "src/test"
+         "../../../libs" "../../../tools"]
+
+ :deps {reagent {:mvn/version "0.9.0-rc3"}
+        re-frame {:mvn/version "0.11.0-rc3"}
+        district0x/re-frame-interval-fx {:mvn/version "1.0.2"}
+        com.andrewmcveigh/cljs-time {:mvn/version "0.5.2"}
+        stylefy {:mvn/version "1.14.0"}}
+
+ :aliases {;; pull in specific versions of Clojure:
+           :1.10.1 {:override-deps {org.clojure/clojure {:mvn/version "1.10.1"}}}
+           :master {:override-deps {org.clojure/clojure {:mvn/version "1.11.0-master-SNAPSHOT"}}}
+           :dev {:extra-paths ["src/cljs" "src/test"]}
+           :shadow-cljs
+                {:extra-deps {thheller/shadow-cljs {:mvn/version "2.8.83"}}
+                 :main-opts ["-m" "shadow.cljs.devtools.cli"]}
+           ;; REPL-related tools:
+           ;; - start a modern nREPL server on a random available port:
+           :nrepl {:extra-deps {nrepl {:mvn/version "RELEASE"}}
+                   :main-opts ["-m" "nrepl.cmdline"]}
+           ;; - start a legacy nREPL server on port 60606:
+           :nrepl/old {:extra-deps {org.clojure/tools.nrepl {:mvn/version "RELEASE"}}
+                       :main-opts ["-e" "(require,'[clojure.tools.nrepl.server,:refer,[start-server]]),(start-server,:port,60606)"]}
+           ;; - start a Socket REPL on port 50505:
+           :socket {:jvm-opts ["-Dclojure.server.repl={:port,50505,:accept,clojure.core.server/repl}"]}
+           ;; - start a Socket REPL on an available port, and display that port:
+           ;; - specify -r as well if you want a repl
+           :socket-zero {:jvm-opts ["-Dclojure.server.repl={:port,0,:accept,clojure.core.server/repl}"]
+                         :main-opts ["-e" "(.getLocalPort,(get-in,@#'clojure.core.server/servers,[\"repl\",:socket]))"]}
+           ;; - start a Socket pREPL on port 40404:
+           :prepl {:jvm-opts ["-Dclojure.server.repl={:port,40404,:accept,clojure.core.server/io-prepl}"]}
+           ;; - see https://atom.io/packages/proto-repl
+           ;; - for use with Atom/ProtoREPL: clj -A:proto:nrepl
+           :proto {:extra-deps {proto-repl {:mvn/version "RELEASE"}}}}}

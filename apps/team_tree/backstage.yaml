@@ -1,0 +1,25 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: team-tree
+  description: team tree tool for understanding domain/team/employee structure.
+  annotations:
+    backstage.io/techdocs-ref: dir:.
+    github.com/project-slug: soluto-private/argvader-tools
+  tags:
+    - clojurescript
+    - clojure
+    - website
+    - personal
+  links:
+    - url: https://team-tree.solutodev.com/
+      title: Team Tree
+      icon: web
+    - url: https://team-tree.solutodev.com/demo
+      title: Demo
+      icon: web
+spec:
+  type: website
+  lifecycle: experimentation
+  owner: argvader
+  system: argvader-tools

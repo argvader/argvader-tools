@@ -1,0 +1,10 @@
+{
+  "name": "gotest",
+  "version": "1.0.0",
+  "scripts": {
+    "dirac": "/Applications/Google\\ Chrome\\ Canary.app/Contents/MacOS/Google\\ Chrome\\ Canary --remote-debugging-port=9700 --no-first-run --user-data-dir=.dirac http://localhost:3000"
+  },
+  "dependencies": {
+    "shadow-cljs": "^2.20.20"
+  }
+}

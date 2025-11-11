@@ -1,0 +1,30 @@
+frameworkVersion: '>=1.34.1'
+service: pss-slack-guild
+provider:
+  name: aws
+  role: 'arn:aws:iam::245511257894:role/svc-pss-ae-dev-lambda'
+  runtime: nodejs14.x
+  timeout: 30
+  stackTags:
+    BUSINESS_UNIT: PSS
+    PLATFORM: ANYWHERE_EXPERT
+    CLIENT: NONE
+    BUSINESS_REGION: NORTHAMERICA
+  environment:
+    API_VERSION: 1.9.0
+    NODE_ENV: dev
+    SERVICE_NAME: slack-guild
+    AWS_XRAY_CONTEXT_MISSING: LOG_ERROR
+  apiGateway:
+    minimumCompressionSize: 0
+  tracing: true
+package:
+  individually: true
+
+functions:
+  hello:
+    handler: target/functions.hello
+    events:
+      - http:
+          path: hello
+          method: get
