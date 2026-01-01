@@ -1,4 +1,4 @@
-(ns challenge.day1
+(ns challenge.day1a
   (:require [clojure.string :as str]))
 
 (def starting-point "R50")
