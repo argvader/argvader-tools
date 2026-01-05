@@ -1,3 +1,4 @@
+; ...existing code...
 (ns challenge.day1b
   (:require [clojure.string :as str]))
 
@@ -26,11 +27,12 @@
         :pass-count passes}
        (let [rotation (left-right (first rotations-left))
              new-pos (dial-mod current rotation)
-             wrap-pos? (or (and (> rotation 0) (<= new-pos current))
-                           (and (< rotation 0) (>= new-pos current)))
-             passed-zero? (or (= new-pos 0) wrap-pos?)]
+             wraps (Math/floorDiv (+ current rotation) dial-size)
+             passes-to-add (if (zero? wraps)
+                              (if (= new-pos 0) 1 0)
+                              (Math/abs wraps))]
          (recur new-pos (rest rotations-left) (conj positions new-pos)
-                (if passed-zero? (inc passes) passes))))))
+                (+ passes passes-to-add))))))
 
 (defn return-passes [result]
   (println (:pass-count result)))
