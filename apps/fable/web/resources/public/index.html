@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Fable — Your life, your story">
+    <meta name="theme-color" content="#1a1a2e">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="apple-touch-icon" href="/icons/icon-192.png">
+    <title>Fable</title>
+    <style>
+      *, *::before, *::after { box-sizing: border-box; }
+      html, body, #application {
+        margin: 0; padding: 0;
+        width: 100%; height: 100%;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+        background: #1a1a2e;
+        color: #eee;
+      }
+    </style>
+    <style id="_stylefy-constant-styles_"></style>
+    <style id="_stylefy-styles_"></style>
+  </head>
+  <body>
+    <div id="application"></div>
+    <script type="text/javascript" src="/js/main.js"></script>
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', function() {
+          navigator.serviceWorker.register('/sw.js');
+        });
+      }
+    </script>
+  </body>
+</html>

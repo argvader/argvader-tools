@@ -1,0 +1,3 @@
+{:api-base #profile
+ {:dev  "http://localhost:8888"
+  :prod "https://fable-api.example.com"}}

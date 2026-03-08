@@ -1,0 +1,45 @@
+{:secrets #include "secrets.edn"
+
+ :service {:name    "fable-api"
+           :version "0.1.0"}
+
+ :fable-db #profile
+ {:dev  {:dbtype   "postgresql"
+         :dbname   "fable"
+         :host     "localhost"
+         :port     5432
+         :user     #ref [:secrets :fable-db :username]
+         :password #ref [:secrets :fable-db :password]}
+  :prod {:dbtype   "postgresql"
+         :dbname   "fable"
+         :host     #ref [:secrets :fable-db :host]
+         :port     5432
+         :user     #ref [:secrets :fable-db :username]
+         :password #ref [:secrets :fable-db :password]}}
+
+ :allowed-origins #profile
+ {:dev  ["http://localhost:3000" "*"]
+  :prod ["https://fable.example.com"]}
+
+ :meta #profile
+ {:dev  {:app-id      #ref [:secrets :meta :app-id]
+         :app-secret  #ref [:secrets :meta :app-secret]
+         :redirect-uri "http://localhost:8888/auth/meta/callback"
+         :scope       "instagram_basic,instagram_manage_media,pages_show_list,public_profile"}
+  :prod {:app-id      #ref [:secrets :meta :app-id]
+         :app-secret  #ref [:secrets :meta :app-secret]
+         :redirect-uri "https://fable-api.example.com/auth/meta/callback"
+         :scope       "instagram_basic,instagram_manage_media,pages_show_list,public_profile"}}
+
+ :openai {:api-key    #ref [:secrets :openai :api-key]
+          :model      "gpt-4o"
+          :max-tokens 4096}
+
+ :lulu {:client-id     #ref [:secrets :lulu :client-id]
+        :client-secret #ref [:secrets :lulu :client-secret]
+        :base-url      "https://api.lulu.com"}
+
+ :session {:secret #ref [:secrets :session :secret]}
+
+ :s3 {:bucket #ref [:secrets :s3 :bucket]
+      :region "us-east-1"}}

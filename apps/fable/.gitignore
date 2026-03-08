@@ -1,0 +1,7 @@
+service/resources/secrets.edn
+service/target/
+web/node_modules/
+web/resources/public/js/
+web/.shadow-cljs/
+web/target/
+.cpcache/
