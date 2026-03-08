@@ -12,15 +12,21 @@
   com.github.seancorfield/honeysql           {:mvn/version "2.6.1147"}
   cheshire/cheshire                          {:mvn/version "5.13.0"}
   clj-http/clj-http                          {:mvn/version "3.13.0"}
-  buddy/buddy-sign                           {:mvn/version "3.5.1"}
+  buddy/buddy-sign                           {:mvn/version "3.5.351"}
   migratus/migratus                          {:mvn/version "1.5.3"}
   com.github.librepdf/openpdf               {:mvn/version "1.3.30"}
-  amazonica/amazonica                        {:mvn/version "0.3.167"}}
+  amazonica/amazonica                        {:mvn/version "0.3.167"}
+  local/libs                                 {:local/root "../../../libs"}
+  local/tools                                {:local/root "../../../tools"}}
 
- :paths ["src" "resources" "../../../libs" "../../../tools"]
+ :paths ["src/clj" "resources"]
 
  :aliases
- {:start    {:main-opts ["-m" "fable.core" "dev"]}
+ {:migratus {:extra-deps {com.github.paulbutcher/clj-migratus {:git/tag "v1.0.3"
+                                                              :git/sha "46a3ac1"}}
+             :main-opts ["-m" "clj-migratus"]}
+  :migrate  {:main-opts ["-m" "fable.migrate"]}
+  :start    {:main-opts ["-m" "fable.core" "dev"]}
   :prod     {:main-opts ["-m" "fable.core" "prod"]}
   :nrepl    {:extra-deps {nrepl/nrepl {:mvn/version "RELEASE"}}
              :main-opts  ["-m" "nrepl.cmdline"]}

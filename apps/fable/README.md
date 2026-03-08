@@ -63,8 +63,11 @@ docker-compose up postgres -d
 
 ```bash
 # From apps/fable/service/
-clj -M:migratus migrate
+clj -M:migrate
 ```
+
+> Uses a custom runner (`src/clj/fable/migrate.clj`) instead of clj-migratus directly.
+> migratus's JDBC batch mode is incompatible with PostgreSQL DDL that implicitly creates indexes (e.g. `PRIMARY KEY`), causing a "Too many update results were returned" error. The custom runner executes each statement individually via `next.jdbc/execute!`.
 
 ### 3. Start the service
 
@@ -153,8 +156,9 @@ apps/fable/
 │   │   ├── config.edn          # aero profile-based config
 │   │   ├── secrets.edn         # gitignored credentials
 │   │   └── migrations/
-│   └── src/fable/
+│   └── src/clj/fable/
 │       ├── core.clj            # -main, component start/stop
+│       ├── migrate.clj         # DB migration runner (clj -M:migrate)
 │       ├── system.clj          # component/system-map
 │       ├── server.clj          # Pedestal Jetty server
 │       ├── routes.clj          # route table

@@ -12,9 +12,12 @@
         re-graph/re-graph {:mvn/version "0.1.12-SNAPSHOT"}
         aero/aero {:mvn/version "1.1.5"}
         funcool/beicon {:mvn/version "2021.06.03-0"}
-        thheller/shadow-cljs {:mvn/version "2.11.18"}}
+        thheller/shadow-cljs {:mvn/version "2.11.18"}
+        local/libs           {:local/root "../../../libs"}
+        local/tools          {:local/root "../../../tools"}
+        local/vendor         {:local/root "../../../vendor"}}
 
- :paths ["src/clj" "src/cljs" "../../../libs" "../../../tools" "../../../vendor" "../../../rx-animation" "resources" "target"]
+ :paths ["src/clj" "src/cljs" "resources" "target"]
  :resource-paths ["resources"]
 
  :aliases {;; pull in specific versions of Clojure:

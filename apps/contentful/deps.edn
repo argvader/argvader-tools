@@ -3,9 +3,12 @@
         cider/cider-nrepl    {:mvn/version "0.28.3"}
         cider/piggieback     {:mvn/version "0.5.3"}
         cljs-http/cljs-http  {:mvn/version "0.1.46"}
-        adzerk/env           {:mvn/version "0.4.0"}}
+        adzerk/env           {:mvn/version "0.4.0"}
+        local/libs           {:local/root "../../libs"}
+        local/tools          {:local/root "../../tools"}
+        local/vendor         {:local/root "../../vendor"}}
 
- :paths ["src/clj" "src/cljs" "../../libs" "../../tools" "../../vendor" "../../rx-animation" "resources" "target"]
+ :paths ["src/clj" "src/cljs" "resources" "target"]
  :resource-paths ["resources"]
 
  :aliases {;; pull in specific versions of Clojure:

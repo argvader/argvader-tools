@@ -1,8 +1,10 @@
 {:deps
   {clj-pdf/clj-pdf {:mvn/version "2.6.1"}
-   io.forward/yaml {:mvn/version "1.0.11"}}
+   io.forward/yaml {:mvn/version "1.0.11"}
+   local/libs      {:local/root "../../../libs"}
+   local/tools     {:local/root "../../../tools"}}
 
- :paths ["src" "resources" "../../../libs" "../../../tools" "classes"]
+ :paths ["src" "resources" "classes"]
 
  :aliases {;; pull in specific versions of Clojure:
            :1.11.1 {:override-deps {org.clojure/clojure {:mvn/version "1.11.1"}}}

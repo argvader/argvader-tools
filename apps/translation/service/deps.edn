@@ -11,9 +11,11 @@
   seancorfield/next.jdbc           {:mvn/version "1.1.613"}
   org.postgresql/postgresql        {:mvn/version "42.2.2"}
   re-graph                         {:mvn/version "0.1.15"}
-  cheshire/cheshire                {:mvn/version "5.10.0"}}
+  cheshire/cheshire                {:mvn/version "5.10.0"}
+  local/libs                       {:local/root "../../../libs"}
+  local/tools                      {:local/root "../../../tools"}}
 
- :paths ["src" "resources" "../../../libs" "../../../tools"]
+ :paths ["src" "resources"]
 
  :aliases {;; pull in specific versions of Clojure:
            :1.10 {:override-deps {org.clojure/clojure {:mvn/version "1.10.0"}}}

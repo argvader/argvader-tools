@@ -1,9 +1,12 @@
 {:deps {thheller/shadow-cljs {:mvn/version "2.18.0"}
         aero/aero            {:mvn/version "1.1.6"}
         cider/cider-nrepl    {:mvn/version "0.28.3"}
-        cider/piggieback     {:mvn/version "0.5.3"}}
+        cider/piggieback     {:mvn/version "0.5.3"}
+        local/libs           {:local/root "../../libs"}
+        local/tools          {:local/root "../../tools"}
+        local/vendor         {:local/root "../../vendor"}}
 
- :paths ["src/clj" "src/cljs" "../../libs" "../../tools" "../../vendor" "../../rx-animation" "resources" "target"]
+ :paths ["src/clj" "src/cljs" "resources" "target"]
  :resource-paths ["resources"]
 
  :aliases {;; pull in specific versions of Clojure:
