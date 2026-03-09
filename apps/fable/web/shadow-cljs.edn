@@ -5,7 +5,7 @@
  {:app
   {:output-dir "resources/public/js"
    :asset-path "/js"
-   :devtools   {:preloads [day8.re-frame-10x.preload]}
+   :devtools   {:preloads [day8.re-frame-10x.preload.react-18]}
    :compiler-options
    {:infer-externs    :auto
     :closure-warnings {:global-this :off}

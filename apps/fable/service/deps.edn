@@ -17,7 +17,8 @@
   com.github.librepdf/openpdf               {:mvn/version "1.3.30"}
   amazonica/amazonica                        {:mvn/version "0.3.167"}
   local/libs                                 {:local/root "../../../libs"}
-  local/tools                                {:local/root "../../../tools"}}
+  local/tools                                {:local/root "../../../tools"}
+  local/vendor                               {:local/root "../../../vendor"}}}
 
  :paths ["src/clj" "resources"]
 

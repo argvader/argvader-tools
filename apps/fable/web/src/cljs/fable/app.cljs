@@ -2,6 +2,7 @@
   (:require
    [re-frame.core :as re-frame]
    [stylefy.core :as stylefy]
+   [stylefy.reagent :as stylefy-reagent]
    [fable.routes :as routes]
    [fable.events]
    [fable.effects]
@@ -14,6 +15,6 @@
    [fable.export.events]))
 
 (defn init []
-  (stylefy/init {:use-caching? false})
+  (stylefy/init {:dom (stylefy-reagent/init)})
   (re-frame/dispatch-sync [:initialize-app])
   (routes/mount))
