@@ -1,0 +1,33 @@
+{:deps
+ {org.clojure/clojure                        {:mvn/version "1.12.0"}
+  io.pedestal/pedestal.service               {:mvn/version "0.5.10"}
+  io.pedestal/pedestal.route                 {:mvn/version "0.5.10"}
+  io.pedestal/pedestal.jetty                 {:mvn/version "0.5.10"}
+  org.slf4j/slf4j-simple                     {:mvn/version "1.7.36"}
+  com.stuartsierra/component                 {:mvn/version "0.4.0"}
+  aero/aero                                  {:mvn/version "1.1.6"}
+  com.github.seancorfield/next.jdbc          {:mvn/version "1.3.909"}
+  org.postgresql/postgresql                  {:mvn/version "42.7.3"}
+  cheshire/cheshire                          {:mvn/version "5.13.0"}
+  clj-http/clj-http                          {:mvn/version "3.13.0"}
+  amazonica/amazonica                        {:mvn/version "0.3.167"}
+  hiccup/hiccup                              {:mvn/version "1.0.5"}
+  migratus/migratus                          {:mvn/version "1.5.3"}
+  net.dv8tion/JDA                            {:mvn/version "5.2.1"}
+  club.minnced/opus-java                     {:mvn/version "1.1.1"}
+  local/libs                                 {:local/root "../../../libs"}
+  local/tools                                {:local/root "../../../tools"}}
+
+ :paths ["src" "resources"]
+
+ :aliases
+ {:migrate    {:main-opts ["-m" "ttrpg-session.migrate"]}
+  :start      {:main-opts ["-m" "ttrpg-session.core" "dev"]}
+  :prod       {:main-opts ["-m" "ttrpg-session.core" "prod"]}
+  :nrepl      {:extra-deps {nrepl/nrepl {:mvn/version "RELEASE"}}
+               :main-opts  ["-m" "nrepl.cmdline"]}
+  :uberdeps   {:extra-deps {uberdeps/uberdeps {:mvn/version "1.0.5"}}
+               :main-opts  ["-m" "uberdeps.uberjar"]}
+  :push-image {:main-opts ["-m" "build.ecr.core"]
+               :extra-deps {lispyclouds/clj-docker-client {:mvn/version "1.0.1"}}}
+  :release    {:main-opts ["-m" "build.ecs.core"]}}}

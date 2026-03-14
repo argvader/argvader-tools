@@ -1,0 +1,30 @@
+{:secrets #include "secrets.edn"
+
+ :service {:name    "ttrpg-session"
+           :version "0.1.0"}
+
+ :ttrpg-db #profile
+ {:dev  {:dbtype   "postgresql"
+         :dbname   "ttrpg_session"
+         :host     "localhost"
+         :port     5432
+         :user     #ref [:secrets :ttrpg-db :username]
+         :password #ref [:secrets :ttrpg-db :password]}
+  :prod {:dbtype   "postgresql"
+         :dbname   "ttrpg_session"
+         :host     #ref [:secrets :ttrpg-db :host]
+         :port     5432
+         :user     #ref [:secrets :ttrpg-db :username]
+         :password #ref [:secrets :ttrpg-db :password]}}
+
+ :discord {:token      #ref [:secrets :discord :token]
+           :bot-secret #ref [:secrets :discord :bot-secret]}
+
+ :openai {:api-key       #ref [:secrets :openai :api-key]
+          :model         "gpt-4o"
+          :max-tokens    4096
+          :whisper-model "whisper-1"}
+
+ :s3 {:bucket             #ref [:secrets :s3 :bucket]
+      :region             "us-east-1"
+      :cloudfront-dist-id #ref [:secrets :s3 :cloudfront-dist-id]}}

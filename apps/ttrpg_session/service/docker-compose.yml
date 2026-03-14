@@ -1,0 +1,21 @@
+services:
+  postgres:
+    image: postgres:16
+    environment:
+      POSTGRES_DB: ttrpg_session
+      POSTGRES_USER: ttrpg_session
+      POSTGRES_PASSWORD: changeme
+    ports:
+      - "5432:5432"
+    volumes:
+      - ttrpg_pg_data:/var/lib/postgresql/data
+
+  ttrpg-service:
+    build: .
+    ports:
+      - "8888:8888"
+    depends_on:
+      - postgres
+
+volumes:
+  ttrpg_pg_data:
