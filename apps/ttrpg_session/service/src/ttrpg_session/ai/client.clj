@@ -9,10 +9,11 @@
 (defn- max-tok [] (get-in env/config [:openai :max-tokens] 4096))
 
 (defn chat-completion
-  "Send a chat completion request to OpenAI. Returns the parsed response body."
-  [messages & {:keys [json-mode?] :or {json-mode? false}}]
+  "Send a chat completion request to OpenAI. Returns the parsed response body.
+   Optional :max-tokens overrides the config default."
+  [messages & {:keys [json-mode? max-tokens] :or {json-mode? false}}]
   (let [body (cond-> {:model      (model)
-                      :max_tokens (max-tok)
+                      :max_tokens (or max-tokens (max-tok))
                       :messages   messages}
                json-mode? (assoc :response_format {:type "json_object"}))
         resp (http/post "https://api.openai.com/v1/chat/completions"

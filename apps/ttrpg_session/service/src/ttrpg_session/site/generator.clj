@@ -1,90 +1,362 @@
 (ns ttrpg-session.site.generator
-  (:require
-   [hiccup.core :refer [html]]
-   [hiccup.page :refer [html5]]
-   [clojure.string :as str]))
+  (:require [clojure.string :as str]))
 
-(defn- css []
-  "body { font-family: Georgia, serif; max-width: 800px; margin: 0 auto; padding: 2em; color: #333; background: #fafaf8; }
-   h1, h2, h3 { color: #1a1a2e; }
-   a { color: #6c63ff; }
-   .meta { color: #888; font-size: 0.9em; margin-bottom: 2em; }
-   .narrative p { line-height: 1.8; margin: 0 0 1em; }
-   .key-events li { margin: 0.4em 0; line-height: 1.6; }
-   .quote { border-left: 3px solid #6c63ff; padding: 0.3em 1em; margin: 0.8em 0; }
-   .quote .char { font-weight: bold; color: #6c63ff; display: block; margin-bottom: 0.2em; }
-   details { margin: 1.5em 0; border: 1px solid #e0e0e0; border-radius: 4px; padding: 0.5em 1em; }
-   summary { cursor: pointer; font-weight: bold; padding: 0.3em 0; }
-   .transcript-line { margin: 0.3em 0; line-height: 1.5; }
-   .ts { color: #aaa; font-size: 0.8em; font-family: monospace; margin-right: 0.5em; }
-   .speaker { font-weight: bold; margin-right: 0.3em; }")
+;; --- formatting helpers ---
 
-(defn- format-time [secs]
-  (let [m (int (/ secs 60))
-        s (int (mod secs 60))]
-    (format "%d:%02d" m s)))
+(defn- slugify [s]
+  (-> (str/lower-case (str s))
+      (str/replace #"[^a-z0-9\s-]" "")
+      (str/replace #"\s+" "-")
+      (str/replace #"-+" "-")
+      str/trim))
+
+(defn- date-slug
+  "Format a JDBC OffsetDateTime as YYYY-MM-DD."
+  [^java.time.OffsetDateTime ts]
+  (when ts
+    (.format ts java.time.format.DateTimeFormatter/ISO_LOCAL_DATE)))
+
+(defn- format-date
+  "Format a JDBC OffsetDateTime as 'Month D, YYYY'."
+  [^java.time.OffsetDateTime ts]
+  (when ts
+    (.format ts (java.time.format.DateTimeFormatter/ofPattern
+                 "MMMM d, yyyy" java.util.Locale/ENGLISH))))
+
+(defn- safe-cell
+  "Escape pipe characters in a Markdown table cell."
+  [s]
+  (str/replace (str s) "|" "\\|"))
+
+(defn- bullet-list [items]
+  (when (seq items)
+    (str/join "\n" (map #(str "- " %) items))))
+
+(defn- numbered-list [items]
+  (when (seq items)
+    (str/join "\n" (map-indexed #(str (inc %1) ". " %2) items))))
+
+(defn- table [headers rows]
+  (let [header-row (str "| " (str/join " | " headers) " |")
+        sep-row    (str "| " (str/join " | " (repeat (count headers) "---")) " |")
+        data-rows  (map (fn [row]
+                          (str "| " (str/join " | " (map safe-cell row)) " |"))
+                        rows)]
+    (str/join "\n" (concat [header-row sep-row] data-rows))))
+
+(defn- section
+  "Emit a ## section only when body is non-blank."
+  [title body]
+  (when (seq (str/trim (str body)))
+    (str "## " title "\n\n" body "\n")))
+
+(defn- subsection [title body]
+  (when (seq (str/trim (str body)))
+    (str "### " title "\n\n" body "\n")))
+
+(defn- overview-paragraphs [text]
+  (when text
+    (str/join "\n\n"
+              (map str/trim (str/split text #"\n\n+")))))
+
+(defn- session-link
+  "Markdown link from a wiki/* page to a session page."
+  [session-number session-title date-slug]
+  (let [label (str "Session " session-number
+                   (when session-title (str " — " session-title)))]
+    (str "[" label "](../sessions/" date-slug ".md)")))
+
+;; --- session page ---
 
 (defn session-page
-  "Render a single session page. summary has :narrative :key-events :notable-quotes.
-   transcript is [{:start :character-name :text}]."
-  [session summary transcript]
-  (html5
-   [:head
-    [:meta {:charset "utf-8"}]
-    [:meta {:name "viewport" :content "width=device-width, initial-scale=1"}]
-    [:title (str (or (:campaign_name session) "Session") " — " (:channel_name session))]
-    [:style (css)]]
-   [:body
-    [:p [:a {:href "/"} "← Archive"]]
-    [:h1 (or (:campaign_name session) "Session Summary")]
-    [:p.meta
-     (str (:channel_name session) " · " (:started_at session))]
+  "Returns {:path str :content str} for the session Markdown page.
+   session: recording_sessions row.
+   summary: session_summaries row with parsed JSONB fields.
+   session-number: 1-based integer."
+  [session summary session-number]
+  (let [ds       (date-slug (:started_at session))
+        title    (or (:session_title summary) (str "Session " session-number))
+        hed      (str "Session " session-number " — " title)
+        img-path (when (:scene_image_path summary)
+                   (str "../images/" (last (str/split (:scene_image_path summary) #"/"))))
 
-    [:h2 "What Happened"]
-    [:div.narrative
-     (for [para (str/split (:narrative summary) #"\n\n+")]
-       [:p para])]
+        key-events-md
+        (when (seq (:key_events_detail summary))
+          (str/join "\n\n"
+                    (map (fn [{:keys [title body]}]
+                           (str "### " title "\n\n"
+                                (str/join "\n\n"
+                                          (map str/trim (str/split (str body) #"\n\n+")))))
+                         (:key_events_detail summary))))
 
-    [:h2 "Key Events"]
-    [:ul.key-events
-     (for [evt (:key-events summary)]
-       [:li evt])]
+        timeline-md
+        (when (seq (:timeline_entries summary))
+          (table ["Time" "Event"]
+                 (map (fn [{:keys [time event]}] [time event])
+                      (:timeline_entries summary))))
 
-    [:h2 "Notable Quotes"]
-    (for [{:keys [character quote]} (:notable-quotes summary)]
-      [:div.quote
-       [:span.char character]
-       [:span (str "\"" quote "\"")]])
+        items-md
+        (when (seq (:items summary))
+          (table ["Item" "Held By" "Notes"]
+                 (map (fn [{:keys [item holder detail]}] [item holder detail])
+                      (:items summary))))
 
-    [:details
-     [:summary "Full Transcript"]
-     [:div
-      (for [{:keys [start character-name text]} transcript]
-        [:div.transcript-line
-         [:span.ts (format-time start)]
-         [:span.speaker (str character-name ":")]
-         text])]]]))
+        pc-moments-md
+        (when (seq (:pc_moments summary))
+          (table ["Character" "Highlight"]
+                 (map (fn [{:keys [character-name moment]}] [character-name moment])
+                      (:pc_moments summary))))
+
+        content
+        (str/join "\n"
+          (filter some?
+            ["---"
+             (str "title: \"" hed "\"")
+             "---"
+             ""
+             (str "# " hed)
+             ""
+             (str "*" (or (:campaign_name session) "Campaign")
+                  " · " (format-date (:started_at session)) "*")
+             ""
+             "---"
+             ""
+             (when (and (:scene_title summary) img-path)
+               (str "## " (:scene_title summary) "\n\n"
+                    "!["  (:scene_title summary) "](" img-path ")\n\n"
+                    "> " (str/replace (str (:scene_prose summary)) "\n" "\n> ")
+                    "\n\n---"))
+             ""
+             (section "Overview" (overview-paragraphs (:overview summary)))
+             (section "Key Events" key-events-md)
+             (section "Timeline" timeline-md)
+             (section "Notable Items" items-md)
+             (section "Lore Learned" (bullet-list (:lore_learned summary)))
+             (section "Mysteries Raised" (bullet-list (:mysteries summary)))
+             (section "Commitments Made" (bullet-list (:commitments summary)))
+             (section "What Comes Next" (numbered-list (:next_steps summary)))
+             (section "Memorable Moments" (bullet-list (:memorable_moments summary)))
+             (section "Characters This Session" pc-moments-md)]))]
+    {:path    (str "docs/sessions/" ds ".md")
+     :content content}))
+
+;; --- npc page ---
+
+(defn npc-page
+  "Returns {:path str :content str}.
+   npc: npcs row. notes: seq of {:notes :session_title :session_number :started_at}."
+  [npc notes]
+  (let [notes-md
+        (when (seq notes)
+          (table ["Session" "Notes"]
+                 (map (fn [n]
+                        (let [snum  (:session_number n)
+                              stitle (:session_title n)
+                              ds     (date-slug (:started_at n))
+                              link   (session-link snum stitle ds)]
+                          [link (:notes n)]))
+                      notes)))
+
+        content
+        (str/join "\n"
+          (filter some?
+            ["---"
+             (str "title: \"" (:name npc) "\"")
+             "---"
+             ""
+             (str "# " (:name npc))
+             ""
+             (:description npc)
+             ""
+             (section "Session Appearances" notes-md)]))]
+    {:path    (str "docs/wiki/npcs/" (:slug npc) ".md")
+     :content content}))
+
+;; --- location page ---
+
+(defn location-page
+  "Returns {:path str :content str}.
+   location: locations row. notes: seq of {:notes :session_title :session_number :started_at}."
+  [location notes]
+  (let [notes-md
+        (when (seq notes)
+          (table ["Session" "Notes"]
+                 (map (fn [n]
+                        (let [snum   (:session_number n)
+                              stitle (:session_title n)
+                              ds     (date-slug (:started_at n))
+                              link   (session-link snum stitle ds)]
+                          [link (:notes n)]))
+                      notes)))
+
+        content
+        (str/join "\n"
+          (filter some?
+            ["---"
+             (str "title: \"" (:name location) "\"")
+             "---"
+             ""
+             (str "# " (:name location))
+             ""
+             (:description location)
+             ""
+             (section "Session Appearances" notes-md)]))]
+    {:path    (str "docs/wiki/locations/" (:slug location) ".md")
+     :content content}))
+
+;; --- pc page ---
+
+(defn pc-page
+  "Returns {:path str :content str}.
+   pc: {:discord-username str :character-name str}.
+   moments: seq of {:moment :session-title :session-number :date-slug}."
+  [pc moments]
+  (let [moments-md
+        (when (seq moments)
+          (table ["Session" "Moment"]
+                 (map (fn [m]
+                        (let [link (session-link (:session-number m)
+                                                 (:session-title m)
+                                                 (:date-slug m))]
+                          [link (:moment m)]))
+                      moments)))
+
+        content
+        (str/join "\n"
+          (filter some?
+            ["---"
+             (str "title: \"" (:character-name pc) "\"")
+             "---"
+             ""
+             (str "# " (:character-name pc))
+             ""
+             (str "*Played by " (:discord-username pc) "*")
+             ""
+             (section "Session Moments" moments-md)]))]
+    {:path    (str "docs/wiki/pcs/" (slugify (:character-name pc)) ".md")
+     :content content}))
+
+;; --- index page ---
 
 (defn index-page
-  "Render the session archive index page."
-  [sessions]
-  (html5
-   [:head
-    [:meta {:charset "utf-8"}]
-    [:meta {:name "viewport" :content "width=device-width, initial-scale=1"}]
-    [:title "Session Archive"]
-    [:style (css)]]
-   [:body
-    [:h1 "Session Archive"]
-    (if (empty? sessions)
-      [:p "No sessions yet."]
-      [:ul
-       (for [s sessions]
-         [:li
-          (if (= "done" (:status s))
-            [:a {:href (str "/sessions/" (:id s) "/")}
-             (str (or (:campaign_name s) "Session") " — " (:channel_name s)
-                  " (" (:started_at s) ")")]
-            [:span
-             (str (or (:campaign_name s) "Session") " — " (:channel_name s)
-                  " [" (:status s) "]")])])])]))
+  "Returns {:path 'docs/index.md' :content str}.
+   sessions: from list-sessions-with-titles."
+  [campaign-name sessions]
+  (let [done   (filter #(= "done" (:status %)) sessions)
+        rows   (map (fn [s]
+                      [(str (:session_number s))
+                       (let [ds    (date-slug (:started_at s))
+                             title (or (:session_title s) "Session")]
+                         (str "[" title "](sessions/" ds ".md)"))
+                       (format-date (:started_at s))])
+                    done)
+        tbl    (when (seq rows)
+                 (table ["#" "Session" "Date"] rows))
+        content
+        (str/join "\n"
+          ["---"
+           "title: \"Home\""
+           "---"
+           ""
+           (str "# " campaign-name)
+           ""
+           (str "Welcome to the session archive and campaign wiki for *" campaign-name "*.")
+           ""
+           (or tbl "*No sessions recorded yet.*")])]
+    {:path    "docs/index.md"
+     :content content}))
+
+;; --- mkdocs.yml ---
+
+(defn mkdocs-yml
+  "Returns {:path 'mkdocs.yml' :content str}.
+   sessions: from list-sessions-with-titles.
+   npcs: from list-npcs.
+   locations: from list-locations.
+   pcs: seq of {:character-name :discord-username}."
+  [{:keys [campaign-name site-url sessions npcs locations pcs]}]
+  (let [done-sessions (filter #(= "done" (:status %)) sessions)
+
+        nav-sessions
+        (str/join "\n"
+          (map (fn [s]
+                 (str "    - sessions/" (date-slug (:started_at s)) ".md"))
+               done-sessions))
+
+        nav-npcs
+        (str/join "\n"
+          (map (fn [n] (str "      - wiki/npcs/" (:slug n) ".md")) npcs))
+
+        nav-locations
+        (str/join "\n"
+          (map (fn [l] (str "      - wiki/locations/" (:slug l) ".md")) locations))
+
+        nav-pcs
+        (str/join "\n"
+          (map (fn [p]
+                 (str "      - wiki/pcs/" (slugify (:character-name p)) ".md"))
+               pcs))
+
+        content
+        (str/join "\n"
+          (filter some?
+            [(str "site_name: \"" campaign-name "\"")
+             (when site-url (str "site_url: \"" site-url "\""))
+             "theme:"
+             "  name: material"
+             "  palette:"
+             "    - scheme: slate"
+             "      primary: deep purple"
+             "      accent: purple"
+             "  font:"
+             "    text: Noto Serif"
+             "    code: Fira Mono"
+             "  features:"
+             "    - navigation.instant"
+             "    - navigation.tracking"
+             "    - navigation.sections"
+             "    - navigation.expand"
+             "    - navigation.top"
+             "    - toc.follow"
+             "    - search.highlight"
+             ""
+             "nav:"
+             "  - Home: index.md"
+             (when (seq done-sessions)
+               (str "  - Sessions:\n" nav-sessions))
+             "  - Wiki:"
+             (when (seq pcs)
+               (str "    - Player Characters:\n" nav-pcs))
+             (when (seq npcs)
+               (str "    - NPCs:\n" nav-npcs))
+             (when (seq locations)
+               (str "    - Locations:\n" nav-locations))]))]
+    {:path    "mkdocs.yml"
+     :content content}))
+
+;; --- GitHub Actions workflow ---
+
+(defn github-workflow
+  "Returns {:path '.github/workflows/deploy-docs.yml' :content str}."
+  []
+  {:path    ".github/workflows/deploy-docs.yml"
+   :content (str/join "\n"
+              ["name: Deploy MkDocs"
+               "on:"
+               "  push:"
+               "    branches: [main]"
+               "  workflow_dispatch:"
+               "permissions:"
+               "  contents: write"
+               "jobs:"
+               "  deploy:"
+               "    runs-on: ubuntu-latest"
+               "    steps:"
+               "      - uses: actions/checkout@v4"
+               "        with:"
+               "          fetch-depth: 0"
+               "      - uses: actions/setup-python@v5"
+               "        with:"
+               "          python-version: \"3.x\""
+               "      - run: pip install mkdocs-material"
+               "      - run: mkdocs gh-deploy --force"])})

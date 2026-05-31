@@ -1,8 +1,10 @@
 FROM clojure:temurin-21-tools-deps AS builder
 WORKDIR /app
-COPY deps.edn .
-RUN clj -P
-COPY . .
+COPY libs libs
+COPY tools tools
+COPY apps/ttrpg_session/service/deps.edn apps/ttrpg_session/service/deps.edn
+RUN cd apps/ttrpg_session/service && clj -P
+COPY apps/ttrpg_session/service .
 RUN clj -M:uberdeps
 
 FROM eclipse-temurin:21-jre

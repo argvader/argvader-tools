@@ -11,7 +11,9 @@ services:
       - ttrpg_pg_data:/var/lib/postgresql/data
 
   ttrpg-service:
-    build: .
+    build:
+      context: ../../..
+      dockerfile: apps/ttrpg_session/service/Dockerfile
     ports:
       - "8888:8888"
     depends_on:

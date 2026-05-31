@@ -12,19 +12,26 @@
          :password #ref [:secrets :ttrpg-db :password]}
   :prod {:dbtype   "postgresql"
          :dbname   "ttrpg_session"
-         :host     #ref [:secrets :ttrpg-db :host]
+         :host     #env DB_HOST
          :port     5432
-         :user     #ref [:secrets :ttrpg-db :username]
-         :password #ref [:secrets :ttrpg-db :password]}}
+         :user     #env DB_USER
+         :password #env DB_PASSWORD}}
 
- :discord {:token      #ref [:secrets :discord :token]
-           :bot-secret #ref [:secrets :discord :bot-secret]}
+ :discord {:token      #profile {:dev #ref [:secrets :discord :token]
+                                 :prod #env DISCORD_TOKEN}
+           :bot-secret #profile {:dev #ref [:secrets :discord :bot-secret]
+                                 :prod #env BOT_SECRET}}
 
- :openai {:api-key       #ref [:secrets :openai :api-key]
+ :openai {:api-key       #profile {:dev #ref [:secrets :openai :api-key]
+                                   :prod #env OPENAI_API_KEY}
           :model         "gpt-4o"
           :max-tokens    4096
           :whisper-model "whisper-1"}
 
- :s3 {:bucket             #ref [:secrets :s3 :bucket]
-      :region             "us-east-1"
-      :cloudfront-dist-id #ref [:secrets :s3 :cloudfront-dist-id]}}
+ :github {:token  #profile {:dev #ref [:secrets :github :token]
+                           :prod #env GITHUB_TOKEN}
+          :owner  #profile {:dev #ref [:secrets :github :owner]
+                            :prod #env GITHUB_OWNER}
+          :repo   #profile {:dev #ref [:secrets :github :repo]
+                            :prod #env GITHUB_REPO}
+          :branch "main"}}

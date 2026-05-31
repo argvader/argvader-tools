@@ -10,8 +10,6 @@
   org.postgresql/postgresql                  {:mvn/version "42.7.3"}
   cheshire/cheshire                          {:mvn/version "5.13.0"}
   clj-http/clj-http                          {:mvn/version "3.13.0"}
-  amazonica/amazonica                        {:mvn/version "0.3.167"}
-  hiccup/hiccup                              {:mvn/version "1.0.5"}
   migratus/migratus                          {:mvn/version "1.5.3"}
   net.dv8tion/JDA                            {:mvn/version "5.2.1"}
   club.minnced/opus-java                     {:mvn/version "1.1.1"}

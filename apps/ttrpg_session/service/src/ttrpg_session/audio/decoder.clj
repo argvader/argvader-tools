@@ -6,7 +6,7 @@
 
 (defn- read-short-le
   "Read a signed 16-bit little-endian value from byte array at offset i."
-  ^short [^bytes b ^long i]
+  [^bytes b ^long i]
   (short (bit-or (bit-and (aget b i) 0xFF)
                  (bit-shift-left (aget b (inc i)) 8))))
 

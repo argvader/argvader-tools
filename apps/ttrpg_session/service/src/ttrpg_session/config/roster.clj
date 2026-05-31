@@ -23,3 +23,10 @@
 
 (defn campaign-name []
   (:campaign (roster)))
+
+(defn all-pcs
+  "Returns a seq of {:discord-username str :character-name str} from roster."
+  []
+  (->> (:players (roster))
+       (map (fn [[k v]] {:discord-username (name k) :character-name v}))
+       (sort-by :character-name)))

@@ -1,41 +1,78 @@
 (ns ttrpg-session.site.publisher
   (:require
-   [amazonica.aws.s3 :as s3]
-   [amazonica.aws.cloudfront :as cf]
-   [clojure.java.io :as io]
+   [clj-http.client :as http]
+   [cheshire.core :as json]
    [env.config :as env]))
 
-(defn- bucket [] (get-in env/config [:s3 :bucket]))
-(defn- cf-dist [] (get-in env/config [:s3 :cloudfront-dist-id]))
+(defn- gh-cfg [] (get-in env/config [:github]))
+(defn- branch [] (get (gh-cfg) :branch "main"))
 
-(defn- put-html!
-  "Write content string as a UTF-8 HTML object to S3."
-  [s3-key content]
-  (let [tmp (java.io.File/createTempFile "ttrpg-" ".html")]
-    (try
-      (spit tmp content :encoding "UTF-8")
-      (s3/put-object :bucket-name (bucket)
-                     :key         s3-key
-                     :file        tmp
-                     :metadata    {:content-type "text/html; charset=utf-8"})
-      (finally
-        (.delete tmp)))))
+(defn- api-url [path]
+  (let [{:keys [owner repo]} (gh-cfg)]
+    (str "https://api.github.com/repos/" owner "/" repo "/contents/" path)))
 
-(defn- invalidate! []
-  (cf/create-invalidation
-   :distribution-id (cf-dist)
-   :invalidation-batch {:caller-reference (str (java.util.UUID/randomUUID))
-                        :paths {:items ["/*"] :quantity 1}}))
+(defn- auth-headers []
+  {"Authorization"        (str "Bearer " (:token (gh-cfg)))
+   "Accept"               "application/vnd.github+json"
+   "X-GitHub-Api-Version" "2022-11-28"})
 
-(defn publish-session!
-  "Upload session HTML to S3. Returns the S3 key."
-  [session-id html]
-  (let [key (str "sessions/" session-id "/index.html")]
-    (put-html! key html)
-    key))
+(defn- b64-encode [^String s]
+  (.encodeToString (java.util.Base64/getEncoder) (.getBytes s "UTF-8")))
 
-(defn update-index!
-  "Upload the index page and invalidate CloudFront."
-  [index-html]
-  (put-html! "index.html" index-html)
-  (invalidate!))
+(defn- b64-encode-bytes [^bytes b]
+  (.encodeToString (java.util.Base64/getEncoder) b))
+
+(defn- file-sha
+  "Return the current blob SHA for path on the target branch, or nil if absent."
+  [path]
+  (try
+    (let [resp (http/get (api-url path)
+                         {:headers          (auth-headers)
+                          :query-params     {"ref" (branch)}
+                          :throw-exceptions false})]
+      (when (= 200 (:status resp))
+        (:sha (json/parse-string (:body resp) true))))
+    (catch Exception _ nil)))
+
+(defn- put-file!
+  "Create or update a UTF-8 text file on the target branch."
+  [path content]
+  (let [sha  (file-sha path)
+        body (cond-> {:message (str "publish " path)
+                      :content (b64-encode content)
+                      :branch  (branch)}
+               sha (assoc :sha sha))]
+    (http/put (api-url path)
+              {:headers      (auth-headers)
+               :body         (json/generate-string body)
+               :content-type :json
+               :accept       :json})))
+
+(defn- put-binary-file!
+  "Create or update a binary file on the target branch."
+  [path ^bytes content-bytes]
+  (let [sha  (file-sha path)
+        body (cond-> {:message (str "publish " path)
+                      :content (b64-encode-bytes content-bytes)
+                      :branch  (branch)}
+               sha (assoc :sha sha))]
+    (http/put (api-url path)
+              {:headers      (auth-headers)
+               :body         (json/generate-string body)
+               :content-type :json
+               :accept       :json})))
+
+(defn publish-image!
+  "Upload PNG bytes to docs/images/{session-id}-scene.png. Returns the path."
+  [session-id ^bytes png-bytes]
+  (let [path (str "docs/images/" session-id "-scene.png")]
+    (put-binary-file! path png-bytes)
+    path))
+
+(defn publish-files!
+  "Publish a seq of {:path str :content str} text files to GitHub.
+   Adds a short sleep between requests to respect GitHub secondary rate limits."
+  [file-maps]
+  (doseq [{:keys [path content]} file-maps]
+    (put-file! path content)
+    (Thread/sleep 500)))
