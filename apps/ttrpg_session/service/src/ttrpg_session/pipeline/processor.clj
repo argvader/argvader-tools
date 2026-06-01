@@ -71,6 +71,63 @@
    {}
    raw-rows))
 
+(defn republish-session!
+  "Rebuild the entire mkdocs wiki from current DB state and publish it to GitHub.
+   Reuses already-stored summaries/NPCs/locations and calls no AI APIs.
+   Records the published path on the session summary and returns it."
+  [session-id]
+  (println (str "Publishing wiki for session: " session-id))
+  (let [session       (store/find-recording-session session-id)
+
+        ;; Full wiki state
+        all-sessions  (store/list-sessions-with-titles)
+        all-npcs      (store/list-npcs)
+        all-locations (store/list-locations)
+        pcs           (roster/all-pcs)
+
+        ;; Session number index: session-id string -> Long
+        session-num-idx (into {} (map (fn [s] [(str (:id s)) (:session_number s)])
+                                      all-sessions))
+        this-num        (get session-num-idx session-id)
+
+        ;; PC moments index from all sessions
+        pc-moment-rows    (store/find-pc-moments-across-sessions)
+        pc-moments-index  (build-pc-moments-index pc-moment-rows)
+
+        ;; This session's parsed summary row
+        summary-row  (parse-summary-jsonb (store/find-summary session-id))
+
+        ;; Generate pages
+        session-page (generator/session-page session summary-row this-num)
+        npc-pages    (mapv (fn [npc]
+                             (generator/npc-page npc (store/find-notes-for-npc (:id npc))))
+                           all-npcs)
+        loc-pages    (mapv (fn [loc]
+                             (generator/location-page loc (store/find-notes-for-location (:id loc))))
+                           all-locations)
+        pc-pages     (mapv (fn [pc]
+                             (generator/pc-page pc
+                               (get pc-moments-index (:character-name pc) [])))
+                           pcs)
+        index        (generator/index-page (roster/campaign-name) all-sessions)
+        site-url     (str "https://" (get-in env/config [:github :owner])
+                          ".github.io/" (get-in env/config [:github :repo]) "/")
+        mkdocs       (generator/mkdocs-yml
+                      {:campaign-name (roster/campaign-name)
+                       :site-url      site-url
+                       :sessions      all-sessions
+                       :npcs          all-npcs
+                       :locations     all-locations
+                       :pcs           pcs})
+        workflow     (generator/github-workflow)
+
+        all-files    (concat [session-page index mkdocs workflow]
+                             npc-pages loc-pages pc-pages)]
+    (println (str "Publishing " (count all-files) " files..."))
+    (publisher/publish-files! all-files)
+    (store/update-summary-published! session-id (:path session-page))
+    (:path session-page)))
+
 (defn process-session!
   "Orchestrate the full decode→transcribe→merge→summarize→publish pipeline.
    pcm-buffers: {user-id -> {:username str :pcm-bufs [byte[]]}}"
@@ -116,65 +173,12 @@
                        (store/add-location-session-note!
                         {:location-id (:id loc)
                          :session-id  session-id
-                         :notes       session-notes})))
+                         :notes       session-notes})))]
 
-          ;; 7. Fetch full wiki state
-          all-sessions  (store/list-sessions-with-titles)
-          all-npcs      (store/list-npcs)
-          all-locations (store/list-locations)
-          pcs           (roster/all-pcs)
-
-          ;; Session number index: session-id string -> Long
-          session-num-idx (into {} (map (fn [s] [(str (:id s)) (:session_number s)])
-                                        all-sessions))
-          this-num        (get session-num-idx session-id)
-
-          ;; 8. Build PC moments index from all sessions
-          pc-moment-rows    (store/find-pc-moments-across-sessions)
-          pc-moments-index  (build-pc-moments-index pc-moment-rows)
-
-          ;; 9. Fetch and parse this session's summary row for generation
-          summary-row  (parse-summary-jsonb (store/find-summary session-id))
-
-          ;; 10. Generate session page
-          session-page (generator/session-page session summary-row this-num)
-
-          ;; 11. Generate NPC pages
-          npc-pages    (mapv (fn [npc]
-                               (generator/npc-page npc (store/find-notes-for-npc (:id npc))))
-                             all-npcs)
-
-          ;; 12. Generate location pages
-          loc-pages    (mapv (fn [loc]
-                               (generator/location-page loc (store/find-notes-for-location (:id loc))))
-                             all-locations)
-
-          ;; 13. Generate PC pages
-          pc-pages     (mapv (fn [pc]
-                               (generator/pc-page pc
-                                 (get pc-moments-index (:character-name pc) [])))
-                             pcs)
-
-          ;; 14. Generate index, mkdocs.yml, workflow
-          index        (generator/index-page (roster/campaign-name) all-sessions)
-          site-url     (str "https://" (get-in env/config [:github :owner])
-                            ".github.io/" (get-in env/config [:github :repo]) "/")
-          mkdocs       (generator/mkdocs-yml
-                        {:campaign-name (roster/campaign-name)
-                         :site-url      site-url
-                         :sessions      all-sessions
-                         :npcs          all-npcs
-                         :locations     all-locations
-                         :pcs           pcs})
-          workflow     (generator/github-workflow)
-
-          ;; 15. Push all files
-          all-files    (concat [session-page index mkdocs workflow]
-                               npc-pages loc-pages pc-pages)
-          _            (println (str "Publishing " (count all-files) " files..."))
-          _            (publisher/publish-files! all-files)
-          _            (store/update-summary-published! session-id (:path session-page))
-          _            (store/complete-recording-session! session-id)]
+      ;; 7. Rebuild the full wiki from current DB state and publish to GitHub
+      (republish-session! session-id)
+      ;; 8. Mark the recording lifecycle complete
+      (store/complete-recording-session! session-id)
       (println (str "Session " session-id " complete.")))
     (catch Exception e
       (println (str "Error processing session " session-id ": " (.getMessage e)))
