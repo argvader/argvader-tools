@@ -11,10 +11,12 @@
                  (bit-shift-left (aget b (inc i)) 8))))
 
 (defn- write-short-le!
-  "Write a signed 16-bit little-endian value into byte array at sample index idx."
+  "Write a signed 16-bit little-endian value into byte array at sample index idx.
+   `unchecked-byte` truncates to the low 8 bits with two's-complement wraparound
+   (e.g. 255 -> -1); a plain `byte` cast would throw on any value > 127."
   [^bytes out ^long idx ^long v]
-  (aset-byte out (* idx 2)       (byte (bit-and v 0xFF)))
-  (aset-byte out (inc (* idx 2)) (byte (bit-and (bit-shift-right v 8) 0xFF))))
+  (aset-byte out (* idx 2)       (unchecked-byte v))
+  (aset-byte out (inc (* idx 2)) (unchecked-byte (bit-shift-right v 8))))
 
 (defn downsample
   "Convert 48kHz stereo PCM bytes to 16kHz mono PCM bytes.

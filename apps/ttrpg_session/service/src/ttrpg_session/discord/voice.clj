@@ -9,6 +9,11 @@
   (let [buffers (atom {})]
     {:jda-handler
      (proxy [AudioReceiveHandler] []
+       ;; Clojure proxy stubs every interface method (even `default` ones) to throw
+       ;; UnsupportedOperationException unless implemented. JDA's receive setup calls
+       ;; all three flags, so we must answer each: per-user PCM only, no combined/encoded.
+       (canReceiveCombined [] false)
+       (canReceiveEncoded [] false)
        (canReceiveUser [] true)
        (handleUserAudio [^UserAudio audio]
          (let [user     (.getUser audio)

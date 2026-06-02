@@ -14,6 +14,7 @@
                 ::http/type              :jetty
                 ::http/host              "0.0.0.0"
                 ::http/port              8888
+                ::http/join?             false
                 ::http/allowed-origins   {:creds true :allowed-origins (constantly true)}
                 ::http/container-options {:ssl? false}}
                http/create-server
