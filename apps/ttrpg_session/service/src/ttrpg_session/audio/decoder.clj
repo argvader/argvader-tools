@@ -1,14 +1,15 @@
 (ns ttrpg-session.audio.decoder)
 
-;; JDA delivers 48kHz stereo 16-bit little-endian PCM (20ms frames = 3840 bytes each).
-;; Whisper requires 16kHz mono 16-bit little-endian PCM.
+;; JDA's AudioReceiveHandler.OUTPUT_FORMAT is 48kHz stereo 16-bit signed BIG-endian
+;; PCM (20ms frames = 3840 bytes each). Whisper/WAV want 16kHz mono 16-bit
+;; little-endian PCM. So we read big-endian on the way in and write little-endian out.
 ;; Downsample ratio: 3:1. Stereo→mono by averaging L + R.
 
-(defn- read-short-le
-  "Read a signed 16-bit little-endian value from byte array at offset i."
+(defn- read-short-be
+  "Read a signed 16-bit big-endian value from byte array at offset i."
   [^bytes b ^long i]
-  (short (bit-or (bit-and (aget b i) 0xFF)
-                 (bit-shift-left (aget b (inc i)) 8))))
+  (short (bit-or (bit-shift-left (aget b i) 8)
+                 (bit-and (aget b (inc i)) 0xFF))))
 
 (defn- write-short-le!
   "Write a signed 16-bit little-endian value into byte array at sample index idx.
@@ -28,8 +29,8 @@
     (dotimes [i n-mono]
       (let [src      (* i 3)
             byte-off (* src 4)
-            l        (long (read-short-le pcm byte-off))
-            r        (long (read-short-le pcm (+ byte-off 2)))
+            l        (long (read-short-be pcm byte-off))
+            r        (long (read-short-be pcm (+ byte-off 2)))
             mono     (quot (+ l r) 2)]
         (write-short-le! out i mono)))
     out))

@@ -16,17 +16,38 @@
   (load!)
   (println "Roster reloaded"))
 
+(def ^:private dm-label "Dungeon Master")
+
+(defn dungeon-master
+  "Discord username of the session facilitator (the DM), from roster.edn :dungeon-master.
+   The DM voices NPCs/narration and is never listed as a player character. nil if unset."
+  []
+  (:dungeon-master (roster)))
+
 (defn character-name
-  "Look up the character name for a Discord username. Returns nil if unmapped."
+  "Display name for a Discord username: the mapped player-character name, the
+   \"Dungeon Master\" label for the facilitator, or nil if unmapped (transcripts
+   then fall back to the raw Discord name)."
   [discord-username]
-  (get-in (roster) [:players discord-username]))
+  (cond
+    (= discord-username (dungeon-master)) dm-label
+    :else (get-in (roster) [:players discord-username])))
 
 (defn campaign-name []
   (:campaign (roster)))
 
-(defn all-pcs
-  "Returns a seq of {:discord-username str :character-name str} from roster."
+(defn custom-theme
+  "Theme alias from roster.edn (:custom_theme), e.g. \"desert\". nil if unset."
   []
-  (->> (:players (roster))
-       (map (fn [[k v]] {:discord-username (name k) :character-name v}))
-       (sort-by :character-name)))
+  (:custom_theme (roster)))
+
+(defn all-pcs
+  "Returns the player characters for the wiki — strictly the roster :players
+   mappings, with the DM excluded even if mistakenly listed there. Each entry is
+   {:discord-username str :character-name str}."
+  []
+  (let [dm (dungeon-master)]
+    (->> (:players (roster))
+         (remove (fn [[k _]] (= (name k) dm)))
+         (map (fn [[k v]] {:discord-username (name k) :character-name v}))
+         (sort-by :character-name))))

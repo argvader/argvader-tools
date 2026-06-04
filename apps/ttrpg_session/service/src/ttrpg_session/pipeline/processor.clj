@@ -37,6 +37,7 @@
   "Parse all JSONB columns on a session_summaries row."
   [row]
   (-> row
+      (update :transcript         store/parse-jsonb)
       (update :key_events_detail  store/parse-jsonb)
       (update :memorable_moments  store/parse-jsonb)
       (update :lore_learned       store/parse-jsonb)
@@ -55,9 +56,7 @@
    (fn [acc row]
      (let [snum    (:session_number row)
            stitle  (:session_title row)
-           started (:started_at row)
-           ds      (.format ^java.time.OffsetDateTime started
-                            java.time.format.DateTimeFormatter/ISO_LOCAL_DATE)
+           ds      (generator/date-slug (:started_at row))
            moments (store/parse-jsonb (:pc_moments row))]
        (reduce
         (fn [a m]
@@ -77,6 +76,11 @@
    Records the published path on the session summary and returns it."
   [session-id]
   (println (str "Publishing wiki for session: " session-id))
+  ;; Mark done BEFORE building the nav/index: mkdocs nav and the home-page table
+  ;; only list status='done' sessions, so the session must be 'done' to appear in
+  ;; its own navigation. On a live run, process-session!'s catch reverts this to
+  ;; 'error' if publishing then fails.
+  (store/complete-recording-session! session-id)
   (let [session       (store/find-recording-session session-id)
 
         ;; Full wiki state
@@ -118,7 +122,8 @@
                        :sessions      all-sessions
                        :npcs          all-npcs
                        :locations     all-locations
-                       :pcs           pcs})
+                       :pcs           pcs
+                       :theme         (roster/custom-theme)})
         workflow     (generator/github-workflow)
 
         all-files    (concat [session-page index mkdocs workflow]
@@ -127,6 +132,19 @@
     (publisher/publish-files! all-files)
     (store/update-summary-published! session-id (:path session-page))
     (:path session-page)))
+
+(defn- try-scene-image!
+  "Generate and upload the scene image, returning its published path. Best-effort:
+   on any failure (e.g. bad OpenAI key, content policy, quota), log the error and
+   return nil so the session still completes without an image."
+  [session-id prompt]
+  (try
+    (println "Generating scene image...")
+    (publisher/publish-image! session-id (image/generate-scene-image prompt))
+    (catch Exception e
+      (println (str "Scene image generation failed for session " session-id
+                    " (continuing without an image): " (.getMessage e)))
+      nil)))
 
 (defn process-session!
   "Orchestrate the full decode→transcribe→merge→summarize→publish pipeline.
@@ -147,10 +165,8 @@
           ;; 2. Generate rich summary
           summary  (narrator/summarize merged (:campaign_name session))
 
-          ;; 3. Generate and upload scene image
-          _        (println "Generating scene image...")
-          png      (image/generate-scene-image (:scene-image-prompt summary))
-          img-path (publisher/publish-image! session-id png)
+          ;; 3. Generate and upload scene image (best-effort; nil if it fails)
+          img-path (try-scene-image! session-id (:scene-image-prompt summary))
 
           ;; 4. Persist summary
           _        (store/create-summary!
@@ -175,10 +191,9 @@
                          :session-id  session-id
                          :notes       session-notes})))]
 
-      ;; 7. Rebuild the full wiki from current DB state and publish to GitHub
+      ;; 7. Rebuild and publish the full wiki to GitHub. republish-session! marks
+      ;;    the session 'done' first so it appears in its own nav/index.
       (republish-session! session-id)
-      ;; 8. Mark the recording lifecycle complete
-      (store/complete-recording-session! session-id)
       (println (str "Session " session-id " complete.")))
     (catch Exception e
       (println (str "Error processing session " session-id ": " (.getMessage e)))

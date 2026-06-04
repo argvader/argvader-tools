@@ -1,3 +1,10 @@
-{:campaign "The Shattered Realm"
- :players  {"DiscordUsername" "Aldric the Bold"
-             "RpgNerd"        "Seraphina Voss"}}
+{:campaign "City of Exiles"
+ :custom_theme "desert"
+ ;; The DM/facilitator: voices NPCs and narration, never listed as a player character.
+ :dungeon-master "sirluckycharms88"
+ :players  {"argvader" "Prance Galavant"
+             "joshua.lloyd" "Adarius"
+             "judgeandjury" "Behnsun Payne"
+             "King Klong" "Fizz"
+             "Nube10" "Krum"}
+ }}

@@ -10,18 +10,32 @@
       (str/replace #"-+" "-")
       str/trim))
 
-(defn- date-slug
-  "Format a JDBC OffsetDateTime as YYYY-MM-DD."
-  [^java.time.OffsetDateTime ts]
+(defn- ->utc-date-time
+  "Coerce a JDBC timestamp value to an OffsetDateTime in UTC. timestamptz columns
+   come back as java.sql.Timestamp (pgjdbc default), but may be java.time types
+   depending on driver config — normalise so date formatting works regardless."
+  ^java.time.OffsetDateTime [ts]
+  (let [^java.time.Instant inst
+        (condp instance? ts
+          java.time.Instant        ts
+          java.sql.Timestamp       (.toInstant ^java.sql.Timestamp ts)
+          java.time.OffsetDateTime (.toInstant ^java.time.OffsetDateTime ts)
+          java.time.ZonedDateTime  (.toInstant ^java.time.ZonedDateTime ts))]
+    (.atOffset inst java.time.ZoneOffset/UTC)))
+
+(defn date-slug
+  "Format a JDBC timestamp value as YYYY-MM-DD (UTC)."
+  [ts]
   (when ts
-    (.format ts java.time.format.DateTimeFormatter/ISO_LOCAL_DATE)))
+    (.format (->utc-date-time ts) java.time.format.DateTimeFormatter/ISO_LOCAL_DATE)))
 
 (defn- format-date
-  "Format a JDBC OffsetDateTime as 'Month D, YYYY'."
-  [^java.time.OffsetDateTime ts]
+  "Format a JDBC timestamp value as 'Month D, YYYY' (UTC)."
+  [ts]
   (when ts
-    (.format ts (java.time.format.DateTimeFormatter/ofPattern
-                 "MMMM d, yyyy" java.util.Locale/ENGLISH))))
+    (.format (->utc-date-time ts)
+             (java.time.format.DateTimeFormatter/ofPattern
+              "MMMM d, yyyy" java.util.Locale/ENGLISH))))
 
 (defn- safe-cell
   "Escape pipe characters in a Markdown table cell."
@@ -107,6 +121,13 @@
                  (map (fn [{:keys [character-name moment]}] [character-name moment])
                       (:pc_moments summary))))
 
+        transcript-md
+        (when (seq (:transcript summary))
+          (str/join "\n\n"
+                    (map (fn [{:keys [character-name text]}]
+                           (str "**" (or character-name "Unknown") ":** " text))
+                         (:transcript summary))))
+
         content
         (str/join "\n"
           (filter some?
@@ -136,7 +157,8 @@
              (section "Commitments Made" (bullet-list (:commitments summary)))
              (section "What Comes Next" (numbered-list (:next_steps summary)))
              (section "Memorable Moments" (bullet-list (:memorable_moments summary)))
-             (section "Characters This Session" pc-moments-md)]))]
+             (section "Characters This Session" pc-moments-md)
+             (section "Transcript" transcript-md)]))]
     {:path    (str "docs/sessions/" ds ".md")
      :content content}))
 
@@ -268,14 +290,33 @@
 
 ;; --- mkdocs.yml ---
 
+(def ^:private default-theme
+  {:scheme "slate" :primary "deep purple" :accent "purple"
+   :text "Noto Serif" :code "Fira Mono"})
+
+(def ^:private themes
+  "Maps a roster :custom_theme alias to MkDocs Material palette/font settings.
+   Colours are Material's named palette colours; fonts are Google Font names."
+  {"desert" {:scheme "default" :primary "amber" :accent "deep orange"
+             :text "Marcellus" :code "Fira Mono"}
+   "egypt"  {:scheme "default" :primary "amber" :accent "brown"
+             :text "Cinzel" :code "Fira Mono"}})
+
+(defn- theme-config
+  "Resolve a custom-theme alias to a Material theme map, falling back to default."
+  [alias]
+  (get themes alias default-theme))
+
 (defn mkdocs-yml
   "Returns {:path 'mkdocs.yml' :content str}.
    sessions: from list-sessions-with-titles.
    npcs: from list-npcs.
    locations: from list-locations.
-   pcs: seq of {:character-name :discord-username}."
-  [{:keys [campaign-name site-url sessions npcs locations pcs]}]
+   pcs: seq of {:character-name :discord-username}.
+   theme: optional :custom_theme alias from the roster (e.g. \"desert\")."
+  [{:keys [campaign-name site-url sessions npcs locations pcs theme]}]
   (let [done-sessions (filter #(= "done" (:status %)) sessions)
+        {:keys [scheme primary accent text code]} (theme-config theme)
 
         nav-sessions
         (str/join "\n"
@@ -305,12 +346,12 @@
              "theme:"
              "  name: material"
              "  palette:"
-             "    - scheme: slate"
-             "      primary: deep purple"
-             "      accent: purple"
+             (str "    - scheme: " scheme)
+             (str "      primary: " primary)
+             (str "      accent: " accent)
              "  font:"
-             "    text: Noto Serif"
-             "    code: Fira Mono"
+             (str "    text: " text)
+             (str "    code: " code)
              "  features:"
              "    - navigation.instant"
              "    - navigation.tracking"

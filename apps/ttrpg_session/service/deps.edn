@@ -33,10 +33,10 @@
   :start      {:jvm-opts  ["-Dorg.slf4j.simpleLogger.logFile=logs/ttrpg.log"
                           "-Dorg.slf4j.simpleLogger.showDateTime=true"
                           "-Dorg.slf4j.simpleLogger.dateTimeFormat=HH:mm:ss.SSS"
-                          "-Dorg.slf4j.simpleLogger.defaultLogLevel=info"
-                          "-Dorg.slf4j.simpleLogger.log.net.dv8tion.jda=debug"]
+                          "-Dorg.slf4j.simpleLogger.defaultLogLevel=info"]
                :main-opts ["-m" "ttrpg-session.core" "dev"]}
   :prod       {:main-opts ["-m" "ttrpg-session.core" "prod"]}
+  :republish  {:main-opts ["-m" "ttrpg-session.republish"]}
   :nrepl      {:extra-deps {nrepl/nrepl {:mvn/version "RELEASE"}}
                :main-opts  ["-m" "nrepl.cmdline"]}
   :uberdeps   {:extra-deps {uberdeps/uberdeps {:mvn/version "1.0.5"}}
